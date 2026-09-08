@@ -31,3 +31,10 @@ All notable changes to Bergbot. Milestones follow docs/BERGBOT_WORK_ORDER.md.
 - `core/logistics`: nearest stops, outbound and last return via transport.opendata.ch, tight/no-return warnings, OSM amenities capped per kind, lifts/huts always unverified with web-verification specs.
 - `core/scoring`, `core/evidence`, `conversation/register.decide()` (rule-based).
 - Workflows `run_audit`, `run_find`, `run_around`, `run_check` and CLI commands; five fixture GPX with golden stats; intersection property tests; 20 + 20 register cases; offline end-to-end audits on recorded fixtures.
+
+### M4 — Report renderer
+- Single-file HTML report (`ui/report/templates/report.html.j2`): inline CSS, no JS, no external requests, sections Before you go → Route → Conditions → Terrain → Logistics → Around → Photos & stories → Evidence → Footer.
+- Inline SVG map with embedded swisstopo raster (data URI, ≤ 400 KB), route, severity-coloured segments, start/end/escape/hut/lift markers, scale bar; inline SVG elevation profile with coloured segments and km ticks.
+- Evidence badges A–E on every finding, verbatim source text beside the translation, `Bergbot informs. The decision is yours.` closes the warnings block.
+- Mascot pipeline `bergbot brand build` (background removal, WebP ≤ 40 KB, 512 px PNG, avatar); header mascot only in playful register and never with a critical warning; footer mascot always; never inside the warnings block.
+- `bergbot render` with 1 MB warning / 2 MB fail; snapshot tests per locale, forbidden-vocabulary scan of rendered HTML, self-containment test.

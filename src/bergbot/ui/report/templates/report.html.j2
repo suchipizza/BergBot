@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t("report.title", route=route.name) }}</title>
+<style>
+:root{--ink:#1c2430;--muted:#5b6b7b;--line:#e3e8ee;--bg:#ffffff;--soft:#f4f6f9;--crit:#c8102e;--imp:#e07b00;--note:#c9a400;--ok:#2b8a3e;--link:#1f6feb}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);overflow-wrap:anywhere;font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.45rem;line-height:1.25;margin:0 0 4px}
+h2{font-size:1.15rem;margin:28px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h3{font-size:1rem;margin:16px 0 6px}
+p{margin:6px 0}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+.hero{display:flex;gap:14px;align-items:flex-start}
+.hero .txt{flex:1}
+.mascot{width:84px;height:84px;object-fit:contain;flex:none}
+.warnbox{border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin:14px 0;background:var(--soft)}
+.warnbox.has-critical{border-color:var(--crit)}
+.warnbox.has-important{border-color:var(--imp)}
+.warn{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;padding:10px 0;border-top:1px solid var(--line)}
+.warn:first-of-type{border-top:0}
+.warn>*{min-width:0}
+.warn .mark{font-size:1.2rem;line-height:1.2}
+.warn .title{font-weight:700}
+.warn .sev{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;padding:1px 6px;border-radius:6px;color:#fff;margin-left:6px;vertical-align:middle}
+.sev.critical{background:var(--crit)}.sev.important{background:var(--imp)}.sev.note{background:var(--note)}
+.warn .body{grid-column:2}
+.warn .src{grid-column:2;font-size:.8rem;color:var(--muted)}
+.orig{grid-column:2;font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);padding-left:8px;margin-top:4px}
+.fixed{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font-weight:700}
+.card{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{text-align:left;padding:5px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.badge{display:inline-block;min-width:1.5em;text-align:center;font-size:.75rem;font-weight:700;border-radius:6px;padding:1px 5px;background:#e9eef4;color:#334}
+.badge.A{background:#d3f9d8;color:#1b5e20}.badge.B{background:#d0ebff;color:#0b3d91}.badge.C{background:#fff3bf;color:#7a5a00}.badge.D{background:#e5dbff;color:#4a2a8a}.badge.E{background:#ffe3e3;color:#8a1c1c}
+.status{font-size:.8rem;padding:1px 6px;border-radius:6px;background:#eee;color:#333}
+.status.unverified,.status.conflicting{background:#ffe8cc;color:#7a3e00}
+.map,.profile{display:block;border-radius:10px;border:1px solid var(--line)}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:.8rem;color:var(--muted);margin:6px 0}
+.legend span::before{content:"";display:inline-block;width:14px;height:4px;border-radius:2px;margin-right:5px;vertical-align:middle;background:var(--link)}
+.legend .haz::before{background:var(--imp)}.legend .clo::before{background:var(--crit)}.legend .exp::before{background:#7a3db8}
+.legend .s::before{background:var(--ok);height:10px;width:10px;border-radius:50%}.legend .e::before{background:var(--crit);height:10px;width:10px;border-radius:50%}.legend .esc::before{background:var(--ok);height:10px;width:10px}
+ul.plain{list-style:none;padding:0;margin:6px 0}
+ul.plain li{padding:4px 0;border-bottom:1px solid var(--line)}
+a{color:var(--link);word-break:break-word}
+footer{margin-top:36px;padding-top:16px;border-top:2px solid var(--line);display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+footer .cta a{display:inline-block;margin:4px 8px 4px 0;padding:8px 12px;border-radius:8px;background:var(--soft);border:1px solid var(--line);text-decoration:none;font-weight:600;color:var(--ink)}
+.ev-list li{font-size:.85rem}
+@media (max-width:480px){body{font-size:15px}.mascot{width:64px;height:64px}main{padding:12px}}
+@media print{footer .cta a{border:0}}
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <div class="txt">
+    <h1>{{ route.name }}</h1>
+    <p class="muted small">{{ t("report.subtitle", generated_at=generated_at, date=date_text) }} · Bergbot v{{ version }}</p>
+  </div>
+  {% if header_mascot %}<img class="mascot" id="header-mascot" src="{{ header_mascot }}" alt="{{ t('report.labels.mascot_alt') }}">{% endif %}
+</header>
+
+{# ---------- 1. Before you go — warnings, no mascot, no CTA ---------- #}
+<section id="before-you-go" class="warnbox{% if warnings and warnings[0].severity == 'critical' %} has-critical{% elif warnings and warnings[0].severity == 'important' %} has-important{% endif %}">
+  <h2 style="margin-top:0;border:0">{{ t("ui.message.warnings_header") }}</h2>
+  {% if warnings %}
+    {% for w in warnings %}
+    <div class="warn {{ w.severity }}">
+      <div class="mark" aria-hidden="true">{{ w.marker }}</div>
+      <div><span class="title">{{ w.title }}</span><span class="sev {{ w.severity }}">{{ w.label }}</span>
+        {% if w.segment %}<span class="muted small"> · km {{ w.segment.from_km }}–{{ w.segment.to_km }}</span>{% endif %}</div>
+      <div class="body">{{ w.body }}</div>
+      {% if w.original_text %}<div class="orig"><span class="muted">{{ t("report.labels.original_text") }}{% if w.original_lang %} ({{ w.original_lang }}){% endif %}:</span> “{{ w.original_text }}”</div>{% endif %}
+      <div class="src">
+        {% for e in w.evidence %}<span class="badge {{ e.cls.value }}" title="{{ ev_label(e.cls.value) }}">{{ e.cls.value }}</span> {{ e.source }}{% if e.source_ts %} · {{ fmt_ts(e.source_ts) }}{% endif %}{% if e.url %} · <a href="{{ e.url }}">↗</a>{% endif %}{% if not loop.last %} &nbsp;{% endif %}{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p>{{ t("report.labels.no_warnings") }}</p>
+  {% endif %}
+  <p class="fixed">{{ fixed_line }}</p>
+</section>
+
+{# ---------- 2. Route ---------- #}
+<section id="route">
+  <h2>{{ t("report.sections.route") }}</h2>
+  <div class="card">
+    <dl class="kv">
+      <dt>{{ t("report.labels.grade") }}</dt><dd>{{ grade_text }}</dd>
+      {% if stats %}
+      <dt>{{ t("report.labels.distance") }}</dt><dd>{{ stats.distance_km }} {{ t("ui.units.km") }}</dd>
+      <dt>{{ t("report.labels.ascent") }} / {{ t("report.labels.descent") }}</dt><dd>↑ {{ stats.ascent_m|int }} {{ t("ui.units.m") }} · ↓ {{ stats.descent_m|int }} {{ t("ui.units.m") }}</dd>
+      <dt>{{ t("report.labels.duration") }}</dt><dd>{{ duration_text }} <span class="muted small">— {{ t("report.labels.duration_method") }}</span></dd>
+      {% if stats.min_elevation_m is not none %}<dt>{{ t("report.labels.altitude_range") }}</dt><dd>{{ stats.min_elevation_m|int }}–{{ stats.max_elevation_m|int }} {{ t("ui.units.m") }}</dd>{% endif %}
+      {% endif %}
+      {% if route.start %}<dt>{{ t("report.labels.start") }}</dt><dd>{{ route.start.name }}{% if audit.transport and audit.transport.start_stop %} <span class="muted">({{ audit.transport.start_stop }})</span>{% endif %}</dd>{% endif %}
+      {% if route.end %}<dt>{{ t("report.labels.end") }}</dt><dd>{{ route.end.name }}{% if audit.transport and audit.transport.end_stop %} <span class="muted">({{ audit.transport.end_stop }})</span>{% endif %}</dd>{% endif %}
+      <dt>{{ t("report.labels.identity") }}</dt><dd>{% if route.identity.network %}{{ route.identity.name }}{% if route.identity.overlap_pct %} <span class="muted small">({{ route.identity.overlap_pct }} %)</span>{% endif %}{% else %}<span class="muted">{{ t("report.labels.identity_none") }}</span>{% endif %}</dd>
+    </dl>
+  </div>
+  {{ map_svg|safe }}
+  <div class="legend">
+    <span>{{ t("report.labels.map_legend_route") }}</span><span class="clo">{{ term("closure") }}</span><span class="haz">{{ t("report.labels.map_legend_hazard") }}</span><span class="exp">{{ t("report.labels.exposed_segments") }}</span>
+    <span class="s">{{ t("report.labels.map_legend_start") }}</span><span class="e">{{ t("report.labels.map_legend_end") }}</span><span class="esc">{{ t("report.labels.map_legend_escape") }}</span>
+  </div>
+  {% if map_attribution %}<p class="muted small">{{ map_attribution }}</p>{% endif %}
+  {% if map_note %}<p class="muted small">{{ map_note }}</p>{% endif %}
+</section>
+
+{# ---------- 3. Conditions ---------- #}
+<section id="conditions">
+  <h2>{{ t("report.sections.conditions") }}</h2>
+  {% if hours %}
+  <h3>{{ t("report.labels.weather_by_hour") }}</h3>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>{{ t("report.labels.time") }}</th><th class="num">km</th><th class="num">{{ t("ui.units.m") }}</th><th class="num">{{ t("report.labels.temp") }} °C</th><th class="num">{{ t("report.labels.precip") }} mm</th><th class="num">{{ t("report.labels.wind") }}</th><th class="num">{{ t("report.labels.gust") }}</th><th>{{ t("report.labels.thunder") }}</th></tr></thead>
+    <tbody>
+    {% for h in hours %}
+    <tr><td>{{ h.time }}</td><td class="num">{{ h.km }}</td><td class="num">{{ h.ele }}</td><td class="num">{{ h.temp }}</td><td class="num">{{ h.precip }} <span class="muted small">{{ h.prob }}</span></td><td class="num">{{ h.wind }}</td><td class="num">{{ h.gust }}</td><td>{{ h.storm }} <span class="muted small">{{ h.summary }}</span></td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="muted">{{ t("ui.message.weather_unavailable") }}</p>
+  {% endif %}
+  <h3>{{ t("report.labels.fire_danger") }}</h3>
+  {% if conditions and conditions.fire_danger_level is not none %}
+  <p>{{ conditions.fire_danger_level }} — {{ L.get("safety.danger_levels." ~ conditions.fire_danger_level, "") }}</p>
+  {% for r in conditions.fire_restrictions %}<p class="small">{{ (r.region or {}).get(lang) or (r.region or {}).get("en") }}: {{ (r.title or {}).get(lang) or (r.title or {}).get("en") }}</p>{% endfor %}
+  {% else %}<p class="muted">{{ t("report.labels.not_checked") }}</p>{% endif %}
+  <h3>{{ t("report.labels.snow_avalanche") }}</h3>
+  {% if conditions and conditions.slf_level is not none %}
+  <p>{{ t("safety.terms.avalanche_not_interpreted", level=conditions.slf_level, label=L.get("safety.danger_levels." ~ conditions.slf_level, "")) }}</p>
+  {% else %}<p class="muted">{{ t("safety.terms.no_bulletin") }}</p>{% endif %}
+</section>
+
+{# ---------- 4. Terrain ---------- #}
+<section id="terrain">
+  <h2>{{ t("report.sections.terrain") }}</h2>
+  <h3>{{ t("report.labels.elevation_profile") }}</h3>
+  {{ profile_svg|safe }}
+  <h3>{{ t("report.labels.exposed_segments") }}</h3>
+  {% set exp = route.segments|selectattr("kind.value","equalto","exposed")|list %}
+  {% if exp %}<ul class="plain">{% for s in exp %}<li>km {{ s.from_km }}–{{ s.to_km }}{% if s.slope_pct %} · {{ s.slope_pct }} %{% endif %} <span class="badge D">D</span></li>{% endfor %}</ul>
+  {% else %}<p class="muted">{{ t("report.labels.none_found") }}</p>{% endif %}
+  <h3>{{ t("report.labels.escape_points") }}</h3>
+  {% if escape_points %}<ul class="plain">{% for p in escape_points %}<li>{{ p.name }} <span class="muted small">({{ p.kind.value }})</span></li>{% endfor %}</ul>
+  {% else %}<p class="muted">{{ t("report.labels.none_found") }}</p>{% endif %}
+</section>
+
+{# ---------- 5. Logistics ---------- #}
+<section id="logistics">
+  <h2>{{ t("report.sections.logistics") }}</h2>
+  {% if transport and not transport.unavailable %}
+  <div class="card">
+    <dl class="kv">
+      <dt>{{ t("report.labels.transport_out") }}</dt><dd>{% if transport.outbound %}{{ transport.outbound.from_stop }} {{ fmt_time(transport.outbound.departure) }} → {{ transport.outbound.to_stop }} {{ fmt_time(transport.outbound.arrival) }} <span class="muted small">{{ transport.outbound.products|join(", ") }}</span>{% else %}<span class="muted">{{ t("report.labels.not_checked") }}</span>{% endif %}</dd>
+      <dt>{{ t("report.labels.transport_back") }}</dt><dd>{% if transport.last_return %}{{ transport.last_return.from_stop }} {{ fmt_time(transport.last_return.departure) }} → {{ transport.last_return.to_stop }} {{ fmt_time(transport.last_return.arrival) }} <span class="muted small">{{ transport.last_return.products|join(", ") }}</span>{% else %}<span class="muted">{{ t("report.labels.none_found") }}</span>{% endif %}</dd>
+    </dl>
+  </div>
+  {% else %}<p class="muted">{{ t("ui.message.transport_unavailable") }}</p>{% endif %}
+  <h3>{{ t("report.labels.lifts") }}</h3>
+  {% if amenities_by_kind.lift %}<ul class="plain">{% for a in amenities_by_kind.lift %}<li>{{ a.name }} <span class="status {{ a.status.value }}">{{ term(a.status.value) }}</span>{% if a.km is not none %} <span class="muted small">km {{ a.km }}</span>{% endif %}</li>{% endfor %}</ul>
+  {% else %}<p class="muted">{{ t("report.labels.none_found") }}</p>{% endif %}
+  <h3>{{ t("report.labels.huts") }}</h3>
+  {% set huts = (amenities_by_kind.hut or []) + (amenities_by_kind.restaurant or []) %}
+  {% if huts %}<ul class="plain">{% for a in huts %}<li>{{ a.name }} <span class="status {{ a.status.value }}">{{ term(a.status.value) }}</span>{% if a.km is not none %} <span class="muted small">km {{ a.km }}</span>{% endif %}{% if a.url %} · <a href="{{ a.url }}">↗</a>{% endif %}</li>{% endfor %}</ul>
+  {% else %}<p class="muted">{{ t("report.labels.none_found") }}</p>{% endif %}
+</section>
+
+{# ---------- 6. Around ---------- #}
+<section id="around">
+  <h2>{{ t("report.sections.around") }}</h2>
+  <h3>{{ t("report.labels.water") }}</h3>
+  {% if amenities_by_kind.water %}<ul class="plain">{% for a in amenities_by_kind.water %}<li>{{ a.name }} <span class="muted small">km {{ a.km }}</span></li>{% endfor %}</ul>{% else %}<p class="muted">{{ t("report.labels.none_found") }}</p>{% endif %}
+  <h3>{{ t("report.labels.shelters") }}</h3>
+  {% if amenities_by_kind.shelter %}<ul class="plain">{% for a in amenities_by_kind.shelter %}<li>{{ a.name }} <span class="muted small">km {{ a.km }}</span></li>{% endfor %}</ul>{% else %}<p class="muted">{{ t("report.labels.none_found") }}</p>{% endif %}
+  <h3>{{ t("report.labels.webcams") }}</h3>
+  {% if audit.webcams %}<ul class="plain">{% for w in audit.webcams %}<li><a href="{{ w.url }}">{{ w.name }}</a></li>{% endfor %}</ul>{% else %}<p class="muted">{{ t("report.labels.not_checked") }}</p>{% endif %}
+  <h3>{{ t("report.labels.rules") }}</h3>
+  {% if audit.zones %}<ul class="plain">{% for z in audit.zones %}<li>{{ z.kind }}{% if z.name %}: {{ z.name }}{% endif %}{% if z.period %} <span class="muted small">{{ z.period }}</span>{% endif %}{% if z.url %} · <a href="{{ z.url }}">↗</a>{% endif %}</li>{% endfor %}</ul>{% else %}<p class="muted">{{ t("report.labels.none_found") }}</p>{% endif %}
+</section>
+
+{# ---------- 7. Photos & stories (only when requested) ---------- #}
+{% if audit.media %}
+<section id="media">
+  <h2>{{ t("report.sections.media") }}</h2>
+  <p class="muted small">{{ t("report.labels.third_party_note") }}</p>
+  <ul class="plain">{% for m in audit.media %}<li><a href="{{ m.url }}">{{ m.title }}</a> <span class="muted small">{{ m.type }}{% if m.date %} · {{ m.date }}{% endif %}</span>{% if m.description %}<br><span class="small">{{ m.description }}</span>{% endif %}</li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+{# ---------- 8. Evidence ---------- #}
+<section id="evidence">
+  <h2>{{ t("report.sections.evidence") }}</h2>
+  <div class="card">
+    <dl class="kv">
+      <dt>{{ t("report.labels.summary_known") }}</dt><dd>{{ summary.known|length }}</dd>
+      <dt>{{ t("report.labels.summary_inferred") }}</dt><dd>{{ summary.inferred|length }}</dd>
+      <dt>{{ t("report.labels.summary_uncertain") }}</dt><dd>{{ summary.uncertain|length }}</dd>
+      <dt>{{ t("report.labels.summary_unverified") }}</dt><dd>{% if summary.unverified %}{{ summary.unverified|join(", ") }}{% else %}—{% endif %}</dd>
+    </dl>
+  </div>
+  <p class="legend">{% for c in ["A","B","C","D","E"] %}<span style="display:inline-flex;align-items:center;gap:4px"><i class="badge {{ c }}">{{ c }}</i> {{ ev_label(c) }}</span>{% endfor %}</p>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>{{ t("report.labels.evidence_class") }}</th><th>{{ t("report.labels.source") }}</th><th>{{ t("report.labels.source_ts") }}</th><th>{{ t("report.labels.retrieved_ts") }}</th><th>{{ t("report.labels.confidence") }}</th></tr></thead>
+    <tbody>
+    {% for e in evidence_rows %}
+    <tr><td><span class="badge {{ e.cls.value }}">{{ e.cls.value }}</span></td>
+        <td>{% if e.url %}<a href="{{ e.url }}">{{ e.source }}</a>{% else %}{{ e.source }}{% endif %}{% if e.translated_summary %}<br><span class="small">{{ e.translated_summary }}</span>{% endif %}{% if e.original_span %}<br><span class="muted small">“{{ e.original_span }}”</span>{% endif %}{% if e.verification != "n/a" %} <span class="status {{ e.verification }}">{{ term(e.verification) }}</span>{% endif %}</td>
+        <td class="small">{{ fmt_ts(e.source_ts) if e.source_ts else "—" }}</td><td class="small">{{ fmt_ts(e.retrieved_ts) }}</td><td class="num">{{ (e.confidence * 100)|int }} %</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+
+{# ---------- 9. Footer ---------- #}
+<footer>
+  <img class="mascot" src="{{ footer_mascot }}" alt="{{ t('report.labels.mascot_alt') }}">
+  <div>
+    <p><strong>{{ t("report.footer.made_with") }}</strong> — {{ t("report.footer.tagline") }}</p>
+    <p class="cta"><a href="{{ links.star }}">{{ t("report.footer.star") }}</a><a href="{{ links.install }}">{{ t("report.footer.install") }}</a><a href="{{ links.waitlist }}">{{ t("report.footer.waitlist") }}</a></p>
+  </div>
+</footer>
+
+</main>
+</body>
+</html>

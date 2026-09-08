@@ -280,7 +280,36 @@ def zone_warnings(
         zones.append(
             {"kind": "guardian_dogs", "name": r.payload.get("name"), "url": r.payload.get("info_url")}
         )
-    return warnings, zones, unavailable, segments
+    return _merge_adjacent(warnings), zones, unavailable, segments
+
+
+def _merge_adjacent(warnings: list[Warning], gap_km: float = 0.25) -> list[Warning]:
+    """Closure features are split into many short pieces; one warning per contiguous stretch with the same
+    type and reason keeps the message readable without dropping any finding."""
+    out: list[Warning] = []
+    for w in sorted(
+        warnings, key=lambda w: (w.type.value, w.affected_segment.from_km if w.affected_segment else 0.0)
+    ):
+        last = out[-1] if out else None
+        if (
+            last is not None
+            and last.type is w.type
+            and last.original_text == w.original_text
+            and last.affected_segment is not None
+            and w.affected_segment is not None
+            and w.affected_segment.from_km <= last.affected_segment.to_km + gap_km
+        ):
+            seg = last.affected_segment.model_copy(
+                update={"to_km": max(last.affected_segment.to_km, w.affected_segment.to_km)}
+            )
+            params = {**last.params, "from_km": seg.from_km, "to_km": seg.to_km}
+            evidence = last.evidence + [e for e in w.evidence if e not in last.evidence]
+            out[-1] = last.model_copy(
+                update={"affected_segment": seg, "params": params, "evidence": evidence}
+            )
+            continue
+        out.append(w)
+    return out
 
 
 def _ev(r: Record, cls: EvidenceClass, summary: str | None, original_lang: str | None) -> Evidence:

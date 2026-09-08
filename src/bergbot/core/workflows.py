@@ -102,6 +102,8 @@ def audit_route(
     if prof.source == "none":
         unavailable.append("ch.geoadmin")
     route.stats = compute_stats(route, prof)
+    if prof.source != "none":
+        route.profile = [[round(k, 3), round(e, 1)] for k, e in zip(prof.km, prof.ele, strict=True)]
     exposed = exposed_segments(prof)
     route.segments = merge_segments(exposed)
     for s in exposed:

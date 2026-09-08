@@ -302,6 +302,7 @@ class Route(BaseModel):
     network_member: bool = Field(
         default=False, description="True when every part lies on the official network"
     )
+    profile: list[list[float]] | None = Field(default=None, description="[[km, elevation_m], …] every 25 m")
 
     @field_validator("geometry")
     @classmethod

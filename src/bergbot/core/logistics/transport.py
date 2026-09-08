@@ -50,8 +50,12 @@ def plan_transport(
     e_stop = _pick(e_stops)
     plan.start_stop = s_stop["name"] if s_stop else None
     plan.end_stop = e_stop["name"] if e_stop else None
-    for st in (s_stops + e_stops)[:6]:
-        if st.payload.get("distance_m") is not None and st.payload["distance_m"] <= 1500:
+    for group in (s_stops[:3], e_stops[:3]):
+        for st in group:
+            if st.payload.get("distance_m") is None or st.payload["distance_m"] > 1500:
+                continue
+            if st.payload["name"] in {p.name for p in escape}:
+                continue
             escape.append(
                 Place(
                     name=st.payload["name"],
@@ -61,6 +65,10 @@ def plan_transport(
                     source="ch.transport",
                 )
             )
+    if s_stop and start.name in ("start", "route"):
+        start.name = s_stop["name"]
+    if e_stop and end.name in ("end", "route"):
+        end.name = e_stop["name"]
     if s_stop:
         plan.evidence.append(
             Evidence(

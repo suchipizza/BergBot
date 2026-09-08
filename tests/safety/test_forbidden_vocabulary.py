@@ -15,8 +15,13 @@ def test_locale_files_clean() -> None:
 
 def test_templates_clean() -> None:
     tpl_dir = ROOT / "src" / "bergbot" / "ui" / "report" / "templates"
+    import re
+
     for path in tpl_dir.rglob("*.html*"):
-        hits = find_forbidden(path.read_text(encoding="utf-8"))
+        text = re.sub(
+            r"\{[{%#].*?[}%#]\}", " ", path.read_text(encoding="utf-8"), flags=re.S
+        )  # drop Jinja tags
+        hits = find_forbidden(text)
         assert not hits, f"{path}: {hits}"
 
 
