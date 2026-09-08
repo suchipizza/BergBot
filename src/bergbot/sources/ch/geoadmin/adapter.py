@@ -13,12 +13,14 @@ import json
 import re
 from datetime import UTC, datetime
 from typing import Any, ClassVar
+from urllib.parse import urlencode
 
 from bergbot.sources.base import Freshness, Health, Licence, Query, Record, SourceUnavailable
 from bergbot.sources.geoadmin_base import HEIGHT_URL, IDENTIFY_URL, OGD_LICENCE, PROFILE_URL, SEARCH_URL
 from bergbot.sources.http import Fetcher, default_fetcher
 
 _TAG = re.compile(r"<[^>]+>")
+_KIND = re.compile(r"^\s*<i>([^<]*)</i>\s*")
 
 
 class GeoAdminAdapter:
@@ -57,7 +59,7 @@ class GeoAdminAdapter:
 
     def health(self) -> Health:
         try:
-            r = self.search("Brunnen SZ", limit=5)
+            r = self.search("Brunnen", limit=8)
             return Health(ok=bool(r), latency_ms=self._latency, last_success_ts=self._last)
         except SourceUnavailable as e:
             return Health(ok=False, note=str(e))
@@ -79,7 +81,8 @@ class GeoAdminAdapter:
                     source_id=self.id,
                     kind="place",
                     payload={
-                        "label": _TAG.sub("", a.get("label", "")),
+                        "label": _TAG.sub("", _KIND.sub("", a.get("label", ""))).strip(),
+                        "kind_label": (_KIND.match(a.get("label", "")) or [None, None])[1],
                         "detail": a.get("detail"),
                         "objectclass": a.get("objectclass"),
                         "origin": a.get("origin"),
@@ -105,8 +108,12 @@ class GeoAdminAdapter:
                 [round(e, 1), round(n, 1)] for e, n in (to_lv95(c[0], c[1]) for c in geometry["coordinates"])
             ],
         }
-        params = {"geom": json.dumps(lv95, separators=(",", ":")), "sr": 2056, "nb_points": nb_points}
-        res = self.fetcher.get_json(self.id, PROFILE_URL, params, ttl_s=self.ttl_s, what="elevation profile")
+        body = urlencode(
+            {"geom": json.dumps(lv95, separators=(",", ":")), "sr": 2056, "nb_points": nb_points}
+        )
+        res = self.fetcher.get_json(
+            self.id, PROFILE_URL, None, ttl_s=self.ttl_s, method="POST", data=body, what="elevation profile"
+        )
         self._last, self._latency = res.retrieved_ts, res.latency_ms
         samples = [
             {

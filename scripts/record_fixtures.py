@@ -45,6 +45,7 @@ def main() -> None:
 
     g = GeoAdminAdapter(rec("geoadmin"))
     g.search("Brunnen SZ", limit=5)
+    g.search("Brunnen", limit=8)
     g.search("Rigi Kulm", limit=5)
     g.search("Urnerboden", limit=5)
     g.search("Zürich HB", limit=3)

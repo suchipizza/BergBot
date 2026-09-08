@@ -3,6 +3,7 @@ presentation strings live in `locales/`. Every safety-relevant finding is a `War
 and every `Evidence` carries both timestamps (SR-1)."""
 
 from bergbot.core.domain.models import (
+    SERIOUS_WARNING_TYPES,
     Activity,
     Amenity,
     AmenityKind,
@@ -43,6 +44,7 @@ from bergbot.core.domain.models import (
 )
 
 __all__ = [
+    "SERIOUS_WARNING_TYPES",
     "Activity",
     "Amenity",
     "AmenityKind",

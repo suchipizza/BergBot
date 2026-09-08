@@ -117,8 +117,9 @@ class MeteoSwissAdapter:
                 "timezone": d.get("timezone"),
                 "model": "MeteoSwiss ICON-CH1/CH2 via open-meteo",
                 "hours": rows,
-                "sunrise": (_first_model(daily, "sunrise") or [None])[0],
-                "sunset": (_first_model(daily, "sunset") or [None])[0],
+                "days": list(daily.get("time") or []),
+                "sunrise": list(_first_model(daily, "sunrise") or []),
+                "sunset": list(_first_model(daily, "sunset") or []),
             },
             source_ts=res.retrieved_ts,
             retrieved_ts=res.retrieved_ts,
@@ -146,13 +147,24 @@ class MeteoSwissAdapter:
 
 
 def _first_model(block: dict[str, Any], col: str) -> list[Any] | None:
-    """open-meteo returns `col` (single model) or `col_<model>` (multi-model); take the first populated one."""
+    """open-meteo returns `col` (single model) or `col_<model>` (multi-model). Merge per index: the first model
+    (in request order: ICON-CH1 → ICON-CH2 → icon_seamless) that has a value for that hour wins, so the 33 h
+    high-resolution horizon is used where available and the coarser model fills the rest."""
     if col in block:
         return list(block[col])
-    for k, v in block.items():
-        if k.startswith(col + "_") and v and any(x is not None for x in v):
-            return list(v)
-    return None
+    cols = [list(v) for k, v in block.items() if k.startswith(col + "_") and v]
+    if not cols:
+        return None
+    n = max(len(c) for c in cols)
+    merged: list[Any] = []
+    for i in range(n):
+        val = None
+        for c in cols:
+            if i < len(c) and c[i] is not None:
+                val = c[i]
+                break
+        merged.append(val)
+    return merged
 
 
 def now() -> datetime:

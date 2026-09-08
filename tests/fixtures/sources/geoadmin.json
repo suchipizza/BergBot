@@ -113,6 +113,173 @@
   "source_id": "ch.geoadmin",
   "url": "https://api3.geo.admin.ch/rest/services/api/SearchServer",
   "params": {
+   "searchText": "Brunnen",
+   "type": "locations",
+   "sr": 4326,
+   "limit": 8
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "attrs": {
+      "detail": "brunnen ergisch",
+      "geom_quadindex": "023103211211331132223",
+      "geom_st_box2d": "BOX(7.718353 46.288423,7.718353 46.288423)",
+      "label": "<i>Ort</i> <b>Brunnen</b> (VS) - Ergisch",
+      "lat": 46.288421630859375,
+      "lon": 7.718348503112793,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 7.718348503112793,
+      "y": 46.288421630859375,
+      "zoomlevel": 10
+     },
+     "id": 108671,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "brunnen mosnang",
+      "geom_quadindex": "030013133102301122330",
+      "geom_st_box2d": "BOX(9.017553 47.381126,9.017553 47.381126)",
+      "label": "<i>Ort</i> <b>Brunnen</b> (SG) - Mosnang",
+      "lat": 47.38112258911133,
+      "lon": 9.017562866210938,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 9.017562866210938,
+      "y": 47.38112258911133,
+      "zoomlevel": 10
+     },
+     "id": 163085,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "brunnen nesslau",
+      "geom_quadindex": "030120313223103130020",
+      "geom_st_box2d": "BOX(9.200921 47.197972,9.200921 47.197972)",
+      "label": "<i>Ort</i> <b>Brunnen</b> (SG) - Nesslau",
+      "lat": 47.19797134399414,
+      "lon": 9.20093059539795,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 9.20093059539795,
+      "y": 47.19797134399414,
+      "zoomlevel": 10
+     },
+     "id": 163506,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "brunnen toerbel",
+      "geom_quadindex": "023112223223313321220",
+      "geom_st_box2d": "BOX(7.857756 46.231236,7.857756 46.231236)",
+      "label": "<i>Ort</i> <b>Brunnen</b> (VS) - Törbel",
+      "lat": 46.231231689453125,
+      "lon": 7.857750415802002,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 7.857750415802002,
+      "y": 46.231231689453125,
+      "zoomlevel": 10
+     },
+     "id": 163874,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "brunnen leuk",
+      "geom_quadindex": "023103021233033013313",
+      "geom_st_box2d": "BOX(7.668186 46.316807,7.668186 46.316807)",
+      "label": "<i>Ort</i> <b>Brunnen</b> (VS) - Leuk",
+      "lat": 46.31680679321289,
+      "lon": 7.6681809425354,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 7.6681809425354,
+      "y": 46.31680679321289,
+      "zoomlevel": 10
+     },
+     "id": 191355,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "brunnen ingenbohl",
+      "geom_quadindex": "030201131011133333230",
+      "geom_st_box2d": "BOX(8.609649 47.000281,8.609649 47.000281)",
+      "label": "<i>Ort</i> <b>Brunnen</b> (SZ) - Ingenbohl",
+      "lat": 47.00027847290039,
+      "lon": 8.609659194946289,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 8.609659194946289,
+      "y": 47.00027847290039,
+      "zoomlevel": 10
+     },
+     "id": 220695,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "brunnen arosa",
+      "geom_quadindex": "030313122023323110232",
+      "geom_st_box2d": "BOX(9.704911 46.824847,9.704911 46.824847)",
+      "label": "<i>Ort</i> <b>Brunnen</b> (GR) - Arosa",
+      "lat": 46.82484436035156,
+      "lon": 9.704922676086426,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 9.704922676086426,
+      "y": 46.82484436035156,
+      "zoomlevel": 10
+     },
+     "id": 248357,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "brunnen bergli unterschaechen",
+      "geom_quadindex": "030212103131000331202",
+      "geom_st_box2d": "BOX(8.764166 46.877132,8.764166 46.877132)",
+      "label": "<i>Ort</i> <b>Brunnen Bergli</b> (UR) - Unterschächen",
+      "lat": 46.87712860107422,
+      "lon": 8.764175415039062,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 8.764175415039062,
+      "y": 46.87712860107422,
+      "zoomlevel": 10
+     },
+     "id": 302489,
+     "weight": 100
+    }
+   ]
+  }
+ },
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/api/SearchServer",
+  "params": {
    "searchText": "Rigi Kulm",
    "type": "locations",
    "sr": 4326,
@@ -404,12 +571,8 @@
  {
   "source_id": "ch.geoadmin",
   "url": "https://api3.geo.admin.ch/rest/services/profile.json",
-  "params": {
-   "geom": "{\"type\":\"LineString\",\"coordinates\":[[2688860.4,1205487.7],[2689963.2,1206004.6],[2690734.9,1206783.4]]}",
-   "sr": 2056,
-   "nb_points": 50
-  },
-  "data": null,
+  "params": {},
+  "data": "geom=%7B%22type%22%3A%22LineString%22%2C%22coordinates%22%3A%5B%5B2688860.4%2C1205487.7%5D%2C%5B2689963.2%2C1206004.6%5D%2C%5B2690734.9%2C1206783.4%5D%5D%7D&sr=2056&nb_points=50",
   "response": [
    {
     "alts": {

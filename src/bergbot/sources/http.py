@@ -152,7 +152,12 @@ class HttpFetcher:
         t0 = time.monotonic()
         try:
             if method == "POST":
-                resp = self._client_or_new().post(url, params=params, content=data)
+                resp = self._client_or_new().post(
+                    url,
+                    params=params,
+                    content=data,
+                    headers={"Content-Type": "application/x-www-form-urlencoded"},
+                )
             else:
                 resp = self._client_or_new().get(url, params=params)
             resp.raise_for_status()
@@ -217,16 +222,25 @@ class FixtureFetcher:
     entries: list[dict[str, Any]]
     strict: bool = True
 
+    @staticmethod
+    def _load(path: Path) -> list[dict[str, Any]]:
+        if path.suffix == ".gz":
+            import gzip
+
+            with gzip.open(path, "rt", encoding="utf-8") as fh:
+                return list(json.load(fh))
+        return list(json.loads(path.read_text(encoding="utf-8")))
+
     @classmethod
     def from_file(cls, path: Path) -> FixtureFetcher:
-        return cls(entries=json.loads(path.read_text(encoding="utf-8")))
+        return cls(entries=cls._load(path))
 
     @classmethod
     def from_files(cls, *paths: Path) -> FixtureFetcher:
         entries: list[dict[str, Any]] = []
         for p in paths:
             if p.exists():
-                entries.extend(json.loads(p.read_text(encoding="utf-8")))
+                entries.extend(cls._load(p))
         return cls(entries=entries)
 
     def _match(self, url: str, params: Mapping[str, Any] | None, data: str | None) -> Any:
