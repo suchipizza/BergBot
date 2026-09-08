@@ -4,7 +4,7 @@ documents/
 __pycache__/
 *.pyc
 .venv/
-dist/
+/dist/
 build/
 *.egg-info/
 .mypy_cache/
