@@ -34,7 +34,7 @@ def fail(error: str, unverified: list[str] | None = None, code: int = 2) -> None
     raise typer.Exit(code)
 
 
-@app.callback()
+@app.callback(invoke_without_command=True)
 def _root(
     version: bool = typer.Option(False, "--version", "-V", help="Print version and exit.", is_eager=True),
 ) -> None:
