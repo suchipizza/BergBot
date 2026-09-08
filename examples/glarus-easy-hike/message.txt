@@ -1,0 +1,31 @@
+> Leichte Wanderung im Kanton Glarus am 2026-09-09, max. 500 m Aufstieg, mit dem Zug zurück
+
+⚠ Bevor du losgehst
+1. Schabziger Höhenweg (Filzbach, Habergschwänd - Mollis, Oberruestel) · nicht bewertet · 6.62 km · ↑389 m · 2 h 19
+   bedeckt 10–12 °C, 36 km/h · 🟠 Wildruhezone; 🟠 Wildruhezone
+2. Glarus Nord – Steinbock – Glarus Nord · nicht bewertet · 6.03 km · ↑197 m · 1 h 53
+   bedeckt 13–16 °C, 41 km/h · 🟠 Waldbrandgefahr; 🟠 Feuerverbot / Einschränkung
+3. Glarus Nord – Eisenbahn – Glarus Nord · nicht bewertet · 5.07 km · ↑196 m · 1 h 38
+   bedeckt 13–16 °C, 41 km/h · 🟠 Waldbrandgefahr; 🟠 Feuerverbot / Einschränkung
+Bergbot informiert. Die Entscheidung liegt bei dir.
+Antworte mit einer Nummer für die vollständige Prüfung.
+
+> 1
+
+⚠ Bevor du losgehst
+🟠 Wildruhezone km 0.47–0.51: Zwischen km 0.47 und km 0.51 führt die Route durch ch.bafu.wrz-wildruhezonen_portal #52747; das Verlassen der markierten Wege ist verboten.
+🟠 Wildruhezone km 0.89–0.93: Zwischen km 0.89 und km 0.93 führt die Route durch ch.bafu.wrz-wildruhezonen_portal #52785; das Verlassen der markierten Wege ist verboten.
+🟠 Wildruhezone km 0.9–1.73: Zwischen km 0.9 und km 1.73 führt die Route durch ch.bafu.wrz-wildruhezonen_portal #52804; das Verlassen der markierten Wege ist verboten.
+🟠 +8: Wildruhezone, Waldbrandgefahr, Feuerverbot / Einschränkung
+🟡 ungeprüft: Habergschwänd
+Bergbot informiert. Die Entscheidung liegt bei dir.
+Schabziger Höhenweg (Filzbach, Habergschwänd - Mollis, Oberruestel) · nicht bewertet · 6.51 km · ↑389 m ↓282 m · 2 h 17 · Habergschwänd → Mollis, Vorderdorf
+Wetter 09.09.2026: bedeckt, 10–13 °C, Böen bis 51 km/h
+ÖV: letzte Rückfahrt 23:34 ab Mollis, Vorderdorf → Habergschwänd 03:34
+Bericht: bergbot-report-schabziger-h-henweg-filzbach-habergschw-.html
+Willst du das GPX oder einen anderen Vorschlag?
+
+> Schick mir das GPX
+
+GPX gespeichert unter bergbot-route-schabziger-h-henweg-filzbach-habergschw-.gpx
+In swisstopo öffnen → Importieren.

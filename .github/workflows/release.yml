@@ -1,0 +1,26 @@
+name: Release
+on:
+  push:
+    tags: ["v*"]
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write   # PyPI trusted publishing (configure the project on PyPI first)
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv python install 3.12
+      - run: uv sync --all-extras --dev
+      - run: uv run pytest -q
+      - run: uv build
+      - name: GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
+          body_path: docs/release-notes.md
+      - name: Publish to PyPI
+        if: ${{ vars.PYPI_PUBLISH == 'true' && !contains(github.ref_name, '-') }}
+        uses: pypa/gh-action-pypi-publish@release/v1

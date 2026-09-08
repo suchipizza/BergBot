@@ -179,6 +179,21 @@ def assess_conditions(
     except SourceUnavailable:
         snap.unavailable.append("ch.bafu.fire")
 
+    # one fire-danger warning per level (regions merged), one restriction per canton
+    seen_lvl: dict[int, Warning] = {}
+    kept: list[Warning] = []
+    for w in warnings:
+        if w.type is WarningType.fire_danger:
+            lvl = int(w.params.get("level") or 0)
+            if lvl in seen_lvl:
+                seen_lvl[lvl].evidence = seen_lvl[lvl].evidence + [
+                    e for e in w.evidence if e not in seen_lvl[lvl].evidence
+                ]
+                continue
+            seen_lvl[lvl] = w
+        kept.append(w)
+    warnings = kept
+
     # SLF presence
     try:
         lon, lat = (

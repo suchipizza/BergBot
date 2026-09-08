@@ -233,6 +233,8 @@ def graph_candidates(
         nid = g.nearest(x, y, max_m=150.0)
         if nid is None or nid == src or nid not in dist or nid in used:
             continue
+        if name.strip().lower() == place.name.strip().lower():
+            continue
         d = dist[nid]
         if d < 1200.0:
             continue

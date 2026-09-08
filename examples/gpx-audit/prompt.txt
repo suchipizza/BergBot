@@ -1,0 +1,2 @@
+Vérifie si cette rando est bien le 2026-09-09
+Envoie-moi le GPX

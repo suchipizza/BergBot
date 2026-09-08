@@ -204,7 +204,8 @@ def zone_warnings(
                 ],
                 affected_segment=s,
                 params={
-                    "name": r.payload.get("name"),
+                    "name": r.payload.get("name")
+                    or f"{r.payload.get('layer', 'zone')} #{r.payload.get('feature_id')}",
                     "from_km": s.from_km,
                     "to_km": s.to_km,
                     "period": r.payload.get("period") or "",
@@ -295,6 +296,7 @@ def _merge_adjacent(warnings: list[Warning], gap_km: float = 0.25) -> list[Warni
             last is not None
             and last.type is w.type
             and last.original_text == w.original_text
+            and last.params.get("name") == w.params.get("name")
             and last.affected_segment is not None
             and w.affected_segment is not None
             and w.affected_segment.from_km <= last.affected_segment.to_km + gap_km

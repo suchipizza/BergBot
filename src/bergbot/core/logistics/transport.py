@@ -106,7 +106,9 @@ def plan_transport(
                 same_day = [
                     lg
                     for lg in legs
-                    if lg.departure.date().isoformat() == date and lg.departure >= planned_end
+                    if lg.departure.date().isoformat() == date
+                    and lg.departure >= planned_end
+                    and (lg.arrival - lg.departure) <= timedelta(hours=5)
                 ]
                 if same_day:
                     plan.last_return = max(same_day, key=lambda lg: lg.departure)

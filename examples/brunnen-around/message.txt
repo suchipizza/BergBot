@@ -1,0 +1,31 @@
+> Can you find a hike near Brunnen SZ on 2026-09-09?
+
+⚠ Before you go
+1. Weg der Schweiz (Sisikon - Brunnen) · not graded · 7.79 km · ↑443 m · 2 h 47
+   overcast 12–16 °C, 34 km/h · 🟠 Forest-fire danger; 🟠 Fire restriction
+2. Brunnen – beaufort – Brunnen · not graded · 6.01 km · ↑0 m · 1 h 30
+   overcast 16–17 °C, 22 km/h · 🟠 Diversion; 🟠 Fire restriction
+3. Brunnen – Restaurant Hirschen – Brunnen · not graded · 5.79 km · ↑324 m · 2 h 03
+   overcast 14–16 °C, 34 km/h · 🟠 Fire restriction
+Bergbot informs. The decision is yours.
+Reply with a number for the full check.
+
+> 1
+
+⚠ Before you go
+🟠 Forest-fire danger: Forest-fire danger level 4 (High danger) in the route area (waldbrandgefahr.ch).
+🟠 Fire restriction: Canton of Schwyz: Conditional ban on fires in the forest and in the proximity of the forest / in the open (waldbrandgefahr.ch).
+🟠 Fire restriction: Canton of Uri: Absolute ban on fires in the forest and in the proximity of the forest (waldbrandgefahr.ch).
+🟡 +2: Heavy precipitation, Forest-fire danger
+Bergbot informs. The decision is yours.
+Weg der Schweiz (Sisikon - Brunnen) · not graded · 7.65 km · ↑443 m ↓455 m · 2 h 45 · Sisikon, Bahnhof → Brunnen (See)
+Weather 09 Sep: overcast, 12–18 °C, gusts up to 36 km/h
+Transport: last return 23:52 from Brunnen (See) → Sisikon 00:10
+Why this one: SchweizMobil · ≤ 1.5 km · overcast
+Report: bergbot-report-weg-der-schweiz-sisikon-brunnen.html
+Want the GPX or another suggestion?
+
+> send me the gpx
+
+Saved GPX to bergbot-route-weg-der-schweiz-sisikon-brunnen.gpx
+Open in swisstopo → Import.

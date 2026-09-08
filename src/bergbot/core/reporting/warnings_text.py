@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 from string import Formatter
 from typing import Any
 
@@ -46,7 +47,11 @@ def format_warning(w: Warning, L: Locale) -> tuple[str, str]:
     for k, v in list(params.items()):
         if isinstance(v, float):
             params[k] = f"{v:g}"
-    body = _fmt.vformat(str(body_tpl), (), _Safe(params))
+    body = (
+        re.sub(r"\s{2,}", " ", _fmt.vformat(str(body_tpl), (), _Safe(params)))
+        .replace(" .", ".")
+        .replace(" ;", ";")
+    )
     return title, body
 
 

@@ -57,3 +57,12 @@ All notable changes to Bergbot. Milestones follow docs/BERGBOT_WORK_ORDER.md.
 - `bergbot chat` REPL with optional slash commands.
 - Claude plugin marketplace (`.claude-plugin/marketplace.json`, `plugins/bergbot`): 7 skills (audit, find, around, check, export, media, help) describing the exact `bergbot … --json` calls, web-verification and register rules; 6 slash commands; 6 sub-agents (route-investigator, conditions-analyst, logistics-researcher, restriction-researcher, evidence-reviewer, media-scout).
 - Channel passthrough documented with an e2e fixture; decision 004.
+
+### M8 — Website, docs, launch kit
+- Static website in four languages (`website/build.py`, GitHub Pages workflow): Home (mascot hero, report + chat screenshots, Install · Connect Telegram · ★ Star), Install tabs, Connect, Examples (real reports), Coverage (from `bergbot doctor`), Safety & sources (no mascot), Roadmap, Waitlist (Tally).
+- README with hero, three example prompts per language, install commands, example reply, safety paragraph; CONTRIBUTING (good first canton/source/language), ROADMAP (Phases 1–8), SECURITY.
+- Install and connect guides in four languages with step screenshots (`docs/install`, `docs/connect`, `scripts/screenshots.py`).
+- Examples folder regenerated from real runs (`make examples`), benchmark docs, release workflow (GitHub release on tag; PyPI gated on `PYPI_PUBLISH`), release notes.
+
+## v0.1.0 — 2026-09-09
+Phase 1 launch (see Unreleased sections above, consolidated).

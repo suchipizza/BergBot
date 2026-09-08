@@ -1,0 +1,19 @@
+> Vérifie si cette rando est bien le 2026-09-09
+
+⚠ Avant de partir
+🔴 Tronçon fermé km 2.93–3.76: Fermeture officielle entre le km 2.93 et le km 3.76 (SchweizMobil / jusqu'à nouvel ordre).
+🟠 Déviation km 2.92–2.96: Une déviation officielle s'applique entre le km 2.92 et le km 2.96 (SchweizMobil / jusqu'à nouvel ordre).
+🟠 Déviation km 3.32–3.77: Une déviation officielle s'applique entre le km 3.32 et le km 3.77 (SchweizMobil / jusqu'à nouvel ordre).
+🟠 +6: Déviation, Fortes précipitations, Danger d'incendie de forêt, Restriction de feu
+🟡 non vérifié: Brunnen, Talstation Luftseilbahn Vitznau –Wissifluh, Talstation Luftseilbahn Hinterbergen
+Bergbot informe. La décision t'appartient.
+Waldstätterweg (Brunnen - Vitznau) · non coté · 14.24 km · ↑566 m ↓566 m · 4 h 37 · Brunnen (See) → Vitznau
+Météo 09.09.2026 : pluie, 12–18 °C, rafales jusqu'à 38 km/h
+Transports : dernier retour 23:29 depuis Vitznau → Brunnen (See) 23:59
+Rapport : bergbot-report-waldst-tterweg-brunnen-vitznau.html
+Tu veux le GPX ou une autre proposition ?
+
+> Envoie-moi le GPX
+
+GPX enregistré dans bergbot-route-waldst-tterweg-brunnen-vitznau.gpx
+Ouvrir dans swisstopo → Importer.
