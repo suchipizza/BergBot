@@ -1,0 +1,615 @@
+{
+  "$defs": {
+    "Activity": {
+      "enum": [
+        "hiking",
+        "alpine_hiking",
+        "winter_hiking",
+        "snowshoe",
+        "ski_touring",
+        "mtb",
+        "trail_running",
+        "climbing",
+        "unknown"
+      ],
+      "title": "Activity",
+      "type": "string"
+    },
+    "Difficulty": {
+      "additionalProperties": false,
+      "properties": {
+        "system": {
+          "$ref": "#/$defs/DifficultySystem",
+          "default": "none"
+        },
+        "grade": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "T1..T6 for sac_t",
+          "title": "Grade"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "confidence": {
+          "default": 0.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "title": "Difficulty",
+      "type": "object"
+    },
+    "DifficultySystem": {
+      "enum": [
+        "sac_t",
+        "none"
+      ],
+      "title": "DifficultySystem",
+      "type": "string"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "One piece of evidence. `original_span` ≤ 15 words verbatim from the source (FR-D4).",
+      "properties": {
+        "class": {
+          "$ref": "#/$defs/EvidenceClass"
+        },
+        "source": {
+          "description": "Adapter id or source name, e.g. 'ch.closures'",
+          "title": "Source",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "source_ts": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "When the source says the data is from",
+          "title": "Source Ts"
+        },
+        "retrieved_ts": {
+          "description": "When Bergbot fetched it",
+          "format": "date-time",
+          "title": "Retrieved Ts",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1.0,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "original_span": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Span"
+        },
+        "original_lang": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Lang"
+        },
+        "translated_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translated Summary"
+        },
+        "verification": {
+          "default": "n/a",
+          "enum": [
+            "verified",
+            "unverified",
+            "conflicting",
+            "n/a"
+          ],
+          "title": "Verification",
+          "type": "string"
+        }
+      },
+      "required": [
+        "class",
+        "source",
+        "retrieved_ts"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "EvidenceClass": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "title": "EvidenceClass",
+      "type": "string"
+    },
+    "Place": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "kind": {
+          "$ref": "#/$defs/PlaceKind",
+          "default": "unknown"
+        },
+        "lon": {
+          "title": "Lon",
+          "type": "number"
+        },
+        "lat": {
+          "title": "Lat",
+          "type": "number"
+        },
+        "elevation_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Elevation M"
+        },
+        "canton": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Two-letter code, lower-case (gl, vs, ti…)",
+          "title": "Canton"
+        },
+        "municipality": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Municipality"
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "maxItems": 4,
+              "minItems": 4,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bbox"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "lon",
+        "lat"
+      ],
+      "title": "Place",
+      "type": "object"
+    },
+    "PlaceKind": {
+      "enum": [
+        "address",
+        "locality",
+        "municipality",
+        "stop",
+        "lift_station",
+        "hut",
+        "summit",
+        "coordinates",
+        "route_point",
+        "unknown"
+      ],
+      "title": "PlaceKind",
+      "type": "string"
+    },
+    "RouteIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        },
+        "official_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Official Id"
+        },
+        "network": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. 'ch.swisstopo.swisstlm3d-wanderwege'",
+          "title": "Network"
+        },
+        "overlap_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Overlap Pct"
+        },
+        "famous": {
+          "default": false,
+          "title": "Famous",
+          "type": "boolean"
+        },
+        "famous_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Famous Reason"
+        }
+      },
+      "title": "RouteIdentity",
+      "type": "object"
+    },
+    "RouteStats": {
+      "additionalProperties": false,
+      "properties": {
+        "distance_km": {
+          "title": "Distance Km",
+          "type": "number"
+        },
+        "ascent_m": {
+          "title": "Ascent M",
+          "type": "number"
+        },
+        "descent_m": {
+          "title": "Descent M",
+          "type": "number"
+        },
+        "duration_min": {
+          "title": "Duration Min",
+          "type": "integer"
+        },
+        "duration_method": {
+          "default": "sac",
+          "title": "Duration Method",
+          "type": "string"
+        },
+        "min_elevation_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Min Elevation M"
+        },
+        "max_elevation_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Elevation M"
+        },
+        "n_points": {
+          "default": 0,
+          "title": "N Points",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "distance_km",
+        "ascent_m",
+        "descent_m",
+        "duration_min"
+      ],
+      "title": "RouteStats",
+      "type": "object"
+    },
+    "Segment": {
+      "additionalProperties": false,
+      "description": "A km range on the route, in route distance.",
+      "properties": {
+        "from_km": {
+          "minimum": 0,
+          "title": "From Km",
+          "type": "number"
+        },
+        "to_km": {
+          "minimum": 0,
+          "title": "To Km",
+          "type": "number"
+        },
+        "kind": {
+          "$ref": "#/$defs/SegmentKind",
+          "default": "hazard"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        },
+        "slope_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Slope Pct"
+        },
+        "aspect_deg": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Aspect Deg"
+        }
+      },
+      "required": [
+        "from_km",
+        "to_km"
+      ],
+      "title": "Segment",
+      "type": "object"
+    },
+    "SegmentKind": {
+      "enum": [
+        "exposed",
+        "steep",
+        "hazard",
+        "closure",
+        "zone",
+        "flat"
+      ],
+      "title": "SegmentKind",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Geometry is a GeoJSON LineString in WGS84 with optional elevation as the third coordinate.",
+  "properties": {
+    "geometry": {
+      "additionalProperties": true,
+      "title": "Geometry",
+      "type": "object"
+    },
+    "identity": {
+      "$ref": "#/$defs/RouteIdentity"
+    },
+    "activity": {
+      "$ref": "#/$defs/Activity",
+      "default": "hiking"
+    },
+    "difficulty": {
+      "$ref": "#/$defs/Difficulty"
+    },
+    "stats": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/RouteStats"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "segments": {
+      "items": {
+        "$ref": "#/$defs/Segment"
+      },
+      "title": "Segments",
+      "type": "array"
+    },
+    "start": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Place"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "end": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Place"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "is_loop": {
+      "default": false,
+      "title": "Is Loop",
+      "type": "boolean"
+    },
+    "source_file": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source File"
+    },
+    "network_member": {
+      "default": false,
+      "description": "True when every part lies on the official network",
+      "title": "Network Member",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "geometry"
+  ],
+  "title": "Route",
+  "type": "object"
+}

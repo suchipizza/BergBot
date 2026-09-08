@@ -1,0 +1,53 @@
+{
+  "$defs": {
+    "DifficultySystem": {
+      "enum": [
+        "sac_t",
+        "none"
+      ],
+      "title": "DifficultySystem",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "$ref": "#/$defs/DifficultySystem",
+      "default": "none"
+    },
+    "grade": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "T1..T6 for sac_t",
+      "title": "Grade"
+    },
+    "source": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source"
+    },
+    "confidence": {
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    }
+  },
+  "title": "Difficulty",
+  "type": "object"
+}

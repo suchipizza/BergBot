@@ -1,0 +1,242 @@
+{
+  "$defs": {
+    "AmenityKind": {
+      "enum": [
+        "hut",
+        "restaurant",
+        "lift",
+        "water",
+        "shelter",
+        "stop",
+        "webcam",
+        "poi",
+        "parking"
+      ],
+      "title": "AmenityKind",
+      "type": "string"
+    },
+    "AmenityStatus": {
+      "enum": [
+        "open",
+        "closed",
+        "unverified",
+        "conflicting"
+      ],
+      "title": "AmenityStatus",
+      "type": "string"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "One piece of evidence. `original_span` ≤ 15 words verbatim from the source (FR-D4).",
+      "properties": {
+        "class": {
+          "$ref": "#/$defs/EvidenceClass"
+        },
+        "source": {
+          "description": "Adapter id or source name, e.g. 'ch.closures'",
+          "title": "Source",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "source_ts": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "When the source says the data is from",
+          "title": "Source Ts"
+        },
+        "retrieved_ts": {
+          "description": "When Bergbot fetched it",
+          "format": "date-time",
+          "title": "Retrieved Ts",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1.0,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "original_span": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Span"
+        },
+        "original_lang": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Lang"
+        },
+        "translated_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translated Summary"
+        },
+        "verification": {
+          "default": "n/a",
+          "enum": [
+            "verified",
+            "unverified",
+            "conflicting",
+            "n/a"
+          ],
+          "title": "Verification",
+          "type": "string"
+        }
+      },
+      "required": [
+        "class",
+        "source",
+        "retrieved_ts"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "EvidenceClass": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "title": "EvidenceClass",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "$ref": "#/$defs/AmenityKind"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "lon": {
+      "title": "Lon",
+      "type": "number"
+    },
+    "lat": {
+      "title": "Lat",
+      "type": "number"
+    },
+    "km": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Km"
+    },
+    "distance_m": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Distance M"
+    },
+    "status": {
+      "$ref": "#/$defs/AmenityStatus",
+      "default": "unverified"
+    },
+    "verification": {
+      "default": "unverified",
+      "enum": [
+        "verified",
+        "unverified",
+        "conflicting"
+      ],
+      "title": "Verification",
+      "type": "string"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Url"
+    },
+    "note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Note"
+    }
+  },
+  "required": [
+    "kind",
+    "name",
+    "lon",
+    "lat"
+  ],
+  "title": "Amenity",
+  "type": "object"
+}

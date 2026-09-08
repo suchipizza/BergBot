@@ -1,0 +1,60 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "url": {
+      "title": "Url",
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "official",
+        "gallery",
+        "trip_report",
+        "video",
+        "article"
+      ],
+      "title": "Type",
+      "type": "string"
+    },
+    "date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Date"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Description"
+    },
+    "third_party": {
+      "default": true,
+      "title": "Third Party",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "title",
+    "url",
+    "type"
+  ],
+  "title": "Media",
+  "type": "object"
+}

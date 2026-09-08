@@ -1,0 +1,65 @@
+{
+  "$defs": {
+    "Register": {
+      "enum": [
+        "playful",
+        "serious"
+      ],
+      "title": "Register",
+      "type": "string"
+    },
+    "Severity": {
+      "enum": [
+        "critical",
+        "important",
+        "note"
+      ],
+      "title": "Severity",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "mode": {
+      "$ref": "#/$defs/Register"
+    },
+    "reasons": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Reasons",
+      "type": "array"
+    },
+    "mascot_allowed": {
+      "title": "Mascot Allowed",
+      "type": "boolean"
+    },
+    "media_offer_allowed": {
+      "title": "Media Offer Allowed",
+      "type": "boolean"
+    },
+    "emoji_allowed": {
+      "title": "Emoji Allowed",
+      "type": "boolean"
+    },
+    "severity": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Severity"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "mode",
+    "mascot_allowed",
+    "media_offer_allowed",
+    "emoji_allowed"
+  ],
+  "title": "RegisterDecision",
+  "type": "object"
+}

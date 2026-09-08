@@ -1,0 +1,51 @@
+{
+  "$defs": {
+    "Intent": {
+      "enum": [
+        "find",
+        "around",
+        "audit",
+        "check",
+        "export",
+        "media",
+        "help",
+        "chat",
+        "emergency",
+        "select",
+        "modify"
+      ],
+      "title": "Intent",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "text": {
+      "title": "Text",
+      "type": "string"
+    },
+    "kind": {
+      "$ref": "#/$defs/Intent"
+    },
+    "months": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Months",
+      "type": "array"
+    },
+    "regions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Regions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "text",
+    "kind"
+  ],
+  "title": "Suggestion",
+  "type": "object"
+}

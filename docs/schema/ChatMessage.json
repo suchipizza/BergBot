@@ -1,0 +1,82 @@
+{
+  "$defs": {
+    "Intent": {
+      "enum": [
+        "find",
+        "around",
+        "audit",
+        "check",
+        "export",
+        "media",
+        "help",
+        "chat",
+        "emergency",
+        "select",
+        "modify"
+      ],
+      "title": "Intent",
+      "type": "string"
+    },
+    "Register": {
+      "enum": [
+        "playful",
+        "serious"
+      ],
+      "title": "Register",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "text": {
+      "title": "Text",
+      "type": "string"
+    },
+    "lines": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Lines",
+      "type": "array"
+    },
+    "lang": {
+      "enum": [
+        "en",
+        "fr",
+        "de",
+        "it"
+      ],
+      "title": "Lang",
+      "type": "string"
+    },
+    "mode": {
+      "$ref": "#/$defs/Register"
+    },
+    "attachments": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Attachments",
+      "type": "array"
+    },
+    "buttons": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Buttons",
+      "type": "array"
+    },
+    "intent": {
+      "$ref": "#/$defs/Intent",
+      "default": "audit"
+    }
+  },
+  "required": [
+    "text",
+    "lines",
+    "lang",
+    "mode"
+  ],
+  "title": "ChatMessage",
+  "type": "object"
+}

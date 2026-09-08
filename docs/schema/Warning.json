@@ -1,0 +1,304 @@
+{
+  "$defs": {
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "One piece of evidence. `original_span` ≤ 15 words verbatim from the source (FR-D4).",
+      "properties": {
+        "class": {
+          "$ref": "#/$defs/EvidenceClass"
+        },
+        "source": {
+          "description": "Adapter id or source name, e.g. 'ch.closures'",
+          "title": "Source",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "source_ts": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "When the source says the data is from",
+          "title": "Source Ts"
+        },
+        "retrieved_ts": {
+          "description": "When Bergbot fetched it",
+          "format": "date-time",
+          "title": "Retrieved Ts",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1.0,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "original_span": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Span"
+        },
+        "original_lang": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Lang"
+        },
+        "translated_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translated Summary"
+        },
+        "verification": {
+          "default": "n/a",
+          "enum": [
+            "verified",
+            "unverified",
+            "conflicting",
+            "n/a"
+          ],
+          "title": "Verification",
+          "type": "string"
+        }
+      },
+      "required": [
+        "class",
+        "source",
+        "retrieved_ts"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "EvidenceClass": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "title": "EvidenceClass",
+      "type": "string"
+    },
+    "Segment": {
+      "additionalProperties": false,
+      "description": "A km range on the route, in route distance.",
+      "properties": {
+        "from_km": {
+          "minimum": 0,
+          "title": "From Km",
+          "type": "number"
+        },
+        "to_km": {
+          "minimum": 0,
+          "title": "To Km",
+          "type": "number"
+        },
+        "kind": {
+          "$ref": "#/$defs/SegmentKind",
+          "default": "hazard"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        },
+        "slope_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Slope Pct"
+        },
+        "aspect_deg": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Aspect Deg"
+        }
+      },
+      "required": [
+        "from_km",
+        "to_km"
+      ],
+      "title": "Segment",
+      "type": "object"
+    },
+    "SegmentKind": {
+      "enum": [
+        "exposed",
+        "steep",
+        "hazard",
+        "closure",
+        "zone",
+        "flat"
+      ],
+      "title": "SegmentKind",
+      "type": "string"
+    },
+    "Severity": {
+      "enum": [
+        "critical",
+        "important",
+        "note"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "WarningType": {
+      "enum": [
+        "trail_closure",
+        "diversion",
+        "fire_restriction",
+        "fire_danger",
+        "shooting_activity",
+        "shooting_zone",
+        "wildlife_quiet_zone",
+        "protected_area",
+        "guardian_dogs",
+        "exposed_wind",
+        "thunderstorm",
+        "heavy_precipitation",
+        "heat",
+        "cold",
+        "natural_hazard",
+        "avalanche_context",
+        "snow_context",
+        "lift_unverified",
+        "lift_closed",
+        "hut_unverified",
+        "transport_no_return",
+        "transport_tight_return",
+        "source_unavailable",
+        "difficulty_above_ceiling",
+        "exposed_terrain",
+        "long_day"
+      ],
+      "title": "WarningType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A safety-relevant finding. Presentation via locales/*/warnings.yaml[type] with `params`.",
+  "properties": {
+    "type": {
+      "$ref": "#/$defs/WarningType"
+    },
+    "severity": {
+      "$ref": "#/$defs/Severity"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "minItems": 1,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "affected_segment": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Segment"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "params": {
+      "additionalProperties": true,
+      "description": "Placeholders for the locale template",
+      "title": "Params",
+      "type": "object"
+    },
+    "original_text": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Verbatim source text, original language",
+      "title": "Original Text"
+    },
+    "original_lang": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Original Lang"
+    }
+  },
+  "required": [
+    "type",
+    "severity",
+    "evidence"
+  ],
+  "title": "Warning",
+  "type": "object"
+}

@@ -1,0 +1,1199 @@
+{
+  "$defs": {
+    "Activity": {
+      "enum": [
+        "hiking",
+        "alpine_hiking",
+        "winter_hiking",
+        "snowshoe",
+        "ski_touring",
+        "mtb",
+        "trail_running",
+        "climbing",
+        "unknown"
+      ],
+      "title": "Activity",
+      "type": "string"
+    },
+    "Constraint": {
+      "additionalProperties": false,
+      "description": "Structured user constraints (FR-C2). All optional; None = unconstrained.",
+      "properties": {
+        "region": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Canton code or free text region",
+          "title": "Region"
+        },
+        "place": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Place"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "YYYY-MM-DD",
+          "title": "Date"
+        },
+        "start_time": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "HH:MM",
+          "title": "Start Time"
+        },
+        "end_time": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End Time"
+        },
+        "max_ascent_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Ascent M"
+        },
+        "max_descent_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Descent M"
+        },
+        "max_distance_km": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Distance Km"
+        },
+        "min_distance_km": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Min Distance Km"
+        },
+        "max_duration_min": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Duration Min"
+        },
+        "max_grade": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "T1..T6 ceiling",
+          "title": "Max Grade"
+        },
+        "origin": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Transport origin, e.g. 'Zürich HB'",
+          "title": "Origin"
+        },
+        "max_travel_min": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Travel Min"
+        },
+        "transport_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Transport Required"
+        },
+        "hut": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hut"
+        },
+        "restaurant": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Restaurant"
+        },
+        "water": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Water"
+        },
+        "dog": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dog"
+        },
+        "bivouac": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bivouac"
+        },
+        "kids": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kids"
+        },
+        "seniors": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Seniors"
+        },
+        "loop": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Loop"
+        },
+        "start_place": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start Place"
+        },
+        "end_place": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End Place"
+        },
+        "activity": {
+          "$ref": "#/$defs/Activity",
+          "default": "hiking"
+        },
+        "lang": {
+          "anyOf": [
+            {
+              "enum": [
+                "en",
+                "fr",
+                "de",
+                "it"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lang"
+        },
+        "free_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Free Text"
+        }
+      },
+      "title": "Constraint",
+      "type": "object"
+    },
+    "Difficulty": {
+      "additionalProperties": false,
+      "properties": {
+        "system": {
+          "$ref": "#/$defs/DifficultySystem",
+          "default": "none"
+        },
+        "grade": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "T1..T6 for sac_t",
+          "title": "Grade"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "confidence": {
+          "default": 0.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "title": "Difficulty",
+      "type": "object"
+    },
+    "DifficultySystem": {
+      "enum": [
+        "sac_t",
+        "none"
+      ],
+      "title": "DifficultySystem",
+      "type": "string"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "One piece of evidence. `original_span` ≤ 15 words verbatim from the source (FR-D4).",
+      "properties": {
+        "class": {
+          "$ref": "#/$defs/EvidenceClass"
+        },
+        "source": {
+          "description": "Adapter id or source name, e.g. 'ch.closures'",
+          "title": "Source",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "source_ts": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "When the source says the data is from",
+          "title": "Source Ts"
+        },
+        "retrieved_ts": {
+          "description": "When Bergbot fetched it",
+          "format": "date-time",
+          "title": "Retrieved Ts",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1.0,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "original_span": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Span"
+        },
+        "original_lang": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Lang"
+        },
+        "translated_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translated Summary"
+        },
+        "verification": {
+          "default": "n/a",
+          "enum": [
+            "verified",
+            "unverified",
+            "conflicting",
+            "n/a"
+          ],
+          "title": "Verification",
+          "type": "string"
+        }
+      },
+      "required": [
+        "class",
+        "source",
+        "retrieved_ts"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "EvidenceClass": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "title": "EvidenceClass",
+      "type": "string"
+    },
+    "Intent": {
+      "enum": [
+        "find",
+        "around",
+        "audit",
+        "check",
+        "export",
+        "media",
+        "help",
+        "chat",
+        "emergency",
+        "select",
+        "modify"
+      ],
+      "title": "Intent",
+      "type": "string"
+    },
+    "Place": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "kind": {
+          "$ref": "#/$defs/PlaceKind",
+          "default": "unknown"
+        },
+        "lon": {
+          "title": "Lon",
+          "type": "number"
+        },
+        "lat": {
+          "title": "Lat",
+          "type": "number"
+        },
+        "elevation_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Elevation M"
+        },
+        "canton": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Two-letter code, lower-case (gl, vs, ti…)",
+          "title": "Canton"
+        },
+        "municipality": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Municipality"
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "maxItems": 4,
+              "minItems": 4,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bbox"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "lon",
+        "lat"
+      ],
+      "title": "Place",
+      "type": "object"
+    },
+    "PlaceKind": {
+      "enum": [
+        "address",
+        "locality",
+        "municipality",
+        "stop",
+        "lift_station",
+        "hut",
+        "summit",
+        "coordinates",
+        "route_point",
+        "unknown"
+      ],
+      "title": "PlaceKind",
+      "type": "string"
+    },
+    "Route": {
+      "additionalProperties": false,
+      "description": "Geometry is a GeoJSON LineString in WGS84 with optional elevation as the third coordinate.",
+      "properties": {
+        "geometry": {
+          "additionalProperties": true,
+          "title": "Geometry",
+          "type": "object"
+        },
+        "identity": {
+          "$ref": "#/$defs/RouteIdentity"
+        },
+        "activity": {
+          "$ref": "#/$defs/Activity",
+          "default": "hiking"
+        },
+        "difficulty": {
+          "$ref": "#/$defs/Difficulty"
+        },
+        "stats": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RouteStats"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "segments": {
+          "items": {
+            "$ref": "#/$defs/Segment"
+          },
+          "title": "Segments",
+          "type": "array"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Place"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "end": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Place"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "is_loop": {
+          "default": false,
+          "title": "Is Loop",
+          "type": "boolean"
+        },
+        "source_file": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source File"
+        },
+        "network_member": {
+          "default": false,
+          "description": "True when every part lies on the official network",
+          "title": "Network Member",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "geometry"
+      ],
+      "title": "Route",
+      "type": "object"
+    },
+    "RouteCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "route": {
+          "$ref": "#/$defs/Route"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "score_breakdown": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Score Breakdown",
+          "type": "object"
+        },
+        "warnings": {
+          "items": {
+            "$ref": "#/$defs/Warning"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "weather_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weather Summary"
+        },
+        "transport_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Transport Summary"
+        },
+        "why": {
+          "additionalProperties": true,
+          "description": "Neutral reasons for the LLM to phrase",
+          "title": "Why",
+          "type": "object"
+        }
+      },
+      "required": [
+        "route",
+        "score"
+      ],
+      "title": "RouteCandidate",
+      "type": "object"
+    },
+    "RouteIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        },
+        "official_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Official Id"
+        },
+        "network": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. 'ch.swisstopo.swisstlm3d-wanderwege'",
+          "title": "Network"
+        },
+        "overlap_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Overlap Pct"
+        },
+        "famous": {
+          "default": false,
+          "title": "Famous",
+          "type": "boolean"
+        },
+        "famous_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Famous Reason"
+        }
+      },
+      "title": "RouteIdentity",
+      "type": "object"
+    },
+    "RouteStats": {
+      "additionalProperties": false,
+      "properties": {
+        "distance_km": {
+          "title": "Distance Km",
+          "type": "number"
+        },
+        "ascent_m": {
+          "title": "Ascent M",
+          "type": "number"
+        },
+        "descent_m": {
+          "title": "Descent M",
+          "type": "number"
+        },
+        "duration_min": {
+          "title": "Duration Min",
+          "type": "integer"
+        },
+        "duration_method": {
+          "default": "sac",
+          "title": "Duration Method",
+          "type": "string"
+        },
+        "min_elevation_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Min Elevation M"
+        },
+        "max_elevation_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Elevation M"
+        },
+        "n_points": {
+          "default": 0,
+          "title": "N Points",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "distance_km",
+        "ascent_m",
+        "descent_m",
+        "duration_min"
+      ],
+      "title": "RouteStats",
+      "type": "object"
+    },
+    "Segment": {
+      "additionalProperties": false,
+      "description": "A km range on the route, in route distance.",
+      "properties": {
+        "from_km": {
+          "minimum": 0,
+          "title": "From Km",
+          "type": "number"
+        },
+        "to_km": {
+          "minimum": 0,
+          "title": "To Km",
+          "type": "number"
+        },
+        "kind": {
+          "$ref": "#/$defs/SegmentKind",
+          "default": "hazard"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        },
+        "slope_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Slope Pct"
+        },
+        "aspect_deg": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Aspect Deg"
+        }
+      },
+      "required": [
+        "from_km",
+        "to_km"
+      ],
+      "title": "Segment",
+      "type": "object"
+    },
+    "SegmentKind": {
+      "enum": [
+        "exposed",
+        "steep",
+        "hazard",
+        "closure",
+        "zone",
+        "flat"
+      ],
+      "title": "SegmentKind",
+      "type": "string"
+    },
+    "Severity": {
+      "enum": [
+        "critical",
+        "important",
+        "note"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "Warning": {
+      "additionalProperties": false,
+      "description": "A safety-relevant finding. Presentation via locales/*/warnings.yaml[type] with `params`.",
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/WarningType"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "affected_segment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Segment"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "params": {
+          "additionalProperties": true,
+          "description": "Placeholders for the locale template",
+          "title": "Params",
+          "type": "object"
+        },
+        "original_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Verbatim source text, original language",
+          "title": "Original Text"
+        },
+        "original_lang": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Lang"
+        }
+      },
+      "required": [
+        "type",
+        "severity",
+        "evidence"
+      ],
+      "title": "Warning",
+      "type": "object"
+    },
+    "WarningType": {
+      "enum": [
+        "trail_closure",
+        "diversion",
+        "fire_restriction",
+        "fire_danger",
+        "shooting_activity",
+        "shooting_zone",
+        "wildlife_quiet_zone",
+        "protected_area",
+        "guardian_dogs",
+        "exposed_wind",
+        "thunderstorm",
+        "heavy_precipitation",
+        "heat",
+        "cold",
+        "natural_hazard",
+        "avalanche_context",
+        "snow_context",
+        "lift_unverified",
+        "lift_closed",
+        "hut_unverified",
+        "transport_no_return",
+        "transport_tight_return",
+        "source_unavailable",
+        "difficulty_above_ceiling",
+        "exposed_terrain",
+        "long_day"
+      ],
+      "title": "WarningType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "intent": {
+      "$ref": "#/$defs/Intent"
+    },
+    "constraints": {
+      "$ref": "#/$defs/Constraint"
+    },
+    "place": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Place"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/RouteCandidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "lang": {
+      "default": "en",
+      "enum": [
+        "en",
+        "fr",
+        "de",
+        "it"
+      ],
+      "title": "Lang",
+      "type": "string"
+    },
+    "unavailable": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unavailable",
+      "type": "array"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "intent",
+    "constraints",
+    "candidates",
+    "generated_at"
+  ],
+  "title": "CandidateSet",
+  "type": "object"
+}

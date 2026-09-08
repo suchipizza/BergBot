@@ -1,0 +1,365 @@
+{
+  "$defs": {
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "One piece of evidence. `original_span` ≤ 15 words verbatim from the source (FR-D4).",
+      "properties": {
+        "class": {
+          "$ref": "#/$defs/EvidenceClass"
+        },
+        "source": {
+          "description": "Adapter id or source name, e.g. 'ch.closures'",
+          "title": "Source",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "source_ts": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "When the source says the data is from",
+          "title": "Source Ts"
+        },
+        "retrieved_ts": {
+          "description": "When Bergbot fetched it",
+          "format": "date-time",
+          "title": "Retrieved Ts",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1.0,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "original_span": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Span"
+        },
+        "original_lang": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Lang"
+        },
+        "translated_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translated Summary"
+        },
+        "verification": {
+          "default": "n/a",
+          "enum": [
+            "verified",
+            "unverified",
+            "conflicting",
+            "n/a"
+          ],
+          "title": "Verification",
+          "type": "string"
+        }
+      },
+      "required": [
+        "class",
+        "source",
+        "retrieved_ts"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "EvidenceClass": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "title": "EvidenceClass",
+      "type": "string"
+    },
+    "WeatherHour": {
+      "additionalProperties": false,
+      "properties": {
+        "time": {
+          "format": "date-time",
+          "title": "Time",
+          "type": "string"
+        },
+        "km": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Route km the sample applies to",
+          "title": "Km"
+        },
+        "elevation_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Elevation M"
+        },
+        "temp_c": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temp C"
+        },
+        "precip_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Precip Mm"
+        },
+        "precip_prob": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Precip Prob"
+        },
+        "wind_kmh": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wind Kmh"
+        },
+        "gust_kmh": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gust Kmh"
+        },
+        "thunder_prob": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Thunder Prob"
+        },
+        "summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Neutral condition code: clear, cloudy, rain, snow, storm…",
+          "title": "Summary"
+        }
+      },
+      "required": [
+        "time"
+      ],
+      "title": "WeatherHour",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "window_start": {
+      "format": "date-time",
+      "title": "Window Start",
+      "type": "string"
+    },
+    "window_end": {
+      "format": "date-time",
+      "title": "Window End",
+      "type": "string"
+    },
+    "hours": {
+      "items": {
+        "$ref": "#/$defs/WeatherHour"
+      },
+      "title": "Hours",
+      "type": "array"
+    },
+    "hazards": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Hazards",
+      "type": "array"
+    },
+    "fire_danger_level": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Fire Danger Level"
+    },
+    "fire_restrictions": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Fire Restrictions",
+      "type": "array"
+    },
+    "slf_region": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Slf Region"
+    },
+    "slf_level": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Slf Level"
+    },
+    "snow_line_m": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Snow Line M"
+    },
+    "sunset": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sunset"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "unavailable": {
+      "description": "Sources that could not be reached",
+      "items": {
+        "type": "string"
+      },
+      "title": "Unavailable",
+      "type": "array"
+    }
+  },
+  "required": [
+    "window_start",
+    "window_end"
+  ],
+  "title": "ConditionSnapshot",
+  "type": "object"
+}

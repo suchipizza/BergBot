@@ -1,0 +1,252 @@
+{
+  "$defs": {
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "One piece of evidence. `original_span` ≤ 15 words verbatim from the source (FR-D4).",
+      "properties": {
+        "class": {
+          "$ref": "#/$defs/EvidenceClass"
+        },
+        "source": {
+          "description": "Adapter id or source name, e.g. 'ch.closures'",
+          "title": "Source",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "source_ts": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "When the source says the data is from",
+          "title": "Source Ts"
+        },
+        "retrieved_ts": {
+          "description": "When Bergbot fetched it",
+          "format": "date-time",
+          "title": "Retrieved Ts",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1.0,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "original_span": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Span"
+        },
+        "original_lang": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Lang"
+        },
+        "translated_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translated Summary"
+        },
+        "verification": {
+          "default": "n/a",
+          "enum": [
+            "verified",
+            "unverified",
+            "conflicting",
+            "n/a"
+          ],
+          "title": "Verification",
+          "type": "string"
+        }
+      },
+      "required": [
+        "class",
+        "source",
+        "retrieved_ts"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "EvidenceClass": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "title": "EvidenceClass",
+      "type": "string"
+    },
+    "TransportLeg": {
+      "additionalProperties": false,
+      "properties": {
+        "from_stop": {
+          "title": "From Stop",
+          "type": "string"
+        },
+        "to_stop": {
+          "title": "To Stop",
+          "type": "string"
+        },
+        "departure": {
+          "format": "date-time",
+          "title": "Departure",
+          "type": "string"
+        },
+        "arrival": {
+          "format": "date-time",
+          "title": "Arrival",
+          "type": "string"
+        },
+        "products": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Products",
+          "type": "array"
+        },
+        "changes": {
+          "default": 0,
+          "title": "Changes",
+          "type": "integer"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "from_stop",
+        "to_stop",
+        "departure",
+        "arrival"
+      ],
+      "title": "TransportLeg",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "outbound": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TransportLeg"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "last_return": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TransportLeg"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "origin": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Origin"
+    },
+    "start_stop": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Stop"
+    },
+    "end_stop": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End Stop"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "unavailable": {
+      "default": false,
+      "title": "Unavailable",
+      "type": "boolean"
+    }
+  },
+  "title": "TransportPlan",
+  "type": "object"
+}
