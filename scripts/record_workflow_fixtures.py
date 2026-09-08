@@ -3,6 +3,7 @@ Run: uv run python scripts/record_workflow_fixtures.py  (network)"""
 
 from __future__ import annotations
 
+import gzip
 import json
 import sys
 from pathlib import Path
@@ -39,6 +40,9 @@ def main() -> None:
             ),
             encoding="utf-8",
         )
+        with gzip.open(path.with_suffix(".json.gz"), "wt", encoding="utf-8") as fh:
+            fh.write(path.read_text(encoding="utf-8"))
+        path.unlink()
         s = audit.route.stats
         print(
             f"{name}: {s.distance_km} km ↑{s.ascent_m} ↓{s.descent_m} {s.duration_min} min; warnings={[w.type.value for w in audit.warnings]}; unavailable={audit.summary.unverified}"

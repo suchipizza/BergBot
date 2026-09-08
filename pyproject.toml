@@ -56,11 +56,8 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/bergbot"]
 
-[tool.hatch.build.targets.wheel.force-include]
-"locales" = "bergbot/_data/locales"
-"brand/mascot/manifest.json" = "bergbot/_data/brand/mascot/manifest.json"
-"brand/mascot/dist" = "bergbot/_data/brand/mascot/dist"
-"data" = "bergbot/_data/data"
+[tool.hatch.build.hooks.custom]
+path = "scripts/hatch_build.py"
 
 [dependency-groups]
 dev = [

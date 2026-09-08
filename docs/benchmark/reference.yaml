@@ -1,0 +1,106 @@
+# Benchmark reference. Stats from swissALTI3D on the recording date; warning_types = static layers that
+# must always be found. Live findings (closures, weather, fire) are reported, not asserted.
+routes:
+- slug: aletsch-panoramaweg
+  name: Aletsch Panoramaweg (Riederalp, Riederfurka - Märjelensee)
+  origin: Bern
+  date: '2026-09-12'
+  expect:
+    distance_km: 10.87
+    ascent_m: 612.0
+    warning_types:
+    - protected_area
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: clariden-hoehenweg
+  name: Clariden-Höhenweg (Klausenpass - Fisetenpass Bergstation)
+  origin: Zürich HB
+  date: '2026-09-12'
+  expect:
+    distance_km: 8.87
+    ascent_m: 451.0
+    warning_types:
+    - exposed_terrain
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: creux-du-van
+  name: Sentier du Creux du Van (Noiraigue - Noiraigue)
+  origin: Neuchâtel
+  date: '2026-09-12'
+  expect:
+    distance_km: 13.92
+    ascent_m: 728.0
+    warning_types:
+    - protected_area
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: pizol-5-seen
+  name: 5-Seen-Wanderung Pizol (Wangs-Pizol (Pizolhütte) - Wangs-Pizol (Gaffia))
+  origin: Zürich HB
+  date: '2026-09-12'
+  expect:
+    distance_km: 9.05
+    ascent_m: 544.0
+    warning_types:
+    - exposed_terrain
+    - guardian_dogs
+    - protected_area
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: rigi-panoramaweg
+  name: Rigi-Panoramaweg (Rigi Kaltbad - Rigi Scheidegg)
+  origin: Luzern
+  date: '2026-09-12'
+  expect:
+    distance_km: 6.99
+    ascent_m: 225.0
+    warning_types: []
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: rigi-stage
+  name: Schwyzer Höhenweg (Küssnacht a.R. - Rigi)
+  origin: Luzern
+  date: '2026-09-12'
+  expect:
+    distance_km: 7.63
+    ascent_m: 1177.0
+    warning_types:
+    - shooting_zone
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: via-alpina-griesalp-kandersteg
+  name: Via Alpina (Griesalp - Kandersteg)
+  origin: Bern
+  date: '2026-09-12'
+  expect:
+    distance_km: 15.28
+    ascent_m: 1402.0
+    warning_types:
+    - exposed_terrain
+    - protected_area
+    - wildlife_quiet_zone
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: vier-seen-wanderung
+  name: Vier-Seen-Wanderung (Melchsee-Frutt - Engelberg (Trübsee))
+  origin: Luzern
+  date: '2026-09-12'
+  expect:
+    distance_km: 13.83
+    ascent_m: 510.0
+    warning_types:
+    - exposed_terrain
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: waldstaetterweg-brunnen-vitznau
+  name: Waldstätterweg (Brunnen - Vitznau)
+  origin: Zürich HB
+  date: '2026-09-12'
+  expect:
+    distance_km: 14.43
+    ascent_m: 572.0
+    warning_types: []
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?
+- slug: walliser-sonnenweg-leukerbad
+  name: Walliser Sonnenweg (Leukerbad - Gampel)
+  origin: Sion
+  date: '2026-09-12'
+  expect:
+    distance_km: 22.05
+    ascent_m: 820.0
+    warning_types:
+    - guardian_dogs
+    - protected_area
+  founder_notes: FOUNDER INPUT — what would you expect Bergbot to flag on this route?

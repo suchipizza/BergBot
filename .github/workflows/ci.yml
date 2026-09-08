@@ -21,3 +21,4 @@ jobs:
       - run: uv run mypy src/bergbot/core src/bergbot/i18n.py src/bergbot/sources/base.py
       - run: uv run pytest
       - run: uv run bergbot --help
+      - run: uv run bergbot benchmark --offline

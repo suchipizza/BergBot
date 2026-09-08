@@ -1,0 +1,283 @@
+{
+ "date": "2026-09-12",
+ "routes": [
+  {
+   "slug": "aletsch-panoramaweg",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "warn:protected_area": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 10.87,
+    "ascent_m": 612.0,
+    "descent_m": 301.0,
+    "duration_min": 220
+   },
+   "warnings": [
+    "fire_danger",
+    "fire_restriction",
+    "hut_unverified",
+    "lift_unverified",
+    "protected_area",
+    "trail_closure"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "clariden-hoehenweg",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "warn:exposed_terrain": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 8.87,
+    "ascent_m": 451.0,
+    "descent_m": 387.0,
+    "duration_min": 181
+   },
+   "warnings": [
+    "exposed_terrain",
+    "fire_danger",
+    "fire_restriction",
+    "lift_unverified"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "creux-du-van",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "warn:protected_area": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 13.92,
+    "ascent_m": 728.0,
+    "descent_m": 731.0,
+    "duration_min": 291
+   },
+   "warnings": [
+    "fire_danger",
+    "fire_restriction",
+    "hut_unverified",
+    "protected_area"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "pizol-5-seen",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "warn:exposed_terrain": true,
+    "warn:guardian_dogs": true,
+    "warn:protected_area": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 9.05,
+    "ascent_m": 544.0,
+    "descent_m": 906.0,
+    "duration_min": 217
+   },
+   "warnings": [
+    "exposed_terrain",
+    "fire_danger",
+    "fire_restriction",
+    "guardian_dogs",
+    "lift_unverified",
+    "protected_area"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "rigi-panoramaweg",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 6.99,
+    "ascent_m": 225.0,
+    "descent_m": 23.0,
+    "duration_min": 123
+   },
+   "warnings": [
+    "diversion",
+    "fire_danger",
+    "fire_restriction",
+    "lift_unverified"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "rigi-stage",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "warn:shooting_zone": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 7.63,
+    "ascent_m": 1177.0,
+    "descent_m": 32.0,
+    "duration_min": 236
+   },
+   "warnings": [
+    "fire_danger",
+    "fire_restriction",
+    "lift_unverified",
+    "shooting_zone"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "via-alpina-griesalp-kandersteg",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "warn:exposed_terrain": true,
+    "warn:protected_area": true,
+    "warn:wildlife_quiet_zone": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 15.28,
+    "ascent_m": 1402.0,
+    "descent_m": 1646.0,
+    "duration_min": 448
+   },
+   "warnings": [
+    "diversion",
+    "exposed_terrain",
+    "fire_danger",
+    "fire_restriction",
+    "hut_unverified",
+    "lift_unverified",
+    "protected_area",
+    "trail_closure",
+    "wildlife_quiet_zone"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "vier-seen-wanderung",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "warn:exposed_terrain": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 13.83,
+    "ascent_m": 510.0,
+    "descent_m": 652.0,
+    "duration_min": 270
+   },
+   "warnings": [
+    "exposed_terrain",
+    "fire_danger",
+    "fire_restriction",
+    "lift_unverified"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "waldstaetterweg-brunnen-vitznau",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 14.43,
+    "ascent_m": 572.0,
+    "descent_m": 572.0,
+    "duration_min": 281
+   },
+   "warnings": [
+    "diversion",
+    "fire_danger",
+    "fire_restriction",
+    "lift_unverified",
+    "trail_closure"
+   ],
+   "register": "serious"
+  },
+  {
+   "slug": "walliser-sonnenweg-leukerbad",
+   "ok": true,
+   "checks": {
+    "distance": true,
+    "ascent": true,
+    "warn:guardian_dogs": true,
+    "warn:protected_area": true,
+    "unverified_stays_unverified": true,
+    "fixed_line": true,
+    "message_le_12": true,
+    "network_member": true
+   },
+   "stats": {
+    "distance_km": 22.05,
+    "ascent_m": 820.0,
+    "descent_m": 1570.0,
+    "duration_min": 451
+   },
+   "warnings": [
+    "fire_danger",
+    "fire_restriction",
+    "guardian_dogs",
+    "lift_unverified",
+    "protected_area",
+    "trail_closure"
+   ],
+   "register": "serious"
+  }
+ ],
+ "passed": 10,
+ "total": 10,
+ "pass_rate": 1.0
+}

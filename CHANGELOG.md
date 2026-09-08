@@ -45,3 +45,9 @@ All notable changes to Bergbot. Milestones follow docs/BERGBOT_WORK_ORDER.md.
 - `agent/`: `Session` (deterministic orchestration, files in workdir, register applied by rule) and `LLM` (Anthropic API: structured intent refinement, web verification returning `WebVerification`, media links, free chat within register). Works without a key (deterministic mode).
 - `bergbot chat` REPL with optional slash commands; canton centroids `data/cantons.json` anchor `find`.
 - Tests: 40 intent fixtures (100 %), message shape/register/forbidden vocabulary, session e2e on recorded fixtures for the three canonical prompts in four languages, emergency and help.
+
+### M6 — Safety and quality gates
+- Safety regressions (closure, fire ban, wind on ridge, quiet zone, shooting day, unverified lift) in four languages: warnings present and ordered, serious register, no header mascot, fixed line; warnings survive constraints; unverified never becomes open/closed (schema, OSM, LLM verification guard); emergency short-circuit through the session in four languages.
+- Off-network synthesis test: every graph candidate vertex within 30 m of the official network; named candidates come from the SwitzerlandMobility layer.
+- Benchmark harness `bergbot benchmark` (10 real routes, `docs/benchmark/`), offline replay in CI, 10/10 pass on the recording date; network-membership fetch tiled along the route.
+- Packaging: hatch build hook copies locales, brand and seed data into the wheel (`bergbot/_data`); editable installs no longer shadowed.

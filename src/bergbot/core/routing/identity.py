@@ -59,9 +59,24 @@ def identify(
     except SourceUnavailable:
         unavailable.append("ch.hiking_network.wanderland")
 
-    # network membership + grade hint
+    # network membership + grade hint — fetched per 4 km cell along the route (GeoAdmin caps identify at 200)
     try:
-        segs = HikingNetworkAdapter(fetcher).fetch(Query(kind="trails", bbox=bbox))
+        from shapely.geometry import LineString, box
+
+        from bergbot.core.routing.candidates import tiles
+
+        line = LineString([(c[0], c[1]) for c in route.coords]).buffer(0.002)
+        adapter = HikingNetworkAdapter(fetcher)
+        segs = []
+        seen: set[str] = set()
+        for cell in tiles(bbox, cell_km=4.0):
+            if not box(*cell).intersects(line):
+                continue
+            for r in adapter.fetch(Query(kind="trails", bbox=cell)):
+                fid = str(r.payload.get("feature_id"))
+                if fid not in seen:
+                    seen.add(fid)
+                    segs.append(r)
         geoms = [to_metric(shape(s.payload["geometry"])) for s in segs if s.payload.get("geometry")]
         if geoms:
             union = unary_union(geoms).buffer(30.0)
