@@ -1,0 +1,11 @@
+[
+ {
+  "source_id": "ch.slf",
+  "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+  "params": {},
+  "data": null,
+  "response": {
+   "bulletins": []
+  }
+ }
+]

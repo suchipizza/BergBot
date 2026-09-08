@@ -1,0 +1,105 @@
+[
+ {
+  "source_id": "ch.bafu.fire",
+  "url": "https://api3.geo.admin.ch/rest/services/all/MapServer/identify",
+  "params": {
+   "layers": "all:ch.bafu.gefahren-waldbrand_warnung,ch.bafu.gefahren-waldbrand_praeventionsmassnahmen_kantone",
+   "tolerance": 0,
+   "sr": 4326,
+   "returnGeometry": "false",
+   "geometryFormat": "geojson",
+   "limit": 200,
+   "geometry": "8.900000,46.100000,9.000000,46.200000",
+   "geometryType": "esriGeometryEnvelope"
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "layerBodId": "ch.bafu.gefahren-waldbrand_warnung",
+     "layerName": "Waldbrandgefahr",
+     "featureId": 2101,
+     "id": 2101,
+     "properties": {
+      "name_de": "Zentraltessin (TI)",
+      "name_fr": "Tessin central (TI)",
+      "name_it": "Ticino centrale (TI)",
+      "name_en": "Central Ticino (TI)",
+      "title_de": "Mässige Gefahr",
+      "title_fr": "Danger limité",
+      "title_it": "Pericolo moderato",
+      "title_en": "Moderate danger",
+      "valid_from": "01.09.2026",
+      "canton": "TI",
+      "label": 2101
+     }
+    },
+    {
+     "layerBodId": "ch.bafu.gefahren-waldbrand_warnung",
+     "layerName": "Waldbrandgefahr",
+     "featureId": 2102,
+     "id": 2102,
+     "properties": {
+      "name_de": "Sottoceneri (TI)",
+      "name_fr": "Sottoceneri (TI)",
+      "name_it": "Sottoceneri (TI)",
+      "name_en": "Sottoceneri (TI)",
+      "title_de": "Mässige Gefahr",
+      "title_fr": "Danger limité",
+      "title_it": "Pericolo moderato",
+      "title_en": "Moderate danger",
+      "valid_from": "01.09.2026",
+      "canton": "TI",
+      "label": 2102
+     }
+    },
+    {
+     "layerBodId": "ch.bafu.gefahren-waldbrand_praeventionsmassnahmen_kantone",
+     "layerName": "Waldbrandpräventionsmassnahmen",
+     "featureId": 2101,
+     "id": 2101,
+     "properties": {
+      "name_de": "Zentraltessin (TI)",
+      "name_fr": "Tessin central (TI)",
+      "name_it": "Ticino centrale (TI)",
+      "name_en": "Central Ticino (TI)",
+      "title_de": "Keine Massnahmen in Kraft",
+      "title_fr": "Aucune mesure en vigueur",
+      "title_it": "Nessuna misura in vigore",
+      "title_en": "No measures in force",
+      "description_de": "Feuer möglich, jeweils mit der angebrachten Vorsicht",
+      "description_fr": "Il est possible de faire du feu, toujours avec la plus grande prudence",
+      "description_it": "sono permessi fuochi all'aperto, ma con la dovuta prudenza",
+      "description_en": "Fire possible, due caution to be exercised in all cases",
+      "valid_from": "21.08.2026",
+      "canton": "TI",
+      "label": 2101
+     }
+    },
+    {
+     "layerBodId": "ch.bafu.gefahren-waldbrand_praeventionsmassnahmen_kantone",
+     "layerName": "Waldbrandpräventionsmassnahmen",
+     "featureId": 2102,
+     "id": 2102,
+     "properties": {
+      "name_de": "Sottoceneri (TI)",
+      "name_fr": "Sottoceneri (TI)",
+      "name_it": "Sottoceneri (TI)",
+      "name_en": "Sottoceneri (TI)",
+      "title_de": "Keine Massnahmen in Kraft",
+      "title_fr": "Aucune mesure en vigueur",
+      "title_it": "Nessuna misura in vigore",
+      "title_en": "No measures in force",
+      "description_de": "Feuer möglich, jeweils mit der angebrachten Vorsicht",
+      "description_fr": "Il est possible de faire du feu, toujours avec la plus grande prudence",
+      "description_it": "sono permessi fuochi all'aperto, ma con la dovuta prudenza",
+      "description_en": "Fire possible, due caution to be exercised in all cases",
+      "valid_from": "21.08.2026",
+      "canton": "TI",
+      "label": 2102
+     }
+    }
+   ]
+  }
+ }
+]

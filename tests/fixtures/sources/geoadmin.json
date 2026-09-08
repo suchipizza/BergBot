@@ -1,0 +1,987 @@
+[
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/api/SearchServer",
+  "params": {
+   "searchText": "Brunnen SZ",
+   "type": "locations",
+   "sr": 4326,
+   "limit": 5
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "attrs": {
+      "detail": "brunnenhoefli wangen _sz_",
+      "geom_quadindex": "030031230122113131131",
+      "geom_st_box2d": "BOX(8.889215 47.193889,8.889215 47.193889)",
+      "label": "<b>Brunnenhöfli</b> (SZ) - Wangen (SZ)",
+      "lat": 47.193885803222656,
+      "lon": 8.889225959777832,
+      "num": 1,
+      "objectclass": "TLM_FLURNAME",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.889225959777832,
+      "y": 47.193885803222656,
+      "zoomlevel": 9
+     },
+     "id": 12199,
+     "weight": 3
+    },
+    {
+     "attrs": {
+      "detail": "galtbrunnen wangen _sz_",
+      "geom_quadindex": "030031231221023230210",
+      "geom_st_box2d": "BOX(8.901893 47.186735,8.901893 47.186735)",
+      "label": "<b>Galtbrunnen</b> (SZ) - Wangen (SZ)",
+      "lat": 47.18673324584961,
+      "lon": 8.901904106140137,
+      "num": 1,
+      "objectclass": "TLM_FLURNAME",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.901904106140137,
+      "y": 47.18673324584961,
+      "zoomlevel": 9
+     },
+     "id": 398846,
+     "weight": 3
+    },
+    {
+     "attrs": {
+      "detail": "unter brunnen wangen _sz_",
+      "geom_quadindex": "030031230300132122230",
+      "geom_st_box2d": "BOX(8.88858 47.191213,8.88858 47.191213)",
+      "label": "<i>Flurname swisstopo</i> <b>Unter Brunnen</b> (SZ) - Wangen (SZ)",
+      "lat": 47.19121170043945,
+      "lon": 8.888589859008789,
+      "num": 1,
+      "objectclass": "TLM_FLURNAME",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.888589859008789,
+      "y": 47.19121170043945,
+      "zoomlevel": 10
+     },
+     "id": 343871,
+     "weight": 2
+    },
+    {
+     "attrs": {
+      "detail": "unterer brunnen wangen _sz_",
+      "geom_quadindex": "030031230301002231311",
+      "geom_st_box2d": "BOX(8.889346 47.191637,8.889346 47.191637)",
+      "label": "<i>Quartierteil</i> <b>Unterer Brunnen</b> (SZ) - Wangen (SZ)",
+      "lat": 47.19163513183594,
+      "lon": 8.88935661315918,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.88935661315918,
+      "y": 47.19163513183594,
+      "zoomlevel": 10
+     },
+     "id": 379847,
+     "weight": 2
+    },
+    {
+     "attrs": {
+      "detail": "hundszun lauterbrunnen",
+      "geom_quadindex": "021332013213332320032",
+      "geom_st_box2d": "BOX(7.915302 46.605785,7.915302 46.605785)",
+      "label": "<i>Flurname swisstopo</i> <b>Hundszun</b> (BE) - Lauterbrunnen",
+      "lat": 46.60578155517578,
+      "lon": 7.915304183959961,
+      "num": 1,
+      "objectclass": "TLM_FLURNAME",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 7.915304183959961,
+      "y": 46.60578155517578,
+      "zoomlevel": 10
+     },
+     "id": 157340,
+     "weight": 1
+    }
+   ]
+  }
+ },
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/api/SearchServer",
+  "params": {
+   "searchText": "Rigi Kulm",
+   "type": "locations",
+   "sr": 4326,
+   "limit": 5
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "attrs": {
+      "detail": "rigi kulm arth",
+      "geom_quadindex": "03002323023",
+      "geom_st_box2d": "BOX(8.482778 47.054935,8.487056 47.056356)",
+      "label": "<b>Rigi Kulm</b> (SZ) - Arth",
+      "lat": 47.05552291870117,
+      "lon": 8.484990119934082,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 8.484990119934082,
+      "y": 47.05552291870117,
+      "zoomlevel": 9
+     },
+     "id": 358304,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "rigi kulm hotel arth",
+      "geom_quadindex": "030023230230313202203",
+      "geom_st_box2d": "BOX(8.484033 47.055858,8.484033 47.055858)",
+      "label": "<i>Gebaeude</i> <b>Rigi Kulm Hotel</b> (SZ) - Arth",
+      "lat": 47.05585479736328,
+      "lon": 8.484042167663574,
+      "num": 1,
+      "objectclass": "TLM_GEBAEUDE",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.484042167663574,
+      "y": 47.05585479736328,
+      "zoomlevel": 9
+     },
+     "id": 44874,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "rigi kulm arth",
+      "geom_quadindex": "030023230231030003103",
+      "geom_st_box2d": "BOX(8.485282 47.056784,8.485282 47.056784)",
+      "label": "<i>Hauptgipfel</i> <b>Rigi Kulm</b> (SZ) - Arth",
+      "lat": 47.05678176879883,
+      "lon": 8.485291481018066,
+      "num": 1,
+      "objectclass": "TLM_NAME_PKT",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.485291481018066,
+      "y": 47.05678176879883,
+      "zoomlevel": 10
+     },
+     "id": 93110,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "rigi-kulm-nordwestrippe arth,kuessnacht _sz_",
+      "geom_quadindex": "0300232302",
+      "geom_st_box2d": "BOX(8.482787 47.056966,8.486115 47.059437)",
+      "label": "<i>Strasse</i> <b>Rigi-Kulm-Nordwestrippe</b> (SZ) - Arth,Küssnacht (SZ)",
+      "lat": 47.05815505981445,
+      "lon": 8.48460865020752,
+      "num": 1,
+      "objectclass": "TLM_STRASSE",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.48460865020752,
+      "y": 47.05815505981445,
+      "zoomlevel": 9
+     },
+     "id": 268285,
+     "weight": 1
+    },
+    {
+     "attrs": {
+      "detail": "rigi kulm hotel arth",
+      "geom_quadindex": "030023230230330132003",
+      "geom_st_box2d": "BOX(8.483934 47.055677,8.483934 47.055677)",
+      "label": "<i>Offenes Gebaeude</i> <b>Rigi Kulm Hotel</b> (SZ) - Arth",
+      "lat": 47.0556755065918,
+      "lon": 8.483942031860352,
+      "num": 1,
+      "objectclass": "TLM_GEBAEUDE",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.483942031860352,
+      "y": 47.0556755065918,
+      "zoomlevel": 9
+     },
+     "id": 350039,
+     "weight": 100
+    }
+   ]
+  }
+ },
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/api/SearchServer",
+  "params": {
+   "searchText": "Urnerboden",
+   "type": "locations",
+   "sr": 4326,
+   "limit": 5
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "attrs": {
+      "detail": "urnerboden spiringen",
+      "geom_quadindex": "030213011122002331003",
+      "geom_st_box2d": "BOX(8.902899 46.889955,8.902899 46.889955)",
+      "label": "<i>Ort</i> <b>Urnerboden</b> (UR) - Spiringen",
+      "lat": 46.88995361328125,
+      "lon": 8.902907371520996,
+      "num": 1,
+      "objectclass": "TLM_SIEDLUNGSNAME",
+      "origin": "gazetteer",
+      "rank": 5,
+      "x": 8.902907371520996,
+      "y": 46.88995361328125,
+      "zoomlevel": 10
+     },
+     "id": 273910,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "urnerboden-fisetengrat spiringen",
+      "geom_quadindex": "030213",
+      "geom_st_box2d": "BOX(8.90314 46.885171,8.931659 46.887962)",
+      "label": "<i>Luftseilbahn</i> <b>Urnerboden-Fisetengrat</b> (UR) - Spiringen",
+      "lat": 46.88656234741211,
+      "lon": 8.917407989501953,
+      "num": 1,
+      "objectclass": "TLM_UEBRIGE_BAHN",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.917407989501953,
+      "y": 46.88656234741211,
+      "zoomlevel": 9
+     },
+     "id": 74897,
+     "weight": 1
+    },
+    {
+     "attrs": {
+      "detail": "urnerboden 300m spiringen",
+      "geom_quadindex": "030213011033221001212",
+      "geom_st_box2d": "BOX(8.899893 46.888854,8.899893 46.888854)",
+      "label": "<i>Gebaeude</i> <b>Urnerboden 300m</b> (UR) - Spiringen",
+      "lat": 46.888851165771484,
+      "lon": 8.899901390075684,
+      "num": 1,
+      "objectclass": "TLM_GEBAEUDE",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.899901390075684,
+      "y": 46.888851165771484,
+      "zoomlevel": 9
+     },
+     "id": 210164,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "urnerboden 300m spiringen",
+      "geom_quadindex": "030213011033221001212",
+      "geom_st_box2d": "BOX(8.899893 46.888854,8.899893 46.888854)",
+      "label": "<i>Gebaeude Einzelhaus</i> <b>Urnerboden 300m</b> (UR) - Spiringen",
+      "lat": 46.888851165771484,
+      "lon": 8.899901390075684,
+      "num": 1,
+      "objectclass": "tlm_gebaeude",
+      "origin": "gazetteer",
+      "rank": 6,
+      "x": 8.899901390075684,
+      "y": 46.888851165771484,
+      "zoomlevel": 10
+     },
+     "id": 445271,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "urnerboden, klus 8505880 haltestelle bus",
+      "geom_quadindex": "030213012213210010232",
+      "geom_st_box2d": "BOX(8.875179 46.868599,8.875179 46.868599)",
+      "label": "<i>Bus</i> <b>Urnerboden, Klus</b>",
+      "lat": 46.868595123291016,
+      "lon": 8.875188827514648,
+      "num": 1,
+      "objectclass": "",
+      "origin": "haltestellen",
+      "rank": 8,
+      "x": 8.875188827514648,
+      "y": 46.868595123291016,
+      "zoomlevel": 4294967295
+     },
+     "id": 7626,
+     "weight": 1
+    }
+   ]
+  }
+ },
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/api/SearchServer",
+  "params": {
+   "searchText": "Zürich HB",
+   "type": "locations",
+   "sr": 4326,
+   "limit": 3
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "attrs": {
+      "detail": "zuerich hb szu sued _spw_ 8518396 spurwechsel",
+      "geom_quadindex": "030003122221033101103",
+      "geom_st_box2d": "BOX(8.535591 47.376549,8.535591 47.376549)",
+      "label": "<i><i>haltestellen_</i></i> <b>Zürich HB SZU Süd (Spw)</b>",
+      "lat": 47.376548767089844,
+      "lon": 8.535602569580078,
+      "num": 1,
+      "objectclass": "",
+      "origin": "haltestellen",
+      "rank": 8,
+      "x": 8.535602569580078,
+      "y": 47.376548767089844,
+      "zoomlevel": 4294967295
+     },
+     "id": 3575,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "zuerich hb szu gleisende 8519108 gleisende",
+      "geom_quadindex": "030003122231012030200",
+      "geom_st_box2d": "BOX(8.54124 47.376945,8.54124 47.376945)",
+      "label": "<i><i>haltestellen_</i></i> <b>Zürich HB SZU Gleisende</b>",
+      "lat": 47.37694549560547,
+      "lon": 8.541252136230469,
+      "num": 1,
+      "objectclass": "",
+      "origin": "haltestellen",
+      "rank": 8,
+      "x": 8.541252136230469,
+      "y": 47.37694549560547,
+      "zoomlevel": 4294967295
+     },
+     "id": 8843,
+     "weight": 100
+    },
+    {
+     "attrs": {
+      "detail": "zuerich hb szu 8503088 haltestelle zug",
+      "geom_quadindex": "030003122212323212123",
+      "geom_st_box2d": "BOX(8.539343 47.377395,8.539343 47.377395)",
+      "label": "<i>Zug</i> <b>Zürich HB SZU</b>",
+      "lat": 47.37739181518555,
+      "lon": 8.53935432434082,
+      "num": 1,
+      "objectclass": "",
+      "origin": "haltestellen",
+      "rank": 8,
+      "x": 8.53935432434082,
+      "y": 47.37739181518555,
+      "zoomlevel": 4294967295
+     },
+     "id": 11291,
+     "weight": 100
+    }
+   ]
+  }
+ },
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/profile.json",
+  "params": {
+   "geom": "{\"type\":\"LineString\",\"coordinates\":[[2688860.4,1205487.7],[2689963.2,1206004.6],[2690734.9,1206783.4]]}",
+   "sr": 2056,
+   "nb_points": 50
+  },
+  "data": null,
+  "response": [
+   {
+    "alts": {
+     "COMB": 444.2,
+     "DTM2": 444.2,
+     "DTM25": 444.2
+    },
+    "dist": 0,
+    "easting": 2688860.4,
+    "northing": 1205487.7
+   },
+   {
+    "alts": {
+     "COMB": 435.4,
+     "DTM2": 435.4,
+     "DTM25": 435.4
+    },
+    "dist": 46.8,
+    "easting": 2688902.815,
+    "northing": 1205507.581
+   },
+   {
+    "alts": {
+     "COMB": 435.3,
+     "DTM2": 435.3,
+     "DTM25": 435.3
+    },
+    "dist": 93.7,
+    "easting": 2688945.231,
+    "northing": 1205527.462
+   },
+   {
+    "alts": {
+     "COMB": 436.3,
+     "DTM2": 436.3,
+     "DTM25": 436.3
+    },
+    "dist": 140.5,
+    "easting": 2688987.646,
+    "northing": 1205547.342
+   },
+   {
+    "alts": {
+     "COMB": 441.4,
+     "DTM2": 441.4,
+     "DTM25": 441.4
+    },
+    "dist": 187.4,
+    "easting": 2689030.062,
+    "northing": 1205567.223
+   },
+   {
+    "alts": {
+     "COMB": 442.2,
+     "DTM2": 442.2,
+     "DTM25": 442.2
+    },
+    "dist": 234.2,
+    "easting": 2689072.477,
+    "northing": 1205587.104
+   },
+   {
+    "alts": {
+     "COMB": 447.1,
+     "DTM2": 447.1,
+     "DTM25": 447.1
+    },
+    "dist": 281.1,
+    "easting": 2689114.892,
+    "northing": 1205606.985
+   },
+   {
+    "alts": {
+     "COMB": 446.1,
+     "DTM2": 446.1,
+     "DTM25": 446.1
+    },
+    "dist": 327.9,
+    "easting": 2689157.308,
+    "northing": 1205626.865
+   },
+   {
+    "alts": {
+     "COMB": 441.0,
+     "DTM2": 441.0,
+     "DTM25": 441.0
+    },
+    "dist": 374.7,
+    "easting": 2689199.723,
+    "northing": 1205646.746
+   },
+   {
+    "alts": {
+     "COMB": 436.1,
+     "DTM2": 436.1,
+     "DTM25": 436.1
+    },
+    "dist": 421.6,
+    "easting": 2689242.138,
+    "northing": 1205666.627
+   },
+   {
+    "alts": {
+     "COMB": 435.8,
+     "DTM2": 435.8,
+     "DTM25": 435.8
+    },
+    "dist": 468.4,
+    "easting": 2689284.554,
+    "northing": 1205686.508
+   },
+   {
+    "alts": {
+     "COMB": 436.4,
+     "DTM2": 436.4,
+     "DTM25": 436.4
+    },
+    "dist": 515.3,
+    "easting": 2689326.969,
+    "northing": 1205706.388
+   },
+   {
+    "alts": {
+     "COMB": 437.4,
+     "DTM2": 437.4,
+     "DTM25": 437.4
+    },
+    "dist": 562.1,
+    "easting": 2689369.385,
+    "northing": 1205726.269
+   },
+   {
+    "alts": {
+     "COMB": 451.9,
+     "DTM2": 451.9,
+     "DTM25": 451.9
+    },
+    "dist": 609.0,
+    "easting": 2689411.8,
+    "northing": 1205746.15
+   },
+   {
+    "alts": {
+     "COMB": 466.9,
+     "DTM2": 466.9,
+     "DTM25": 466.9
+    },
+    "dist": 655.8,
+    "easting": 2689454.215,
+    "northing": 1205766.031
+   },
+   {
+    "alts": {
+     "COMB": 467.5,
+     "DTM2": 467.5,
+     "DTM25": 467.5
+    },
+    "dist": 702.7,
+    "easting": 2689496.631,
+    "northing": 1205785.912
+   },
+   {
+    "alts": {
+     "COMB": 467.3,
+     "DTM2": 467.3,
+     "DTM25": 467.3
+    },
+    "dist": 749.5,
+    "easting": 2689539.046,
+    "northing": 1205805.792
+   },
+   {
+    "alts": {
+     "COMB": 463.1,
+     "DTM2": 463.1,
+     "DTM25": 463.1
+    },
+    "dist": 796.3,
+    "easting": 2689581.462,
+    "northing": 1205825.673
+   },
+   {
+    "alts": {
+     "COMB": 449.9,
+     "DTM2": 449.9,
+     "DTM25": 449.9
+    },
+    "dist": 843.2,
+    "easting": 2689623.877,
+    "northing": 1205845.554
+   },
+   {
+    "alts": {
+     "COMB": 446.3,
+     "DTM2": 446.3,
+     "DTM25": 446.3
+    },
+    "dist": 890.0,
+    "easting": 2689666.292,
+    "northing": 1205865.435
+   },
+   {
+    "alts": {
+     "COMB": 439.7,
+     "DTM2": 439.7,
+     "DTM25": 439.7
+    },
+    "dist": 936.9,
+    "easting": 2689708.708,
+    "northing": 1205885.315
+   },
+   {
+    "alts": {
+     "COMB": 439.0,
+     "DTM2": 439.0,
+     "DTM25": 439.0
+    },
+    "dist": 983.7,
+    "easting": 2689751.123,
+    "northing": 1205905.196
+   },
+   {
+    "alts": {
+     "COMB": 438.9,
+     "DTM2": 438.9,
+     "DTM25": 438.9
+    },
+    "dist": 1030.6,
+    "easting": 2689793.538,
+    "northing": 1205925.077
+   },
+   {
+    "alts": {
+     "COMB": 438.7,
+     "DTM2": 438.7,
+     "DTM25": 438.7
+    },
+    "dist": 1077.4,
+    "easting": 2689835.954,
+    "northing": 1205944.958
+   },
+   {
+    "alts": {
+     "COMB": 438.8,
+     "DTM2": 438.8,
+     "DTM25": 438.8
+    },
+    "dist": 1124.2,
+    "easting": 2689878.369,
+    "northing": 1205964.838
+   },
+   {
+    "alts": {
+     "COMB": 439.4,
+     "DTM2": 439.4,
+     "DTM25": 439.4
+    },
+    "dist": 1171.1,
+    "easting": 2689920.785,
+    "northing": 1205984.719
+   },
+   {
+    "alts": {
+     "COMB": 440.0,
+     "DTM2": 440.0,
+     "DTM25": 440.0
+    },
+    "dist": 1217.9,
+    "easting": 2689963.2,
+    "northing": 1206004.6
+   },
+   {
+    "alts": {
+     "COMB": 440.3,
+     "DTM2": 440.3,
+     "DTM25": 440.3
+    },
+    "dist": 1265.6,
+    "easting": 2689996.752,
+    "northing": 1206038.461
+   },
+   {
+    "alts": {
+     "COMB": 442.5,
+     "DTM2": 442.5,
+     "DTM25": 442.5
+    },
+    "dist": 1313.3,
+    "easting": 2690030.304,
+    "northing": 1206072.322
+   },
+   {
+    "alts": {
+     "COMB": 443.1,
+     "DTM2": 443.1,
+     "DTM25": 443.1
+    },
+    "dist": 1360.9,
+    "easting": 2690063.857,
+    "northing": 1206106.183
+   },
+   {
+    "alts": {
+     "COMB": 441.0,
+     "DTM2": 441.0,
+     "DTM25": 441.0
+    },
+    "dist": 1408.6,
+    "easting": 2690097.409,
+    "northing": 1206140.043
+   },
+   {
+    "alts": {
+     "COMB": 440.8,
+     "DTM2": 440.8,
+     "DTM25": 440.8
+    },
+    "dist": 1456.3,
+    "easting": 2690130.961,
+    "northing": 1206173.904
+   },
+   {
+    "alts": {
+     "COMB": 441.0,
+     "DTM2": 441.0,
+     "DTM25": 441.0
+    },
+    "dist": 1503.9,
+    "easting": 2690164.513,
+    "northing": 1206207.765
+   },
+   {
+    "alts": {
+     "COMB": 440.6,
+     "DTM2": 440.6,
+     "DTM25": 440.6
+    },
+    "dist": 1551.6,
+    "easting": 2690198.065,
+    "northing": 1206241.626
+   },
+   {
+    "alts": {
+     "COMB": 440.8,
+     "DTM2": 440.8,
+     "DTM25": 440.8
+    },
+    "dist": 1599.3,
+    "easting": 2690231.617,
+    "northing": 1206275.487
+   },
+   {
+    "alts": {
+     "COMB": 441.7,
+     "DTM2": 441.7,
+     "DTM25": 441.7
+    },
+    "dist": 1646.9,
+    "easting": 2690265.17,
+    "northing": 1206309.348
+   },
+   {
+    "alts": {
+     "COMB": 442.3,
+     "DTM2": 442.3,
+     "DTM25": 442.3
+    },
+    "dist": 1694.6,
+    "easting": 2690298.722,
+    "northing": 1206343.209
+   },
+   {
+    "alts": {
+     "COMB": 442.0,
+     "DTM2": 442.0,
+     "DTM25": 442.0
+    },
+    "dist": 1742.3,
+    "easting": 2690332.274,
+    "northing": 1206377.07
+   },
+   {
+    "alts": {
+     "COMB": 442.3,
+     "DTM2": 442.3,
+     "DTM25": 442.3
+    },
+    "dist": 1790.0,
+    "easting": 2690365.826,
+    "northing": 1206410.93
+   },
+   {
+    "alts": {
+     "COMB": 442.4,
+     "DTM2": 442.4,
+     "DTM25": 442.4
+    },
+    "dist": 1837.6,
+    "easting": 2690399.378,
+    "northing": 1206444.791
+   },
+   {
+    "alts": {
+     "COMB": 442.5,
+     "DTM2": 442.5,
+     "DTM25": 442.5
+    },
+    "dist": 1885.3,
+    "easting": 2690432.93,
+    "northing": 1206478.652
+   },
+   {
+    "alts": {
+     "COMB": 442.7,
+     "DTM2": 442.7,
+     "DTM25": 442.7
+    },
+    "dist": 1933.0,
+    "easting": 2690466.483,
+    "northing": 1206512.513
+   },
+   {
+    "alts": {
+     "COMB": 442.8,
+     "DTM2": 442.8,
+     "DTM25": 442.8
+    },
+    "dist": 1980.6,
+    "easting": 2690500.035,
+    "northing": 1206546.374
+   },
+   {
+    "alts": {
+     "COMB": 442.9,
+     "DTM2": 442.9,
+     "DTM25": 442.9
+    },
+    "dist": 2028.3,
+    "easting": 2690533.587,
+    "northing": 1206580.235
+   },
+   {
+    "alts": {
+     "COMB": 443.0,
+     "DTM2": 443.0,
+     "DTM25": 443.0
+    },
+    "dist": 2076.0,
+    "easting": 2690567.139,
+    "northing": 1206614.096
+   },
+   {
+    "alts": {
+     "COMB": 443.3,
+     "DTM2": 443.3,
+     "DTM25": 443.3
+    },
+    "dist": 2123.6,
+    "easting": 2690600.691,
+    "northing": 1206647.957
+   },
+   {
+    "alts": {
+     "COMB": 443.7,
+     "DTM2": 443.7,
+     "DTM25": 443.7
+    },
+    "dist": 2171.3,
+    "easting": 2690634.243,
+    "northing": 1206681.817
+   },
+   {
+    "alts": {
+     "COMB": 443.6,
+     "DTM2": 443.6,
+     "DTM25": 443.6
+    },
+    "dist": 2219.0,
+    "easting": 2690667.796,
+    "northing": 1206715.678
+   },
+   {
+    "alts": {
+     "COMB": 443.9,
+     "DTM2": 443.9,
+     "DTM25": 443.9
+    },
+    "dist": 2266.6,
+    "easting": 2690701.348,
+    "northing": 1206749.539
+   },
+   {
+    "alts": {
+     "COMB": 444.2,
+     "DTM2": 444.2,
+     "DTM25": 444.2
+    },
+    "dist": 2314.3,
+    "easting": 2690734.9,
+    "northing": 1206783.4
+   }
+  ]
+ },
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/height",
+  "params": {
+   "easting": 2689103.6,
+   "northing": 1204991.0,
+   "sr": 2056
+  },
+  "data": null,
+  "response": {
+   "height": "433.6"
+  }
+ },
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/all/MapServer/identify",
+  "params": {
+   "geometry": "8.610000,46.990000",
+   "geometryType": "esriGeometryPoint",
+   "layers": "all:ch.swisstopo.swissboundaries3d-kanton-flaeche.fill",
+   "tolerance": 0,
+   "sr": 4326,
+   "returnGeometry": "false"
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "layerBodId": "ch.swisstopo.swissboundaries3d-kanton-flaeche.fill",
+     "layerName": "Kantonsgrenzen",
+     "featureId": 5,
+     "id": 5,
+     "attributes": {
+      "ak": "SZ",
+      "name": "Schwyz",
+      "flaeche": 90788.0,
+      "label": "Schwyz"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "source_id": "ch.geoadmin",
+  "url": "https://api3.geo.admin.ch/rest/services/all/MapServer/identify",
+  "params": {
+   "geometry": "8.480000,47.050000",
+   "geometryType": "esriGeometryPoint",
+   "layers": "all:ch.swisstopo.swissboundaries3d-kanton-flaeche.fill",
+   "tolerance": 0,
+   "sr": 4326,
+   "returnGeometry": "false"
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "layerBodId": "ch.swisstopo.swissboundaries3d-kanton-flaeche.fill",
+     "layerName": "Kantonsgrenzen",
+     "featureId": 5,
+     "id": 5,
+     "attributes": {
+      "ak": "SZ",
+      "name": "Schwyz",
+      "flaeche": 90788.0,
+      "label": "Schwyz"
+     }
+    }
+   ]
+  }
+ }
+]

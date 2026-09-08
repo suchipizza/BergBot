@@ -1,0 +1,5686 @@
+[
+ {
+  "source_id": "ch.transport",
+  "url": "https://transport.opendata.ch/v1/locations",
+  "params": {
+   "x": 46.99,
+   "y": 8.61,
+   "type": "station"
+  },
+  "data": null,
+  "response": {
+   "stations": [
+    {
+     "id": null,
+     "name": "Grand Parc 4.1, Brunnen",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": null,
+      "y": null
+     },
+     "distance": 110.24969104030406,
+     "icon": null
+    },
+    {
+     "id": "8508470",
+     "name": "Brunnen (See)",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.993542,
+      "y": 8.60531
+     },
+     "distance": 532,
+     "icon": "ship"
+    },
+    {
+     "id": "8505099",
+     "name": "Brunnen, See/Schiffstation",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.994455,
+      "y": 8.605738
+     },
+     "distance": 593,
+     "icon": "bus"
+    },
+    {
+     "id": "8505126",
+     "name": "Brunnen, Kleinstadtstrasse",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.99542,
+      "y": 8.606442
+     },
+     "distance": 661,
+     "icon": "bus"
+    },
+    {
+     "id": "8577436",
+     "name": "Brunnen, Kantonalbank",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.996652,
+      "y": 8.607311
+     },
+     "distance": 768,
+     "icon": "bus"
+    },
+    {
+     "id": "8577438",
+     "name": "Brunnen, Hafenstrasse",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.995734,
+      "y": 8.602137
+     },
+     "distance": 875,
+     "icon": "bus"
+    },
+    {
+     "id": "8505007",
+     "name": "Brunnen",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.999161,
+      "y": 8.610061
+     },
+     "distance": 1019,
+     "icon": "train"
+    },
+    {
+     "id": "8505128",
+     "name": "Morschach, Gewerbestrasse",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.981337,
+      "y": 8.615666
+     },
+     "distance": 1054,
+     "icon": "bus"
+    },
+    {
+     "id": "8505098",
+     "name": "Brunnen, Bahnhof",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.999593,
+      "y": 8.610123
+     },
+     "distance": 1067,
+     "icon": "bus"
+    },
+    {
+     "id": "8577439",
+     "name": "Brunnen, Heideweg",
+     "score": null,
+     "coordinate": {
+      "type": "WGS84",
+      "x": 46.997008,
+      "y": 8.599797
+     },
+     "distance": 1100,
+     "icon": "bus"
+    }
+   ]
+  }
+ },
+ {
+  "source_id": "ch.transport",
+  "url": "https://transport.opendata.ch/v1/connections",
+  "params": {
+   "from": "Zürich HB",
+   "to": "Brunnen",
+   "date": "2026-09-09",
+   "time": "07:00",
+   "limit": 4
+  },
+  "data": null,
+  "response": {
+   "connections": [
+    {
+     "from": {
+      "station": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      },
+      "arrival": null,
+      "arrivalTimestamp": null,
+      "departure": "2026-09-09T07:05:00+0200",
+      "departureTimestamp": 1788930300,
+      "delay": null,
+      "platform": "8",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      }
+     },
+     "to": {
+      "station": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      },
+      "arrival": "2026-09-09T08:05:00+0200",
+      "arrivalTimestamp": 1788933900,
+      "departure": null,
+      "departureTimestamp": null,
+      "delay": null,
+      "platform": "5",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      }
+     },
+     "duration": "00d01:00:00",
+     "transfers": 1,
+     "service": null,
+     "products": [
+      "IC 2",
+      "IR 26"
+     ],
+     "capacity1st": null,
+     "capacity2nd": null,
+     "sections": [
+      {
+       "journey": {
+        "name": "000861",
+        "category": "IC",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "2",
+        "operator": "SBB",
+        "to": "Lugano",
+        "passList": [
+         {
+          "station": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": "2026-09-09T07:05:00+0200",
+          "departureTimestamp": 1788930300,
+          "delay": null,
+          "platform": "8",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T07:29:00+0200",
+          "arrivalTimestamp": 1788931740,
+          "departure": "2026-09-09T07:30:00+0200",
+          "departureTimestamp": 1788931800,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T07:45:00+0200",
+          "arrivalTimestamp": 1788932700,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        },
+        "arrival": null,
+        "arrivalTimestamp": null,
+        "departure": "2026-09-09T07:05:00+0200",
+        "departureTimestamp": 1788930300,
+        "delay": null,
+        "platform": "8",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8505004",
+         "name": "Arth-Goldau",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.049035,
+          "y": 8.549436
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T07:45:00+0200",
+        "arrivalTimestamp": 1788932700,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505004",
+         "name": "Arth-Goldau",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.049035,
+          "y": 8.549436
+         },
+         "distance": null
+        }
+       }
+      },
+      {
+       "journey": {
+        "name": "002311",
+        "category": "IR",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "26",
+        "operator": "SOB-sob",
+        "to": "Locarno",
+        "passList": [
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T07:45:00+0200",
+          "arrivalTimestamp": 1788932700,
+          "departure": "2026-09-09T07:54:00+0200",
+          "departureTimestamp": 1788933240,
+          "delay": null,
+          "platform": "5",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:01:00+0200",
+          "arrivalTimestamp": 1788933660,
+          "departure": "2026-09-09T08:02:00+0200",
+          "departureTimestamp": 1788933720,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:05:00+0200",
+          "arrivalTimestamp": 1788933900,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "5",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8505004",
+         "name": "Arth-Goldau",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.049035,
+          "y": 8.549436
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T07:45:00+0200",
+        "arrivalTimestamp": 1788932700,
+        "departure": "2026-09-09T07:54:00+0200",
+        "departureTimestamp": 1788933240,
+        "delay": null,
+        "platform": "5",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505004",
+         "name": "Arth-Goldau",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.049035,
+          "y": 8.549436
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T08:05:00+0200",
+        "arrivalTimestamp": 1788933900,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "5",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "from": {
+      "station": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      },
+      "arrival": null,
+      "arrivalTimestamp": null,
+      "departure": "2026-09-09T07:35:00+0200",
+      "departureTimestamp": 1788932100,
+      "delay": null,
+      "platform": "6",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      }
+     },
+     "to": {
+      "station": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      },
+      "arrival": "2026-09-09T08:39:00+0200",
+      "arrivalTimestamp": 1788935940,
+      "departure": null,
+      "departureTimestamp": null,
+      "delay": null,
+      "platform": "5",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      }
+     },
+     "duration": "00d01:04:00",
+     "transfers": 1,
+     "service": null,
+     "products": [
+      "IR 75",
+      "S2"
+     ],
+     "capacity1st": null,
+     "capacity2nd": null,
+     "sections": [
+      {
+       "journey": {
+        "name": "002570",
+        "category": "IR",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "75",
+        "operator": "SBB",
+        "to": "Luzern",
+        "passList": [
+         {
+          "station": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": "2026-09-09T07:35:00+0200",
+          "departureTimestamp": 1788932100,
+          "delay": null,
+          "platform": "6",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8503202",
+           "name": "Thalwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.295971,
+            "y": 8.564768
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T07:45:00+0200",
+          "arrivalTimestamp": 1788932700,
+          "departure": "2026-09-09T07:45:00+0200",
+          "departureTimestamp": 1788932700,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503202",
+           "name": "Thalwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.295971,
+            "y": 8.564768
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502206",
+           "name": "Baar",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.195359,
+            "y": 8.523269
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T07:58:00+0200",
+          "arrivalTimestamp": 1788933480,
+          "departure": "2026-09-09T07:58:00+0200",
+          "departureTimestamp": 1788933480,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502206",
+           "name": "Baar",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.195359,
+            "y": 8.523269
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:02:00+0200",
+          "arrivalTimestamp": 1788933720,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        },
+        "arrival": null,
+        "arrivalTimestamp": null,
+        "departure": "2026-09-09T07:35:00+0200",
+        "departureTimestamp": 1788932100,
+        "delay": null,
+        "platform": "6",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T08:02:00+0200",
+        "arrivalTimestamp": 1788933720,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        }
+       }
+      },
+      {
+       "journey": {
+        "name": "021227",
+        "category": "S",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "2",
+        "operator": "SBB",
+        "to": "Erstfeld",
+        "passList": [
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:02:00+0200",
+          "arrivalTimestamp": 1788933720,
+          "departure": "2026-09-09T08:07:00+0200",
+          "departureTimestamp": 1788934020,
+          "delay": null,
+          "platform": "3",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502300",
+           "name": "Zug Postplatz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.168269,
+            "y": 8.516929
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:08:00+0200",
+          "arrivalTimestamp": 1788934080,
+          "departure": "2026-09-09T08:08:00+0200",
+          "departureTimestamp": 1788934080,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502300",
+           "name": "Zug Postplatz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.168269,
+            "y": 8.516929
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8517527",
+           "name": "Zug Casino",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.162313,
+            "y": 8.5152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:10:00+0200",
+          "arrivalTimestamp": 1788934200,
+          "departure": "2026-09-09T08:10:00+0200",
+          "departureTimestamp": 1788934200,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8517527",
+           "name": "Zug Casino",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.162313,
+            "y": 8.5152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8515994",
+           "name": "Zug Fridbach",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.156573,
+            "y": 8.512289
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:11:00+0200",
+          "arrivalTimestamp": 1788934260,
+          "departure": "2026-09-09T08:11:00+0200",
+          "departureTimestamp": 1788934260,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8515994",
+           "name": "Zug Fridbach",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.156573,
+            "y": 8.512289
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502231",
+           "name": "Zug Oberwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.147672,
+            "y": 8.509935
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:13:00+0200",
+          "arrivalTimestamp": 1788934380,
+          "departure": "2026-09-09T08:13:00+0200",
+          "departureTimestamp": 1788934380,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502231",
+           "name": "Zug Oberwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.147672,
+            "y": 8.509935
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8517112",
+           "name": "Walchwil Hörndli",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.108453,
+            "y": 8.504776
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:18:00+0200",
+          "arrivalTimestamp": 1788934680,
+          "departure": "2026-09-09T08:18:00+0200",
+          "departureTimestamp": 1788934680,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8517112",
+           "name": "Walchwil Hörndli",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.108453,
+            "y": 8.504776
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502205",
+           "name": "Walchwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.098679,
+            "y": 8.516925
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:21:00+0200",
+          "arrivalTimestamp": 1788934860,
+          "departure": "2026-09-09T08:22:00+0200",
+          "departureTimestamp": 1788934920,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502205",
+           "name": "Walchwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.098679,
+            "y": 8.516925
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:28:00+0200",
+          "arrivalTimestamp": 1788935280,
+          "departure": "2026-09-09T08:28:00+0200",
+          "departureTimestamp": 1788935280,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505005",
+           "name": "Steinen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.047659,
+            "y": 8.607448
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:32:00+0200",
+          "arrivalTimestamp": 1788935520,
+          "departure": "2026-09-09T08:32:00+0200",
+          "departureTimestamp": 1788935520,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505005",
+           "name": "Steinen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.047659,
+            "y": 8.607448
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:36:00+0200",
+          "arrivalTimestamp": 1788935760,
+          "departure": "2026-09-09T08:36:00+0200",
+          "departureTimestamp": 1788935760,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:39:00+0200",
+          "arrivalTimestamp": 1788935940,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "5",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T08:02:00+0200",
+        "arrivalTimestamp": 1788933720,
+        "departure": "2026-09-09T08:07:00+0200",
+        "departureTimestamp": 1788934020,
+        "delay": null,
+        "platform": "3",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T08:39:00+0200",
+        "arrivalTimestamp": 1788935940,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "5",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "from": {
+      "station": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      },
+      "arrival": null,
+      "arrivalTimestamp": null,
+      "departure": "2026-09-09T08:05:00+0200",
+      "departureTimestamp": 1788933900,
+      "delay": null,
+      "platform": "7",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      }
+     },
+     "to": {
+      "station": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      },
+      "arrival": "2026-09-09T09:05:00+0200",
+      "arrivalTimestamp": 1788937500,
+      "departure": null,
+      "departureTimestamp": null,
+      "delay": null,
+      "platform": "5",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      }
+     },
+     "duration": "00d01:00:00",
+     "transfers": 0,
+     "service": null,
+     "products": [
+      "IR 46"
+     ],
+     "capacity1st": null,
+     "capacity2nd": null,
+     "sections": [
+      {
+       "journey": {
+        "name": "002413",
+        "category": "IR",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "46",
+        "operator": "SOB-sob",
+        "to": "Locarno",
+        "passList": [
+         {
+          "station": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": "2026-09-09T08:05:00+0200",
+          "departureTimestamp": 1788933900,
+          "delay": null,
+          "platform": "7",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:29:00+0200",
+          "arrivalTimestamp": 1788935340,
+          "departure": "2026-09-09T08:30:00+0200",
+          "departureTimestamp": 1788935400,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:45:00+0200",
+          "arrivalTimestamp": 1788936300,
+          "departure": "2026-09-09T08:54:00+0200",
+          "departureTimestamp": 1788936840,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:01:00+0200",
+          "arrivalTimestamp": 1788937260,
+          "departure": "2026-09-09T09:02:00+0200",
+          "departureTimestamp": 1788937320,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:05:00+0200",
+          "arrivalTimestamp": 1788937500,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "5",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        },
+        "arrival": null,
+        "arrivalTimestamp": null,
+        "departure": "2026-09-09T08:05:00+0200",
+        "departureTimestamp": 1788933900,
+        "delay": null,
+        "platform": "7",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T09:05:00+0200",
+        "arrivalTimestamp": 1788937500,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "5",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "from": {
+      "station": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      },
+      "arrival": null,
+      "arrivalTimestamp": null,
+      "departure": "2026-09-09T08:35:00+0200",
+      "departureTimestamp": 1788935700,
+      "delay": null,
+      "platform": "4",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      }
+     },
+     "to": {
+      "station": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      },
+      "arrival": "2026-09-09T09:39:00+0200",
+      "arrivalTimestamp": 1788939540,
+      "departure": null,
+      "departureTimestamp": null,
+      "delay": null,
+      "platform": "5",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      }
+     },
+     "duration": "00d01:04:00",
+     "transfers": 1,
+     "service": null,
+     "products": [
+      "IR 75",
+      "S2"
+     ],
+     "capacity1st": null,
+     "capacity2nd": null,
+     "sections": [
+      {
+       "journey": {
+        "name": "002110",
+        "category": "IR",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "75",
+        "operator": "SBB",
+        "to": "Luzern",
+        "passList": [
+         {
+          "station": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": "2026-09-09T08:35:00+0200",
+          "departureTimestamp": 1788935700,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8503202",
+           "name": "Thalwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.295971,
+            "y": 8.564768
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:45:00+0200",
+          "arrivalTimestamp": 1788936300,
+          "departure": "2026-09-09T08:45:00+0200",
+          "departureTimestamp": 1788936300,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503202",
+           "name": "Thalwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.295971,
+            "y": 8.564768
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502206",
+           "name": "Baar",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.195359,
+            "y": 8.523269
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T08:58:00+0200",
+          "arrivalTimestamp": 1788937080,
+          "departure": "2026-09-09T08:58:00+0200",
+          "departureTimestamp": 1788937080,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502206",
+           "name": "Baar",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.195359,
+            "y": 8.523269
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:02:00+0200",
+          "arrivalTimestamp": 1788937320,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        },
+        "arrival": null,
+        "arrivalTimestamp": null,
+        "departure": "2026-09-09T08:35:00+0200",
+        "departureTimestamp": 1788935700,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T09:02:00+0200",
+        "arrivalTimestamp": 1788937320,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        }
+       }
+      },
+      {
+       "journey": {
+        "name": "021231",
+        "category": "S",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "2",
+        "operator": "SBB",
+        "to": "Erstfeld",
+        "passList": [
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:02:00+0200",
+          "arrivalTimestamp": 1788937320,
+          "departure": "2026-09-09T09:07:00+0200",
+          "departureTimestamp": 1788937620,
+          "delay": null,
+          "platform": "3",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502300",
+           "name": "Zug Postplatz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.168269,
+            "y": 8.516929
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:08:00+0200",
+          "arrivalTimestamp": 1788937680,
+          "departure": "2026-09-09T09:08:00+0200",
+          "departureTimestamp": 1788937680,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502300",
+           "name": "Zug Postplatz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.168269,
+            "y": 8.516929
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8517527",
+           "name": "Zug Casino",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.162313,
+            "y": 8.5152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:10:00+0200",
+          "arrivalTimestamp": 1788937800,
+          "departure": "2026-09-09T09:10:00+0200",
+          "departureTimestamp": 1788937800,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8517527",
+           "name": "Zug Casino",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.162313,
+            "y": 8.5152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8515994",
+           "name": "Zug Fridbach",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.156573,
+            "y": 8.512289
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:11:00+0200",
+          "arrivalTimestamp": 1788937860,
+          "departure": "2026-09-09T09:11:00+0200",
+          "departureTimestamp": 1788937860,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8515994",
+           "name": "Zug Fridbach",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.156573,
+            "y": 8.512289
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502231",
+           "name": "Zug Oberwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.147672,
+            "y": 8.509935
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:13:00+0200",
+          "arrivalTimestamp": 1788937980,
+          "departure": "2026-09-09T09:13:00+0200",
+          "departureTimestamp": 1788937980,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502231",
+           "name": "Zug Oberwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.147672,
+            "y": 8.509935
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8517112",
+           "name": "Walchwil Hörndli",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.108453,
+            "y": 8.504776
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:18:00+0200",
+          "arrivalTimestamp": 1788938280,
+          "departure": "2026-09-09T09:18:00+0200",
+          "departureTimestamp": 1788938280,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8517112",
+           "name": "Walchwil Hörndli",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.108453,
+            "y": 8.504776
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502205",
+           "name": "Walchwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.098679,
+            "y": 8.516925
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:21:00+0200",
+          "arrivalTimestamp": 1788938460,
+          "departure": "2026-09-09T09:22:00+0200",
+          "departureTimestamp": 1788938520,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502205",
+           "name": "Walchwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.098679,
+            "y": 8.516925
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:28:00+0200",
+          "arrivalTimestamp": 1788938880,
+          "departure": "2026-09-09T09:28:00+0200",
+          "departureTimestamp": 1788938880,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505005",
+           "name": "Steinen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.047659,
+            "y": 8.607448
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:32:00+0200",
+          "arrivalTimestamp": 1788939120,
+          "departure": "2026-09-09T09:32:00+0200",
+          "departureTimestamp": 1788939120,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505005",
+           "name": "Steinen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.047659,
+            "y": 8.607448
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:36:00+0200",
+          "arrivalTimestamp": 1788939360,
+          "departure": "2026-09-09T09:36:00+0200",
+          "departureTimestamp": 1788939360,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T09:39:00+0200",
+          "arrivalTimestamp": 1788939540,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "5",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T09:02:00+0200",
+        "arrivalTimestamp": 1788937320,
+        "departure": "2026-09-09T09:07:00+0200",
+        "departureTimestamp": 1788937620,
+        "delay": null,
+        "platform": "3",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T09:39:00+0200",
+        "arrivalTimestamp": 1788939540,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "5",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        }
+       }
+      }
+     ]
+    }
+   ],
+   "from": {
+    "id": "8503000",
+    "name": "Zürich HB",
+    "score": null,
+    "coordinate": {
+     "type": "WGS84",
+     "x": 47.377847,
+     "y": 8.540502
+    },
+    "distance": null
+   },
+   "to": {
+    "id": "8505007",
+    "name": "Brunnen",
+    "score": null,
+    "coordinate": {
+     "type": "WGS84",
+     "x": 46.999161,
+     "y": 8.610061
+    },
+    "distance": null
+   },
+   "stations": {
+    "from": [
+     {
+      "id": "8503000",
+      "name": "Zürich HB",
+      "score": null,
+      "coordinate": {
+       "type": "WGS84",
+       "x": 47.377847,
+       "y": 8.540502
+      },
+      "distance": null
+     }
+    ],
+    "to": [
+     {
+      "id": "8505007",
+      "name": "Brunnen",
+      "score": null,
+      "coordinate": {
+       "type": "WGS84",
+       "x": 46.999161,
+       "y": 8.610061
+      },
+      "distance": null
+     }
+    ]
+   }
+  }
+ },
+ {
+  "source_id": "ch.transport",
+  "url": "https://transport.opendata.ch/v1/connections",
+  "params": {
+   "from": "Brunnen",
+   "to": "Zürich HB",
+   "date": "2026-09-09",
+   "time": "17:00",
+   "limit": 4
+  },
+  "data": null,
+  "response": {
+   "connections": [
+    {
+     "from": {
+      "station": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      },
+      "arrival": null,
+      "arrivalTimestamp": null,
+      "departure": "2026-09-09T17:20:00+0200",
+      "departureTimestamp": 1788967200,
+      "delay": null,
+      "platform": "4",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      }
+     },
+     "to": {
+      "station": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      },
+      "arrival": "2026-09-09T18:25:00+0200",
+      "arrivalTimestamp": 1788971100,
+      "departure": null,
+      "departureTimestamp": null,
+      "delay": null,
+      "platform": "9",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      }
+     },
+     "duration": "00d01:05:00",
+     "transfers": 1,
+     "service": null,
+     "products": [
+      "S2",
+      "IR 75"
+     ],
+     "capacity1st": null,
+     "capacity2nd": null,
+     "sections": [
+      {
+       "journey": {
+        "name": "021266",
+        "category": "S",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "2",
+        "operator": "SBB",
+        "to": "Baar Lindenpark",
+        "passList": [
+         {
+          "station": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": "2026-09-09T17:20:00+0200",
+          "departureTimestamp": 1788967200,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:23:00+0200",
+          "arrivalTimestamp": 1788967380,
+          "departure": "2026-09-09T17:23:00+0200",
+          "departureTimestamp": 1788967380,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505005",
+           "name": "Steinen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.047659,
+            "y": 8.607448
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:25:00+0200",
+          "arrivalTimestamp": 1788967500,
+          "departure": "2026-09-09T17:25:00+0200",
+          "departureTimestamp": 1788967500,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505005",
+           "name": "Steinen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.047659,
+            "y": 8.607448
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:31:00+0200",
+          "arrivalTimestamp": 1788967860,
+          "departure": "2026-09-09T17:32:00+0200",
+          "departureTimestamp": 1788967920,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502205",
+           "name": "Walchwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.098679,
+            "y": 8.516925
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:38:00+0200",
+          "arrivalTimestamp": 1788968280,
+          "departure": "2026-09-09T17:38:00+0200",
+          "departureTimestamp": 1788968280,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502205",
+           "name": "Walchwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.098679,
+            "y": 8.516925
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8517112",
+           "name": "Walchwil Hörndli",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.108453,
+            "y": 8.504776
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:40:00+0200",
+          "arrivalTimestamp": 1788968400,
+          "departure": "2026-09-09T17:40:00+0200",
+          "departureTimestamp": 1788968400,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8517112",
+           "name": "Walchwil Hörndli",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.108453,
+            "y": 8.504776
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502231",
+           "name": "Zug Oberwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.147672,
+            "y": 8.509935
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:45:00+0200",
+          "arrivalTimestamp": 1788968700,
+          "departure": "2026-09-09T17:45:00+0200",
+          "departureTimestamp": 1788968700,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502231",
+           "name": "Zug Oberwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.147672,
+            "y": 8.509935
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8515994",
+           "name": "Zug Fridbach",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.156573,
+            "y": 8.512289
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:46:00+0200",
+          "arrivalTimestamp": 1788968760,
+          "departure": "2026-09-09T17:46:00+0200",
+          "departureTimestamp": 1788968760,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8515994",
+           "name": "Zug Fridbach",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.156573,
+            "y": 8.512289
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8517527",
+           "name": "Zug Casino",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.162313,
+            "y": 8.5152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:48:00+0200",
+          "arrivalTimestamp": 1788968880,
+          "departure": "2026-09-09T17:48:00+0200",
+          "departureTimestamp": 1788968880,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8517527",
+           "name": "Zug Casino",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.162313,
+            "y": 8.5152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502300",
+           "name": "Zug Postplatz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.168269,
+            "y": 8.516929
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:49:00+0200",
+          "arrivalTimestamp": 1788968940,
+          "departure": "2026-09-09T17:49:00+0200",
+          "departureTimestamp": 1788968940,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502300",
+           "name": "Zug Postplatz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.168269,
+            "y": 8.516929
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:53:00+0200",
+          "arrivalTimestamp": 1788969180,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "3",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        },
+        "arrival": null,
+        "arrivalTimestamp": null,
+        "departure": "2026-09-09T17:20:00+0200",
+        "departureTimestamp": 1788967200,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T17:53:00+0200",
+        "arrivalTimestamp": 1788969180,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "3",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        }
+       }
+      },
+      {
+       "journey": {
+        "name": "002131",
+        "category": "IR",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "75",
+        "operator": "SBB",
+        "to": "Konstanz",
+        "passList": [
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:53:00+0200",
+          "arrivalTimestamp": 1788969180,
+          "departure": "2026-09-09T17:58:00+0200",
+          "departureTimestamp": 1788969480,
+          "delay": null,
+          "platform": "5",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502206",
+           "name": "Baar",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.195359,
+            "y": 8.523269
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:01:00+0200",
+          "arrivalTimestamp": 1788969660,
+          "departure": "2026-09-09T18:01:00+0200",
+          "departureTimestamp": 1788969660,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502206",
+           "name": "Baar",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.195359,
+            "y": 8.523269
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8503202",
+           "name": "Thalwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.295971,
+            "y": 8.564768
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:14:00+0200",
+          "arrivalTimestamp": 1788970440,
+          "departure": "2026-09-09T18:14:00+0200",
+          "departureTimestamp": 1788970440,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503202",
+           "name": "Thalwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.295971,
+            "y": 8.564768
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:25:00+0200",
+          "arrivalTimestamp": 1788971100,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "9",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T17:53:00+0200",
+        "arrivalTimestamp": 1788969180,
+        "departure": "2026-09-09T17:58:00+0200",
+        "departureTimestamp": 1788969480,
+        "delay": null,
+        "platform": "5",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T18:25:00+0200",
+        "arrivalTimestamp": 1788971100,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "9",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "from": {
+      "station": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      },
+      "arrival": null,
+      "arrivalTimestamp": null,
+      "departure": "2026-09-09T17:55:00+0200",
+      "departureTimestamp": 1788969300,
+      "delay": null,
+      "platform": "4",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      }
+     },
+     "to": {
+      "station": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      },
+      "arrival": "2026-09-09T18:55:00+0200",
+      "arrivalTimestamp": 1788972900,
+      "departure": null,
+      "departureTimestamp": null,
+      "delay": null,
+      "platform": "8",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      }
+     },
+     "duration": "00d01:00:00",
+     "transfers": 1,
+     "service": null,
+     "products": [
+      "IR 26",
+      "IC 2"
+     ],
+     "capacity1st": null,
+     "capacity2nd": null,
+     "sections": [
+      {
+       "journey": {
+        "name": "002332",
+        "category": "IR",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "26",
+        "operator": "SOB-sob",
+        "to": "Basel SBB",
+        "passList": [
+         {
+          "station": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": "2026-09-09T17:55:00+0200",
+          "departureTimestamp": 1788969300,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T17:58:00+0200",
+          "arrivalTimestamp": 1788969480,
+          "departure": "2026-09-09T17:59:00+0200",
+          "departureTimestamp": 1788969540,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:07:00+0200",
+          "arrivalTimestamp": 1788970020,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "5",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        },
+        "arrival": null,
+        "arrivalTimestamp": null,
+        "departure": "2026-09-09T17:55:00+0200",
+        "departureTimestamp": 1788969300,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8505004",
+         "name": "Arth-Goldau",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.049035,
+          "y": 8.549436
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T18:07:00+0200",
+        "arrivalTimestamp": 1788970020,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "5",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505004",
+         "name": "Arth-Goldau",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.049035,
+          "y": 8.549436
+         },
+         "distance": null
+        }
+       }
+      },
+      {
+       "journey": {
+        "name": "000886",
+        "category": "IC",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "2",
+        "operator": "SBB",
+        "to": "Zürich HB",
+        "passList": [
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:07:00+0200",
+          "arrivalTimestamp": 1788970020,
+          "departure": "2026-09-09T18:15:00+0200",
+          "departureTimestamp": 1788970500,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:30:00+0200",
+          "arrivalTimestamp": 1788971400,
+          "departure": "2026-09-09T18:31:00+0200",
+          "departureTimestamp": 1788971460,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:55:00+0200",
+          "arrivalTimestamp": 1788972900,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "8",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8505004",
+         "name": "Arth-Goldau",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.049035,
+          "y": 8.549436
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T18:07:00+0200",
+        "arrivalTimestamp": 1788970020,
+        "departure": "2026-09-09T18:15:00+0200",
+        "departureTimestamp": 1788970500,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505004",
+         "name": "Arth-Goldau",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.049035,
+          "y": 8.549436
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T18:55:00+0200",
+        "arrivalTimestamp": 1788972900,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "8",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "from": {
+      "station": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      },
+      "arrival": null,
+      "arrivalTimestamp": null,
+      "departure": "2026-09-09T18:20:00+0200",
+      "departureTimestamp": 1788970800,
+      "delay": null,
+      "platform": "4",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      }
+     },
+     "to": {
+      "station": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      },
+      "arrival": "2026-09-09T19:25:00+0200",
+      "arrivalTimestamp": 1788974700,
+      "departure": null,
+      "departureTimestamp": null,
+      "delay": null,
+      "platform": "11",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      }
+     },
+     "duration": "00d01:05:00",
+     "transfers": 1,
+     "service": null,
+     "products": [
+      "S2",
+      "IR 75"
+     ],
+     "capacity1st": null,
+     "capacity2nd": null,
+     "sections": [
+      {
+       "journey": {
+        "name": "021270",
+        "category": "S",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "2",
+        "operator": "SBB",
+        "to": "Baar Lindenpark",
+        "passList": [
+         {
+          "station": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": "2026-09-09T18:20:00+0200",
+          "departureTimestamp": 1788970800,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:23:00+0200",
+          "arrivalTimestamp": 1788970980,
+          "departure": "2026-09-09T18:23:00+0200",
+          "departureTimestamp": 1788970980,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505005",
+           "name": "Steinen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.047659,
+            "y": 8.607448
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:25:00+0200",
+          "arrivalTimestamp": 1788971100,
+          "departure": "2026-09-09T18:25:00+0200",
+          "departureTimestamp": 1788971100,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505005",
+           "name": "Steinen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.047659,
+            "y": 8.607448
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:31:00+0200",
+          "arrivalTimestamp": 1788971460,
+          "departure": "2026-09-09T18:32:00+0200",
+          "departureTimestamp": 1788971520,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502205",
+           "name": "Walchwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.098679,
+            "y": 8.516925
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:38:00+0200",
+          "arrivalTimestamp": 1788971880,
+          "departure": "2026-09-09T18:38:00+0200",
+          "departureTimestamp": 1788971880,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502205",
+           "name": "Walchwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.098679,
+            "y": 8.516925
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8517112",
+           "name": "Walchwil Hörndli",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.108453,
+            "y": 8.504776
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:40:00+0200",
+          "arrivalTimestamp": 1788972000,
+          "departure": "2026-09-09T18:40:00+0200",
+          "departureTimestamp": 1788972000,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8517112",
+           "name": "Walchwil Hörndli",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.108453,
+            "y": 8.504776
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502231",
+           "name": "Zug Oberwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.147672,
+            "y": 8.509935
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:45:00+0200",
+          "arrivalTimestamp": 1788972300,
+          "departure": "2026-09-09T18:45:00+0200",
+          "departureTimestamp": 1788972300,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502231",
+           "name": "Zug Oberwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.147672,
+            "y": 8.509935
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8515994",
+           "name": "Zug Fridbach",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.156573,
+            "y": 8.512289
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:46:00+0200",
+          "arrivalTimestamp": 1788972360,
+          "departure": "2026-09-09T18:46:00+0200",
+          "departureTimestamp": 1788972360,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8515994",
+           "name": "Zug Fridbach",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.156573,
+            "y": 8.512289
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8517527",
+           "name": "Zug Casino",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.162313,
+            "y": 8.5152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:48:00+0200",
+          "arrivalTimestamp": 1788972480,
+          "departure": "2026-09-09T18:48:00+0200",
+          "departureTimestamp": 1788972480,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8517527",
+           "name": "Zug Casino",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.162313,
+            "y": 8.5152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502300",
+           "name": "Zug Postplatz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.168269,
+            "y": 8.516929
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:49:00+0200",
+          "arrivalTimestamp": 1788972540,
+          "departure": "2026-09-09T18:49:00+0200",
+          "departureTimestamp": 1788972540,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502300",
+           "name": "Zug Postplatz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.168269,
+            "y": 8.516929
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:53:00+0200",
+          "arrivalTimestamp": 1788972780,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "3",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        },
+        "arrival": null,
+        "arrivalTimestamp": null,
+        "departure": "2026-09-09T18:20:00+0200",
+        "departureTimestamp": 1788970800,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T18:53:00+0200",
+        "arrivalTimestamp": 1788972780,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "3",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        }
+       }
+      },
+      {
+       "journey": {
+        "name": "002133",
+        "category": "IR",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "75",
+        "operator": "SBB",
+        "to": "Konstanz",
+        "passList": [
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:53:00+0200",
+          "arrivalTimestamp": 1788972780,
+          "departure": "2026-09-09T18:58:00+0200",
+          "departureTimestamp": 1788973080,
+          "delay": null,
+          "platform": "5",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502206",
+           "name": "Baar",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.195359,
+            "y": 8.523269
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T19:01:00+0200",
+          "arrivalTimestamp": 1788973260,
+          "departure": "2026-09-09T19:01:00+0200",
+          "departureTimestamp": 1788973260,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502206",
+           "name": "Baar",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.195359,
+            "y": 8.523269
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8503202",
+           "name": "Thalwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.295971,
+            "y": 8.564768
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T19:14:00+0200",
+          "arrivalTimestamp": 1788974040,
+          "departure": "2026-09-09T19:14:00+0200",
+          "departureTimestamp": 1788974040,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503202",
+           "name": "Thalwil",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.295971,
+            "y": 8.564768
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T19:25:00+0200",
+          "arrivalTimestamp": 1788974700,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "11",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T18:53:00+0200",
+        "arrivalTimestamp": 1788972780,
+        "departure": "2026-09-09T18:58:00+0200",
+        "departureTimestamp": 1788973080,
+        "delay": null,
+        "platform": "5",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8502204",
+         "name": "Zug",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.173693,
+          "y": 8.515046
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T19:25:00+0200",
+        "arrivalTimestamp": 1788974700,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "11",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "from": {
+      "station": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      },
+      "arrival": null,
+      "arrivalTimestamp": null,
+      "departure": "2026-09-09T18:55:00+0200",
+      "departureTimestamp": 1788972900,
+      "delay": null,
+      "platform": "4",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8505007",
+       "name": "Brunnen",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 46.999161,
+        "y": 8.610061
+       },
+       "distance": null
+      }
+     },
+     "to": {
+      "station": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      },
+      "arrival": "2026-09-09T19:55:00+0200",
+      "arrivalTimestamp": 1788976500,
+      "departure": null,
+      "departureTimestamp": null,
+      "delay": null,
+      "platform": "7",
+      "prognosis": {
+       "platform": null,
+       "arrival": null,
+       "departure": null,
+       "capacity1st": null,
+       "capacity2nd": null
+      },
+      "realtimeAvailability": null,
+      "location": {
+       "id": "8503000",
+       "name": "Zürich HB",
+       "score": null,
+       "coordinate": {
+        "type": "WGS84",
+        "x": 47.377847,
+        "y": 8.540502
+       },
+       "distance": null
+      }
+     },
+     "duration": "00d01:00:00",
+     "transfers": 0,
+     "service": null,
+     "products": [
+      "IR 46"
+     ],
+     "capacity1st": null,
+     "capacity2nd": null,
+     "sections": [
+      {
+       "journey": {
+        "name": "002434",
+        "category": "IR",
+        "subcategory": null,
+        "categoryCode": null,
+        "number": "46",
+        "operator": "SOB-sob",
+        "to": "Zürich HB",
+        "passList": [
+         {
+          "station": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": "2026-09-09T18:55:00+0200",
+          "departureTimestamp": 1788972900,
+          "delay": null,
+          "platform": "4",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505007",
+           "name": "Brunnen",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 46.999161,
+            "y": 8.610061
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T18:58:00+0200",
+          "arrivalTimestamp": 1788973080,
+          "departure": "2026-09-09T18:59:00+0200",
+          "departureTimestamp": 1788973140,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505006",
+           "name": "Schwyz",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.02639,
+            "y": 8.632152
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T19:07:00+0200",
+          "arrivalTimestamp": 1788973620,
+          "departure": "2026-09-09T19:15:00+0200",
+          "departureTimestamp": 1788974100,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8505004",
+           "name": "Arth-Goldau",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.049035,
+            "y": 8.549436
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T19:30:00+0200",
+          "arrivalTimestamp": 1788975000,
+          "departure": "2026-09-09T19:31:00+0200",
+          "departureTimestamp": 1788975060,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8502204",
+           "name": "Zug",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.173693,
+            "y": 8.515046
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          },
+          "arrival": null,
+          "arrivalTimestamp": null,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": null,
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "0000176",
+           "name": "Zimmerberg-Basistunnel",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.351666,
+            "y": 8.52196
+           },
+           "distance": null
+          }
+         },
+         {
+          "station": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          },
+          "arrival": "2026-09-09T19:55:00+0200",
+          "arrivalTimestamp": 1788976500,
+          "departure": null,
+          "departureTimestamp": null,
+          "delay": null,
+          "platform": "7",
+          "prognosis": {
+           "platform": null,
+           "arrival": null,
+           "departure": null,
+           "capacity1st": null,
+           "capacity2nd": null
+          },
+          "realtimeAvailability": null,
+          "location": {
+           "id": "8503000",
+           "name": "Zürich HB",
+           "score": null,
+           "coordinate": {
+            "type": "WGS84",
+            "x": 47.377847,
+            "y": 8.540502
+           },
+           "distance": null
+          }
+         }
+        ],
+        "capacity1st": null,
+        "capacity2nd": null
+       },
+       "walk": null,
+       "departure": {
+        "station": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        },
+        "arrival": null,
+        "arrivalTimestamp": null,
+        "departure": "2026-09-09T18:55:00+0200",
+        "departureTimestamp": 1788972900,
+        "delay": null,
+        "platform": "4",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8505007",
+         "name": "Brunnen",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 46.999161,
+          "y": 8.610061
+         },
+         "distance": null
+        }
+       },
+       "arrival": {
+        "station": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        },
+        "arrival": "2026-09-09T19:55:00+0200",
+        "arrivalTimestamp": 1788976500,
+        "departure": null,
+        "departureTimestamp": null,
+        "delay": null,
+        "platform": "7",
+        "prognosis": {
+         "platform": null,
+         "arrival": null,
+         "departure": null,
+         "capacity1st": null,
+         "capacity2nd": null
+        },
+        "realtimeAvailability": null,
+        "location": {
+         "id": "8503000",
+         "name": "Zürich HB",
+         "score": null,
+         "coordinate": {
+          "type": "WGS84",
+          "x": 47.377847,
+          "y": 8.540502
+         },
+         "distance": null
+        }
+       }
+      }
+     ]
+    }
+   ],
+   "from": {
+    "id": "8505007",
+    "name": "Brunnen",
+    "score": null,
+    "coordinate": {
+     "type": "WGS84",
+     "x": 46.999161,
+     "y": 8.610061
+    },
+    "distance": null
+   },
+   "to": {
+    "id": "8503000",
+    "name": "Zürich HB",
+    "score": null,
+    "coordinate": {
+     "type": "WGS84",
+     "x": 47.377847,
+     "y": 8.540502
+    },
+    "distance": null
+   },
+   "stations": {
+    "from": [
+     {
+      "id": "8505007",
+      "name": "Brunnen",
+      "score": null,
+      "coordinate": {
+       "type": "WGS84",
+       "x": 46.999161,
+       "y": 8.610061
+      },
+      "distance": null
+     }
+    ],
+    "to": [
+     {
+      "id": "8503000",
+      "name": "Zürich HB",
+      "score": null,
+      "coordinate": {
+       "type": "WGS84",
+       "x": 47.377847,
+       "y": 8.540502
+      },
+      "distance": null
+     }
+    ]
+   }
+  }
+ }
+]

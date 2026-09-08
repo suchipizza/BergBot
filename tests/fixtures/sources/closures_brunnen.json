@@ -1,0 +1,859 @@
+[
+ {
+  "source_id": "ch.closures",
+  "url": "https://api3.geo.admin.ch/rest/services/all/MapServer/identify",
+  "params": {
+   "layers": "all:ch.astra.wanderland-sperrungen_umleitungen",
+   "tolerance": 0,
+   "sr": 4326,
+   "returnGeometry": "true",
+   "geometryFormat": "geojson",
+   "limit": 200,
+   "geometry": "8.550000,46.950000,8.700000,47.050000",
+   "geometryType": "esriGeometryEnvelope"
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "type": "Feature",
+     "featureId": 1982129,
+     "bbox": [
+      8.56989,
+      46.99795,
+      8.578945,
+      47.000838
+     ],
+     "layerBodId": "ch.astra.wanderland-sperrungen_umleitungen",
+     "layerName": "Sperrungen Wanderwege",
+     "id": 1982129,
+     "geometry": {
+      "type": "LineString",
+      "coordinates": [
+       [
+        8.56989,
+        46.99795
+       ],
+       [
+        8.570024,
+        46.998048
+       ],
+       [
+        8.570157,
+        46.998128
+       ],
+       [
+        8.570396,
+        46.998242
+       ],
+       [
+        8.570674,
+        46.998356
+       ],
+       [
+        8.570834,
+        46.998418
+       ],
+       [
+        8.571072,
+        46.998514
+       ],
+       [
+        8.571682,
+        46.998742
+       ],
+       [
+        8.571934,
+        46.998839
+       ],
+       [
+        8.572901,
+        46.999207
+       ],
+       [
+        8.573644,
+        46.999487
+       ],
+       [
+        8.573935,
+        46.999584
+       ],
+       [
+        8.574266,
+        46.999679
+       ],
+       [
+        8.574729,
+        46.99981
+       ],
+       [
+        8.574993,
+        46.999861
+       ],
+       [
+        8.57523,
+        46.999886
+       ],
+       [
+        8.575336,
+        46.999903
+       ],
+       [
+        8.575415,
+        46.999902
+       ],
+       [
+        8.575625,
+        46.999891
+       ],
+       [
+        8.575848,
+        46.99987
+       ],
+       [
+        8.576254,
+        46.999812
+       ],
+       [
+        8.576647,
+        46.999746
+       ],
+       [
+        8.576844,
+        46.999726
+       ],
+       [
+        8.577041,
+        46.999724
+       ],
+       [
+        8.577186,
+        46.999731
+       ],
+       [
+        8.577318,
+        46.999757
+       ],
+       [
+        8.57745,
+        46.999792
+       ],
+       [
+        8.577556,
+        46.999827
+       ],
+       [
+        8.577676,
+        46.999888
+       ],
+       [
+        8.577756,
+        46.99995
+       ],
+       [
+        8.57785,
+        47.000022
+       ],
+       [
+        8.577904,
+        47.000093
+       ],
+       [
+        8.578025,
+        47.000227
+       ],
+       [
+        8.578201,
+        47.000459
+       ],
+       [
+        8.578308,
+        47.000566
+       ],
+       [
+        8.578416,
+        47.000664
+       ],
+       [
+        8.578535,
+        47.000716
+       ],
+       [
+        8.578681,
+        47.000787
+       ],
+       [
+        8.578814,
+        47.000831
+       ],
+       [
+        8.578945,
+        47.000838
+       ]
+      ]
+     },
+     "properties": {
+      "sperrungen_type": "detour",
+      "sperrungen_type_de": "Sperrung mit Umleitung",
+      "sperrungen_type_fr": "Fermeture avec déviation",
+      "sperrungen_type_it": "Chiusura con deviazione",
+      "sperrungen_type_en": "Closure with detour",
+      "land": "wanderland",
+      "duration_de": "bis auf Weiteres",
+      "duration_fr": "jusqu'à nouvel ordre",
+      "duration_it": "fino a nuovo avviso",
+      "duration_en": "until further notice",
+      "reason_de": "Steinschlag",
+      "reason_fr": "Chute de pierres",
+      "reason_it": "Caduta di pietre",
+      "reason_en": "Stone chipping",
+      "title_de": "Steinschlag: Waldstätterweg Brunnen",
+      "title_fr": "Chute de pierres: Waldstätterweg Brunnen",
+      "title_it": "Caduta di pietre: Waldstätterweg Brunnen",
+      "title_en": "Stone chipping: Waldstätterweg Brunnen",
+      "abstract_de": "Infolge Steinschlag ist der Wanderweg zwischen Fallenbach und Brünischart bis auf Weiteres für jeglichen Fussverkehr gesperrt. Als Alternative dient das Trottoir entlang der Kantonsstrasse.",
+      "abstract_fr": "En raison d'une chute de pierres, le chemin de randonnée pédestre entre Fallenbach et Brünischart est fermé à la circulation des piétons jusqu'à nouvel ordre. Comme alternative, il est possible d'utiliser le revêtement de la route cantonale.",
+      "abstract_it": "A causa della caduta di pietre, il sentiero escursionistico tra Fallenbach e Brünischart è chiuso al traffico pedonale fino a nuovo avviso. In alternativa, è disponibile il marciapiede lungo la strada cantonale.",
+      "abstract_en": "Due to rockfall, the hiking trail between Fallenbach and Brünischart is closed to foot traffic until further notice. As an alternative, the pavement along the cantonal road is available.",
+      "state_validate_de": "validiert",
+      "state_validate_fr": "validé",
+      "state_validate_it": "validato",
+      "state_validate_en": "validated",
+      "file_de": null,
+      "file_fr": null,
+      "file_it": null,
+      "file_en": null,
+      "content_provider_de": "Schweizer Wanderwege und kantonale Wanderweg-Fachorganisationen",
+      "content_provider_fr": "Suisse Rando et Associations cantonales de tourisme pédestre",
+      "content_provider_it": "Sentieri Svizzeri e Associazione cantonale per i sentieri escursionistici",
+      "content_provider_en": "Swiss Hiking Federation and Cantonal Hiking Associations",
+      "url1_link_de": null,
+      "url1_link_fr": null,
+      "url1_link_it": null,
+      "url1_link_en": null,
+      "route_nr": null,
+      "segment_nr": null,
+      "label": "detour"
+     }
+    },
+    {
+     "type": "Feature",
+     "featureId": 1982130,
+     "bbox": [
+      8.569695,
+      46.998069,
+      8.578858,
+      47.001082
+     ],
+     "layerBodId": "ch.astra.wanderland-sperrungen_umleitungen",
+     "layerName": "Sperrungen Wanderwege",
+     "id": 1982130,
+     "geometry": {
+      "type": "LineString",
+      "coordinates": [
+       [
+        8.569814,
+        46.998068
+       ],
+       [
+        8.569814,
+        46.998077
+       ],
+       [
+        8.569696,
+        46.998078
+       ],
+       [
+        8.569722,
+        46.998096
+       ],
+       [
+        8.569736,
+        46.998114
+       ],
+       [
+        8.569815,
+        46.99814
+       ],
+       [
+        8.569935,
+        46.998211
+       ],
+       [
+        8.570015,
+        46.998237
+       ],
+       [
+        8.570252,
+        46.998271
+       ],
+       [
+        8.570477,
+        46.998358
+       ],
+       [
+        8.57053,
+        46.998376
+       ],
+       [
+        8.570849,
+        46.998508
+       ],
+       [
+        8.571114,
+        46.998613
+       ],
+       [
+        8.571366,
+        46.998709
+       ],
+       [
+        8.571458,
+        46.998744
+       ],
+       [
+        8.571604,
+        46.998797
+       ],
+       [
+        8.571962,
+        46.998937
+       ],
+       [
+        8.572201,
+        46.999034
+       ],
+       [
+        8.572307,
+        46.999087
+       ],
+       [
+        8.572374,
+        46.999113
+       ],
+       [
+        8.572413,
+        46.999122
+       ],
+       [
+        8.572453,
+        46.999148
+       ],
+       [
+        8.572493,
+        46.999184
+       ],
+       [
+        8.572547,
+        46.999228
+       ],
+       [
+        8.572587,
+        46.999282
+       ],
+       [
+        8.572575,
+        46.999327
+       ],
+       [
+        8.572589,
+        46.999336
+       ],
+       [
+        8.572682,
+        46.999407
+       ],
+       [
+        8.572775,
+        46.999442
+       ],
+       [
+        8.572801,
+        46.999451
+       ],
+       [
+        8.572868,
+        46.999468
+       ],
+       [
+        8.572933,
+        46.999477
+       ],
+       [
+        8.573039,
+        46.999502
+       ],
+       [
+        8.573145,
+        46.999528
+       ],
+       [
+        8.573238,
+        46.999563
+       ],
+       [
+        8.573634,
+        46.999668
+       ],
+       [
+        8.573833,
+        46.999729
+       ],
+       [
+        8.574018,
+        46.999772
+       ],
+       [
+        8.574097,
+        46.999798
+       ],
+       [
+        8.57423,
+        46.999833
+       ],
+       [
+        8.574296,
+        46.99985
+       ],
+       [
+        8.574428,
+        46.999903
+       ],
+       [
+        8.574521,
+        46.999947
+       ],
+       [
+        8.574588,
+        46.999973
+       ],
+       [
+        8.574588,
+        46.999982
+       ],
+       [
+        8.574614,
+        46.999991
+       ],
+       [
+        8.574667,
+        47.000017
+       ],
+       [
+        8.57476,
+        47.000052
+       ],
+       [
+        8.574813,
+        47.00007
+       ],
+       [
+        8.574853,
+        47.000069
+       ],
+       [
+        8.574879,
+        47.000078
+       ],
+       [
+        8.574932,
+        47.000077
+       ],
+       [
+        8.575156,
+        47.000093
+       ],
+       [
+        8.575169,
+        47.000093
+       ],
+       [
+        8.575195,
+        47.000093
+       ],
+       [
+        8.575221,
+        47.000084
+       ],
+       [
+        8.575261,
+        47.000083
+       ],
+       [
+        8.5753,
+        47.000074
+       ],
+       [
+        8.575313,
+        47.000074
+       ],
+       [
+        8.575405,
+        47.000073
+       ],
+       [
+        8.575471,
+        47.000081
+       ],
+       [
+        8.57551,
+        47.000081
+       ],
+       [
+        8.57571,
+        47.000169
+       ],
+       [
+        8.575908,
+        47.000212
+       ],
+       [
+        8.576081,
+        47.000309
+       ],
+       [
+        8.576147,
+        47.000344
+       ],
+       [
+        8.576186,
+        47.000326
+       ],
+       [
+        8.576226,
+        47.000353
+       ],
+       [
+        8.576333,
+        47.000441
+       ],
+       [
+        8.576387,
+        47.000486
+       ],
+       [
+        8.576414,
+        47.000513
+       ],
+       [
+        8.576427,
+        47.00053
+       ],
+       [
+        8.576454,
+        47.000548
+       ],
+       [
+        8.576467,
+        47.000548
+       ],
+       [
+        8.576493,
+        47.000539
+       ],
+       [
+        8.576519,
+        47.000539
+       ],
+       [
+        8.576533,
+        47.000547
+       ],
+       [
+        8.576533,
+        47.000556
+       ],
+       [
+        8.576533,
+        47.000574
+       ],
+       [
+        8.576521,
+        47.000592
+       ],
+       [
+        8.576495,
+        47.00062
+       ],
+       [
+        8.576482,
+        47.00062
+       ],
+       [
+        8.576509,
+        47.000656
+       ],
+       [
+        8.576522,
+        47.000673
+       ],
+       [
+        8.576536,
+        47.000682
+       ],
+       [
+        8.576549,
+        47.000682
+       ],
+       [
+        8.576641,
+        47.000672
+       ],
+       [
+        8.576667,
+        47.000672
+       ],
+       [
+        8.576693,
+        47.000681
+       ],
+       [
+        8.576694,
+        47.00069
+       ],
+       [
+        8.57672,
+        47.000698
+       ],
+       [
+        8.576734,
+        47.000734
+       ],
+       [
+        8.576761,
+        47.000761
+       ],
+       [
+        8.576774,
+        47.000761
+       ],
+       [
+        8.576787,
+        47.000761
+       ],
+       [
+        8.57684,
+        47.000769
+       ],
+       [
+        8.57688,
+        47.000778
+       ],
+       [
+        8.577104,
+        47.000839
+       ],
+       [
+        8.577118,
+        47.000847
+       ],
+       [
+        8.577131,
+        47.000874
+       ],
+       [
+        8.577172,
+        47.00091
+       ],
+       [
+        8.577185,
+        47.000919
+       ],
+       [
+        8.577212,
+        47.000954
+       ],
+       [
+        8.577225,
+        47.000963
+       ],
+       [
+        8.577265,
+        47.000972
+       ],
+       [
+        8.577292,
+        47.000981
+       ],
+       [
+        8.577331,
+        47.000998
+       ],
+       [
+        8.577491,
+        47.001069
+       ],
+       [
+        8.577544,
+        47.001086
+       ],
+       [
+        8.577583,
+        47.001086
+       ],
+       [
+        8.577623,
+        47.001094
+       ],
+       [
+        8.577728,
+        47.001084
+       ],
+       [
+        8.577754,
+        47.001084
+       ],
+       [
+        8.577859,
+        47.001083
+       ],
+       [
+        8.577912,
+        47.001082
+       ],
+       [
+        8.577925,
+        47.001091
+       ],
+       [
+        8.577965,
+        47.001091
+       ],
+       [
+        8.578004,
+        47.001091
+       ],
+       [
+        8.578004,
+        47.001082
+       ],
+       [
+        8.578004,
+        47.001073
+       ],
+       [
+        8.577977,
+        47.001064
+       ],
+       [
+        8.577964,
+        47.001046
+       ],
+       [
+        8.577937,
+        47.001037
+       ],
+       [
+        8.577924,
+        47.001028
+       ],
+       [
+        8.577924,
+        47.001019
+       ],
+       [
+        8.577937,
+        47.001019
+       ],
+       [
+        8.577963,
+        47.00101
+       ],
+       [
+        8.578068,
+        47.001009
+       ],
+       [
+        8.578107,
+        47.001009
+       ],
+       [
+        8.578226,
+        47.000998
+       ],
+       [
+        8.578357,
+        47.000997
+       ],
+       [
+        8.578396,
+        47.000997
+       ],
+       [
+        8.578528,
+        47.000977
+       ],
+       [
+        8.578646,
+        47.000967
+       ],
+       [
+        8.578685,
+        47.000967
+       ],
+       [
+        8.578698,
+        47.000967
+       ],
+       [
+        8.578724,
+        47.000957
+       ],
+       [
+        8.578737,
+        47.000957
+       ],
+       [
+        8.578855,
+        47.000929
+       ]
+      ]
+     },
+     "properties": {
+      "sperrungen_type": "closed_way",
+      "sperrungen_type_de": "Sperrung mit Umleitung",
+      "sperrungen_type_fr": "Fermeture avec déviation",
+      "sperrungen_type_it": "Chiusura con deviazione",
+      "sperrungen_type_en": "Closure with detour",
+      "land": "wanderland",
+      "duration_de": "bis auf Weiteres",
+      "duration_fr": "jusqu'à nouvel ordre",
+      "duration_it": "fino a nuovo avviso",
+      "duration_en": "until further notice",
+      "reason_de": "Steinschlag",
+      "reason_fr": "Chute de pierres",
+      "reason_it": "Caduta di pietre",
+      "reason_en": "Stone chipping",
+      "title_de": "Steinschlag: Waldstätterweg Brunnen",
+      "title_fr": "Chute de pierres: Waldstätterweg Brunnen",
+      "title_it": "Caduta di pietre: Waldstätterweg Brunnen",
+      "title_en": "Stone chipping: Waldstätterweg Brunnen",
+      "abstract_de": "Infolge Steinschlag ist der Wanderweg zwischen Fallenbach und Brünischart bis auf Weiteres für jeglichen Fussverkehr gesperrt. Als Alternative dient das Trottoir entlang der Kantonsstrasse.",
+      "abstract_fr": "En raison d'une chute de pierres, le chemin de randonnée pédestre entre Fallenbach et Brünischart est fermé à la circulation des piétons jusqu'à nouvel ordre. Comme alternative, il est possible d'utiliser le revêtement de la route cantonale.",
+      "abstract_it": "A causa della caduta di pietre, il sentiero escursionistico tra Fallenbach e Brünischart è chiuso al traffico pedonale fino a nuovo avviso. In alternativa, è disponibile il marciapiede lungo la strada cantonale.",
+      "abstract_en": "Due to rockfall, the hiking trail between Fallenbach and Brünischart is closed to foot traffic until further notice. As an alternative, the pavement along the cantonal road is available.",
+      "state_validate_de": "validiert",
+      "state_validate_fr": "validé",
+      "state_validate_it": "validato",
+      "state_validate_en": "validated",
+      "file_de": null,
+      "file_fr": null,
+      "file_it": null,
+      "file_en": null,
+      "content_provider_de": "Schweizer Wanderwege und kantonale Wanderweg-Fachorganisationen",
+      "content_provider_fr": "Suisse Rando et Associations cantonales de tourisme pédestre",
+      "content_provider_it": "Sentieri Svizzeri e Associazione cantonale per i sentieri escursionistici",
+      "content_provider_en": "Swiss Hiking Federation and Cantonal Hiking Associations",
+      "url1_link_de": null,
+      "url1_link_fr": null,
+      "url1_link_it": null,
+      "url1_link_en": null,
+      "route_nr": null,
+      "segment_nr": null,
+      "label": "closed_way"
+     }
+    }
+   ]
+  }
+ }
+]

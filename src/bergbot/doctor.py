@@ -3,11 +3,23 @@
 from __future__ import annotations
 
 import os
+import time
 from typing import Any
 
 from bergbot import __version__
 from bergbot.i18n import load
 from bergbot.paths import cache_dir, user_config_dir
+
+
+def _cache_age(source_id: str) -> int | None:
+    d = cache_dir() / source_id
+    if not d.is_dir():
+        return None
+    files = list(d.iterdir())
+    if not files:
+        return None
+    newest = max(f.stat().st_mtime for f in files)
+    return int(time.time() - newest)
 
 
 def run_doctor() -> dict[str, Any]:
@@ -19,6 +31,8 @@ def run_doctor() -> dict[str, Any]:
             h = adapter.health()
             fr = adapter.freshness()
             lic = adapter.licence()
+            if h.cache_age_s is None:
+                h.cache_age_s = _cache_age(adapter.id)
             adapters.append(
                 {
                     "id": adapter.id,

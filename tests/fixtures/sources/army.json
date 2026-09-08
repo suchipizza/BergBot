@@ -1,0 +1,1016 @@
+[
+ {
+  "source_id": "ch.army",
+  "url": "https://api3.geo.admin.ch/rest/services/all/MapServer/identify",
+  "params": {
+   "layers": "all:ch.vbs.schiessanzeigen",
+   "tolerance": 0,
+   "sr": 4326,
+   "returnGeometry": "true",
+   "geometryFormat": "geojson",
+   "limit": 200,
+   "geometry": "7.750000,46.850000,7.950000,47.000000",
+   "geometryType": "esriGeometryEnvelope"
+  },
+  "data": null,
+  "response": {
+   "results": [
+    {
+     "type": "Feature",
+     "featureId": "1301.060.01",
+     "bbox": [
+      7.823266,
+      46.899631,
+      7.828873,
+      46.902522
+     ],
+     "layerBodId": "ch.vbs.schiessanzeigen",
+     "layerName": "Publizierte Schiessanzeigen, Gefahrenzonen",
+     "id": "1301.060.01",
+     "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
+       [
+        [
+         [
+          7.828861,
+          46.900853,
+          0.0
+         ],
+         [
+          7.828852,
+          46.900859,
+          0.0
+         ],
+         [
+          7.828857,
+          46.90085,
+          0.0
+         ],
+         [
+          7.82855,
+          46.900411,
+          0.0
+         ],
+         [
+          7.827103,
+          46.899695,
+          0.0
+         ],
+         [
+          7.825202,
+          46.899625,
+          0.0
+         ],
+         [
+          7.823791,
+          46.900168,
+          0.0
+         ],
+         [
+          7.823276,
+          46.900979,
+          0.0
+         ],
+         [
+          7.823672,
+          46.901781,
+          0.0
+         ],
+         [
+          7.824718,
+          46.902327,
+          0.0
+         ],
+         [
+          7.826198,
+          46.902406,
+          0.0
+         ],
+         [
+          7.826924,
+          46.902528,
+          0.0
+         ],
+         [
+          7.827414,
+          46.901872,
+          0.0
+         ],
+         [
+          7.828861,
+          46.900853,
+          0.0
+         ]
+        ]
+       ]
+      ]
+     },
+     "properties": {
+      "wochentag": [
+       2,
+       3
+      ],
+      "belplan_id": "1301.060",
+      "bezeichnung": "Trubschachen",
+      "bezeichnung_ort": "Chrümpelhüttli Schiessen",
+      "infobezeichnung": "Koord Absch 13 (+41 79 526 29 64)",
+      "infotelefonnr": "+41 58 468 53 46",
+      "infoemail": "philipp.guedel@vtg.admin.ch",
+      "url_de": "https://www.armee.ch/schiessanzeigen/1301.060",
+      "url_fr": "https://www.armee.ch/avisdetir/1301.060",
+      "url_it": "https://www.armee.ch/avvisoditiro/1301.060",
+      "url_en": "https://www.armee.ch/shootingrangebulletin/1301.060",
+      "belegungsdatum": [
+       "08.09.2026",
+       "09.09.2026"
+      ],
+      "zeit_von": [
+       "0700",
+       "0700"
+      ],
+      "zeit_bis": [
+       "2300",
+       "2300"
+      ],
+      "anmerkung": [
+       "A",
+       "A"
+      ],
+      "pdf_de": [
+       "https://api.zensa.vbs.admin.ch/de/1301.060/18800.pdf",
+       "https://api.zensa.vbs.admin.ch/de/1301.060/18800.pdf"
+      ],
+      "pdf_fr": [
+       "https://api.zensa.vbs.admin.ch/fr/1301.060/18800.pdf",
+       "https://api.zensa.vbs.admin.ch/fr/1301.060/18800.pdf"
+      ],
+      "pdf_it": [
+       "https://api.zensa.vbs.admin.ch/it/1301.060/18800.pdf",
+       "https://api.zensa.vbs.admin.ch/it/1301.060/18800.pdf"
+      ],
+      "pdf_en": [
+       "https://api.zensa.vbs.admin.ch/en/1301.060/18800.pdf",
+       "https://api.zensa.vbs.admin.ch/en/1301.060/18800.pdf"
+      ],
+      "kein_schiessen": [
+       false,
+       false
+      ],
+      "label": "Trubschachen"
+     }
+    },
+    {
+     "type": "Feature",
+     "featureId": "1301.060.02",
+     "bbox": [
+      7.821691,
+      46.898614,
+      7.829629,
+      46.904002
+     ],
+     "layerBodId": "ch.vbs.schiessanzeigen",
+     "layerName": "Publizierte Schiessanzeigen, Gefahrenzonen",
+     "id": "1301.060.02",
+     "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
+       [
+        [
+         [
+          7.825679,
+          46.904015,
+          0.0
+         ],
+         [
+          7.826023,
+          46.904003,
+          0.0
+         ],
+         [
+          7.826365,
+          46.903972,
+          0.0
+         ],
+         [
+          7.826701,
+          46.903919,
+          0.0
+         ],
+         [
+          7.827029,
+          46.903847,
+          0.0
+         ],
+         [
+          7.827347,
+          46.903756,
+          0.0
+         ],
+         [
+          7.827652,
+          46.903646,
+          0.0
+         ],
+         [
+          7.827941,
+          46.903518,
+          0.0
+         ],
+         [
+          7.828214,
+          46.903373,
+          0.0
+         ],
+         [
+          7.828467,
+          46.903213,
+          0.0
+         ],
+         [
+          7.828698,
+          46.903038,
+          0.0
+         ],
+         [
+          7.828907,
+          46.90285,
+          0.0
+         ],
+         [
+          7.82909,
+          46.90265,
+          0.0
+         ],
+         [
+          7.829248,
+          46.90244,
+          0.0
+         ],
+         [
+          7.829378,
+          46.902221,
+          0.0
+         ],
+         [
+          7.82948,
+          46.901995,
+          0.0
+         ],
+         [
+          7.829553,
+          46.901765,
+          0.0
+         ],
+         [
+          7.829596,
+          46.90153,
+          0.0
+         ],
+         [
+          7.82961,
+          46.901294,
+          0.0
+         ],
+         [
+          7.829593,
+          46.901058,
+          0.0
+         ],
+         [
+          7.829546,
+          46.900824,
+          0.0
+         ],
+         [
+          7.82947,
+          46.900594,
+          0.0
+         ],
+         [
+          7.829365,
+          46.900369,
+          0.0
+         ],
+         [
+          7.829231,
+          46.900151,
+          0.0
+         ],
+         [
+          7.829071,
+          46.899942,
+          0.0
+         ],
+         [
+          7.828884,
+          46.899744,
+          0.0
+         ],
+         [
+          7.828673,
+          46.899557,
+          0.0
+         ],
+         [
+          7.828439,
+          46.899384,
+          0.0
+         ],
+         [
+          7.828184,
+          46.899225,
+          0.0
+         ],
+         [
+          7.827909,
+          46.899082,
+          0.0
+         ],
+         [
+          7.827618,
+          46.898956,
+          0.0
+         ],
+         [
+          7.827311,
+          46.898848,
+          0.0
+         ],
+         [
+          7.826992,
+          46.898759,
+          0.0
+         ],
+         [
+          7.826663,
+          46.898689,
+          0.0
+         ],
+         [
+          7.826326,
+          46.898639,
+          0.0
+         ],
+         [
+          7.825985,
+          46.898609,
+          0.0
+         ],
+         [
+          7.82564,
+          46.8986,
+          0.0
+         ],
+         [
+          7.825296,
+          46.898612,
+          0.0
+         ],
+         [
+          7.824955,
+          46.898644,
+          0.0
+         ],
+         [
+          7.824619,
+          46.898696,
+          0.0
+         ],
+         [
+          7.824291,
+          46.898768,
+          0.0
+         ],
+         [
+          7.823973,
+          46.89886,
+          0.0
+         ],
+         [
+          7.823668,
+          46.89897,
+          0.0
+         ],
+         [
+          7.823378,
+          46.899098,
+          0.0
+         ],
+         [
+          7.823106,
+          46.899242,
+          0.0
+         ],
+         [
+          7.822853,
+          46.899403,
+          0.0
+         ],
+         [
+          7.822622,
+          46.899578,
+          0.0
+         ],
+         [
+          7.822413,
+          46.899766,
+          0.0
+         ],
+         [
+          7.822229,
+          46.899965,
+          0.0
+         ],
+         [
+          7.822072,
+          46.900176,
+          0.0
+         ],
+         [
+          7.821941,
+          46.900394,
+          0.0
+         ],
+         [
+          7.821839,
+          46.90062,
+          0.0
+         ],
+         [
+          7.821767,
+          46.900851,
+          0.0
+         ],
+         [
+          7.821723,
+          46.901085,
+          0.0
+         ],
+         [
+          7.82171,
+          46.901321,
+          0.0
+         ],
+         [
+          7.821727,
+          46.901557,
+          0.0
+         ],
+         [
+          7.821773,
+          46.901791,
+          0.0
+         ],
+         [
+          7.821849,
+          46.902021,
+          0.0
+         ],
+         [
+          7.821955,
+          46.902246,
+          0.0
+         ],
+         [
+          7.822088,
+          46.902464,
+          0.0
+         ],
+         [
+          7.822249,
+          46.902673,
+          0.0
+         ],
+         [
+          7.822435,
+          46.902871,
+          0.0
+         ],
+         [
+          7.822646,
+          46.903058,
+          0.0
+         ],
+         [
+          7.82288,
+          46.903231,
+          0.0
+         ],
+         [
+          7.823136,
+          46.90339,
+          0.0
+         ],
+         [
+          7.82341,
+          46.903533,
+          0.0
+         ],
+         [
+          7.823702,
+          46.903659,
+          0.0
+         ],
+         [
+          7.824008,
+          46.903767,
+          0.0
+         ],
+         [
+          7.824327,
+          46.903856,
+          0.0
+         ],
+         [
+          7.824656,
+          46.903926,
+          0.0
+         ],
+         [
+          7.824993,
+          46.903976,
+          0.0
+         ],
+         [
+          7.825335,
+          46.904006,
+          0.0
+         ],
+         [
+          7.825679,
+          46.904015,
+          0.0
+         ]
+        ]
+       ]
+      ]
+     },
+     "properties": {
+      "wochentag": [
+       2,
+       3
+      ],
+      "belplan_id": "1301.060",
+      "bezeichnung": "Trubschachen",
+      "bezeichnung_ort": "Chrümpelhüttli Sprengen",
+      "infobezeichnung": "Koord Absch 13 (+41 79 526 29 64)",
+      "infotelefonnr": "+41 58 468 53 46",
+      "infoemail": "philipp.guedel@vtg.admin.ch",
+      "url_de": "https://www.armee.ch/schiessanzeigen/1301.060",
+      "url_fr": "https://www.armee.ch/avisdetir/1301.060",
+      "url_it": "https://www.armee.ch/avvisoditiro/1301.060",
+      "url_en": "https://www.armee.ch/shootingrangebulletin/1301.060",
+      "belegungsdatum": [
+       "08.09.2026",
+       "09.09.2026"
+      ],
+      "zeit_von": [
+       "0700",
+       "0700"
+      ],
+      "zeit_bis": [
+       "2300",
+       "2300"
+      ],
+      "anmerkung": [
+       "B",
+       "B"
+      ],
+      "pdf_de": [
+       "https://api.zensa.vbs.admin.ch/de/1301.060/18800.pdf",
+       "https://api.zensa.vbs.admin.ch/de/1301.060/18800.pdf"
+      ],
+      "pdf_fr": [
+       "https://api.zensa.vbs.admin.ch/fr/1301.060/18800.pdf",
+       "https://api.zensa.vbs.admin.ch/fr/1301.060/18800.pdf"
+      ],
+      "pdf_it": [
+       "https://api.zensa.vbs.admin.ch/it/1301.060/18800.pdf",
+       "https://api.zensa.vbs.admin.ch/it/1301.060/18800.pdf"
+      ],
+      "pdf_en": [
+       "https://api.zensa.vbs.admin.ch/en/1301.060/18800.pdf",
+       "https://api.zensa.vbs.admin.ch/en/1301.060/18800.pdf"
+      ],
+      "kein_schiessen": [
+       false,
+       false
+      ],
+      "label": "Trubschachen"
+     }
+    },
+    {
+     "type": "Feature",
+     "featureId": "1302.020.01",
+     "bbox": [
+      7.839292,
+      46.87603,
+      7.842294,
+      46.87796
+     ],
+     "layerBodId": "ch.vbs.schiessanzeigen",
+     "layerName": "Publizierte Schiessanzeigen, Gefahrenzonen",
+     "id": "1302.020.01",
+     "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
+       [
+        [
+         [
+          7.842228,
+          46.876678,
+          0.0
+         ],
+         [
+          7.842013,
+          46.876715,
+          0.0
+         ],
+         [
+          7.841876,
+          46.87672,
+          0.0
+         ],
+         [
+          7.841539,
+          46.876619,
+          0.0
+         ],
+         [
+          7.841236,
+          46.876436,
+          0.0
+         ],
+         [
+          7.840578,
+          46.876426,
+          0.0
+         ],
+         [
+          7.840336,
+          46.876141,
+          0.0
+         ],
+         [
+          7.840035,
+          46.876027,
+          0.0
+         ],
+         [
+          7.839851,
+          46.876163,
+          0.0
+         ],
+         [
+          7.839853,
+          46.876428,
+          0.0
+         ],
+         [
+          7.840017,
+          46.876611,
+          0.0
+         ],
+         [
+          7.839916,
+          46.876792,
+          0.0
+         ],
+         [
+          7.839298,
+          46.876843,
+          0.0
+         ],
+         [
+          7.839402,
+          46.877,
+          0.0
+         ],
+         [
+          7.839465,
+          46.877334,
+          0.0
+         ],
+         [
+          7.839615,
+          46.877631,
+          0.0
+         ],
+         [
+          7.839976,
+          46.877629,
+          0.0
+         ],
+         [
+          7.840832,
+          46.877965,
+          0.0
+         ],
+         [
+          7.841015,
+          46.877961,
+          0.0
+         ],
+         [
+          7.841213,
+          46.877795,
+          0.0
+         ],
+         [
+          7.841357,
+          46.877598,
+          0.0
+         ],
+         [
+          7.841497,
+          46.877536,
+          0.0
+         ],
+         [
+          7.841811,
+          46.877255,
+          0.0
+         ],
+         [
+          7.842083,
+          46.877142,
+          0.0
+         ],
+         [
+          7.842273,
+          46.877009,
+          0.0
+         ],
+         [
+          7.842285,
+          46.876807,
+          0.0
+         ],
+         [
+          7.842228,
+          46.876678,
+          0.0
+         ]
+        ]
+       ]
+      ]
+     },
+     "properties": {
+      "wochentag": [
+       2,
+       3
+      ],
+      "belplan_id": "1302.020",
+      "bezeichnung": "Eggiwil/Geissbach",
+      "bezeichnung_ort": "Geissbach",
+      "infobezeichnung": "Koord Absch 13 (+41 79 526 29 64)",
+      "infotelefonnr": "+41 58 468 53 46",
+      "infoemail": "philipp.guedel@vtg.admin.ch",
+      "url_de": "https://www.armee.ch/schiessanzeigen/1302.020",
+      "url_fr": "https://www.armee.ch/avisdetir/1302.020",
+      "url_it": "https://www.armee.ch/avvisoditiro/1302.020",
+      "url_en": "https://www.armee.ch/shootingrangebulletin/1302.020",
+      "belegungsdatum": [
+       "08.09.2026",
+       "09.09.2026"
+      ],
+      "zeit_von": [
+       "0700",
+       "0700"
+      ],
+      "zeit_bis": [
+       "2300",
+       "2300"
+      ],
+      "anmerkung": [
+       "A",
+       "A"
+      ],
+      "pdf_de": [
+       "https://api.zensa.vbs.admin.ch/de/1302.020/18801.pdf",
+       "https://api.zensa.vbs.admin.ch/de/1302.020/18801.pdf"
+      ],
+      "pdf_fr": [
+       "https://api.zensa.vbs.admin.ch/fr/1302.020/18801.pdf",
+       "https://api.zensa.vbs.admin.ch/fr/1302.020/18801.pdf"
+      ],
+      "pdf_it": [
+       "https://api.zensa.vbs.admin.ch/it/1302.020/18801.pdf",
+       "https://api.zensa.vbs.admin.ch/it/1302.020/18801.pdf"
+      ],
+      "pdf_en": [
+       "https://api.zensa.vbs.admin.ch/en/1302.020/18801.pdf",
+       "https://api.zensa.vbs.admin.ch/en/1302.020/18801.pdf"
+      ],
+      "kein_schiessen": [
+       false,
+       false
+      ],
+      "label": "Eggiwil/Geissbach"
+     }
+    },
+    {
+     "type": "Feature",
+     "featureId": "1302.020.02",
+     "bbox": [
+      7.835478,
+      46.875184,
+      7.836489,
+      46.876264
+     ],
+     "layerBodId": "ch.vbs.schiessanzeigen",
+     "layerName": "Publizierte Schiessanzeigen, Gefahrenzonen",
+     "id": "1302.020.02",
+     "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
+       [
+        [
+         [
+          7.836238,
+          46.876265,
+          0.0
+         ],
+         [
+          7.836488,
+          46.876094,
+          0.0
+         ],
+         [
+          7.836432,
+          46.876047,
+          0.0
+         ],
+         [
+          7.836391,
+          46.876003,
+          0.0
+         ],
+         [
+          7.836373,
+          46.875951,
+          0.0
+         ],
+         [
+          7.836362,
+          46.875876,
+          0.0
+         ],
+         [
+          7.836382,
+          46.875805,
+          0.0
+         ],
+         [
+          7.836403,
+          46.875746,
+          0.0
+         ],
+         [
+          7.836388,
+          46.875659,
+          0.0
+         ],
+         [
+          7.836337,
+          46.875622,
+          0.0
+         ],
+         [
+          7.836316,
+          46.875586,
+          0.0
+         ],
+         [
+          7.836197,
+          46.875387,
+          0.0
+         ],
+         [
+          7.836111,
+          46.875347,
+          0.0
+         ],
+         [
+          7.83588,
+          46.875244,
+          0.0
+         ],
+         [
+          7.835839,
+          46.875214,
+          0.0
+         ],
+         [
+          7.835791,
+          46.875195,
+          0.0
+         ],
+         [
+          7.83576,
+          46.875183,
+          0.0
+         ],
+         [
+          7.83548,
+          46.875356,
+          0.0
+         ],
+         [
+          7.835488,
+          46.875591,
+          0.0
+         ],
+         [
+          7.835495,
+          46.875636,
+          0.0
+         ],
+         [
+          7.835533,
+          46.875681,
+          0.0
+         ],
+         [
+          7.835876,
+          46.876005,
+          0.0
+         ],
+         [
+          7.836007,
+          46.876115,
+          0.0
+         ],
+         [
+          7.836114,
+          46.876194,
+          0.0
+         ],
+         [
+          7.836238,
+          46.876265,
+          0.0
+         ]
+        ]
+       ]
+      ]
+     },
+     "properties": {
+      "wochentag": [
+       2,
+       3
+      ],
+      "belplan_id": "1302.020",
+      "bezeichnung": "Eggiwil/Geissbach",
+      "bezeichnung_ort": "KD",
+      "infobezeichnung": "Koord Absch 13 (+41 79 526 29 64)",
+      "infotelefonnr": "+41 58 468 53 46",
+      "infoemail": "philipp.guedel@vtg.admin.ch",
+      "url_de": "https://www.armee.ch/schiessanzeigen/1302.020",
+      "url_fr": "https://www.armee.ch/avisdetir/1302.020",
+      "url_it": "https://www.armee.ch/avvisoditiro/1302.020",
+      "url_en": "https://www.armee.ch/shootingrangebulletin/1302.020",
+      "belegungsdatum": [
+       "08.09.2026",
+       "09.09.2026"
+      ],
+      "zeit_von": [
+       "0700",
+       "0700"
+      ],
+      "zeit_bis": [
+       "2300",
+       "2300"
+      ],
+      "anmerkung": [
+       "B",
+       "B"
+      ],
+      "pdf_de": [
+       "https://api.zensa.vbs.admin.ch/de/1302.020/18801.pdf",
+       "https://api.zensa.vbs.admin.ch/de/1302.020/18801.pdf"
+      ],
+      "pdf_fr": [
+       "https://api.zensa.vbs.admin.ch/fr/1302.020/18801.pdf",
+       "https://api.zensa.vbs.admin.ch/fr/1302.020/18801.pdf"
+      ],
+      "pdf_it": [
+       "https://api.zensa.vbs.admin.ch/it/1302.020/18801.pdf",
+       "https://api.zensa.vbs.admin.ch/it/1302.020/18801.pdf"
+      ],
+      "pdf_en": [
+       "https://api.zensa.vbs.admin.ch/en/1302.020/18801.pdf",
+       "https://api.zensa.vbs.admin.ch/en/1302.020/18801.pdf"
+      ],
+      "kein_schiessen": [
+       false,
+       false
+      ],
+      "label": "Eggiwil/Geissbach"
+     }
+    }
+   ]
+  }
+ }
+]

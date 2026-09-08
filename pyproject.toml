@@ -85,7 +85,7 @@ select = ["E", "F", "I", "UP", "B", "W"]
 ignore = ["E501"]
 
 [tool.mypy]
-python_version = "3.11"
+python_version = "3.12"
 strict = true
 plugins = ["pydantic.mypy"]
 mypy_path = "src"
