@@ -150,23 +150,37 @@ class HttpFetcher:
         if offline:
             raise SourceUnavailable(source_id, what)
         t0 = time.monotonic()
-        try:
-            if method == "POST":
-                resp = self._client_or_new().post(
-                    url,
-                    params=params,
-                    content=data,
-                    headers={"Content-Type": "application/x-www-form-urlencoded"},
-                )
-            else:
-                resp = self._client_or_new().get(url, params=params)
-            resp.raise_for_status()
-            payload = resp.json()
-        except (httpx.HTTPError, ValueError) as e:
+        payload: Any = None
+        last_exc: BaseException | None = None
+        for attempt in range(3):
+            try:
+                if method == "POST":
+                    resp = self._client_or_new().post(
+                        url,
+                        params=params,
+                        content=data,
+                        headers={"Content-Type": "application/x-www-form-urlencoded"},
+                    )
+                else:
+                    resp = self._client_or_new().get(url, params=params)
+                if resp.status_code in (429, 500, 502, 503, 504) and attempt < 2:
+                    time.sleep(1.5 * (attempt + 1))
+                    continue
+                resp.raise_for_status()
+                payload = resp.json()
+                last_exc = None
+                break
+            except (httpx.HTTPError, ValueError) as e:
+                last_exc = e
+                if attempt < 2 and not isinstance(e, ValueError):
+                    time.sleep(1.0 * (attempt + 1))
+                    continue
+                break
+        if last_exc is not None:
             stale = self._read_cache(path, ttl_s, allow_stale=True)
             if stale is not None:
                 return stale
-            raise SourceUnavailable(source_id, what, e) from e
+            raise SourceUnavailable(source_id, what, last_exc) from last_exc
         latency = int((time.monotonic() - t0) * 1000)
         if ttl_s > 0:
             self._write_cache(path, str(resp.url), payload)

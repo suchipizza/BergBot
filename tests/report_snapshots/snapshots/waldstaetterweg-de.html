@@ -9,7 +9,8 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);overflow-wrap:anywhere;font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-main{max-width:760px;margin:0 auto;padding:16px}
+main{max-width:760px;margin:0 auto;padding:16px;overflow-x:hidden}
+img,svg{max-width:100%;height:auto}
 h1{font-size:1.45rem;line-height:1.25;margin:0 0 4px}
 h2{font-size:1.15rem;margin:28px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
 h3{font-size:1rem;margin:16px 0 6px}
@@ -17,12 +18,12 @@ p{margin:6px 0}
 .muted{color:var(--muted)}
 .small{font-size:.85rem}
 .hero{display:flex;gap:14px;align-items:flex-start}
-.hero .txt{flex:1}
+.hero .txt{flex:1;min-width:0}
 .mascot{width:84px;height:84px;object-fit:contain;flex:none}
 .warnbox{border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin:14px 0;background:var(--soft)}
 .warnbox.has-critical{border-color:var(--crit)}
 .warnbox.has-important{border-color:var(--imp)}
-.warn{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;padding:10px 0;border-top:1px solid var(--line)}
+.warn{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 10px;padding:10px 0;border-top:1px solid var(--line)}
 .warn:first-of-type{border-top:0}
 .warn>*{min-width:0}
 .warn .mark{font-size:1.2rem;line-height:1.2}
@@ -34,7 +35,7 @@ p{margin:6px 0}
 .orig{grid-column:2;font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);padding-left:8px;margin-top:4px}
 .fixed{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font-weight:700}
 .card{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
-.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px}
+.kv{display:grid;grid-template-columns:minmax(0,max-content) minmax(0,1fr);gap:4px 14px}
 .kv dt{color:var(--muted)}
 .kv dd{margin:0}
 table{width:100%;border-collapse:collapse;font-size:.9rem}

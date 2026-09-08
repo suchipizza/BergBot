@@ -38,3 +38,10 @@ All notable changes to Bergbot. Milestones follow docs/BERGBOT_WORK_ORDER.md.
 - Evidence badges A–E on every finding, verbatim source text beside the translation, `Bergbot informs. The decision is yours.` closes the warnings block.
 - Mascot pipeline `bergbot brand build` (background removal, WebP ≤ 40 KB, 512 px PNG, avatar); header mascot only in playful register and never with a critical warning; footer mascot always; never inside the warnings block.
 - `bergbot render` with 1 MB warning / 2 MB fail; snapshot tests per locale, forbidden-vocabulary scan of rendered HTML, self-containment test.
+
+### M5 — Conversation layer
+- `conversation/intent.py`: rule-based intent + constraint extraction in EN/FR/DE/IT (dates, cantons, places, ascent, distance, travel time and origin, T-grade, hut/dog/kids/loop…), emergency short-circuit, attachment → audit; LLM schema/prompt for refinement.
+- `conversation/suggestions.py` (seasonal, regional), `message.py` (≤ 12 lines, fixed order, both registers, folded extra warnings, closing question with media offer), `replanning.py` (constraint diff → steps; relative modifiers), `media.py` (curated `data/famous_routes.yaml` + prominence), `qa.py` (answers from audit context; safety frame).
+- `agent/`: `Session` (deterministic orchestration, files in workdir, register applied by rule) and `LLM` (Anthropic API: structured intent refinement, web verification returning `WebVerification`, media links, free chat within register). Works without a key (deterministic mode).
+- `bergbot chat` REPL with optional slash commands; canton centroids `data/cantons.json` anchor `find`.
+- Tests: 40 intent fixtures (100 %), message shape/register/forbidden vocabulary, session e2e on recorded fixtures for the three canonical prompts in four languages, emergency and help.

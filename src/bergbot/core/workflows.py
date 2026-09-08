@@ -299,7 +299,7 @@ def _candidates(
     lang_n = normalise_lang(lang)
     date = constraints.date or default_date()
     start_time = constraints.start_time or "09:00"
-    bbox = search_bbox(place, radius_for(constraints))
+    bbox = search_bbox(place, radius_for(constraints, place))
     activity = constraints.activity or Activity.hiking
     routes = named_stage_candidates(bbox, fetcher, activity) if not offline else []
     # nearest routes to the place first — a stage that merely crosses the search box 10 km away ranks last

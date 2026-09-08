@@ -1,0 +1,68 @@
+# Curated seed of well-known Swiss hiking routes (names as they appear on SwitzerlandMobility / GeoAdmin).
+# Used by conversation/media.py together with the prominence heuristic (national/regional route number,
+# OSM/wanderland match). Add rows via PR; keep the official page as the first media link.
+routes:
+  - name: "Hardergrat"
+    aliases: ["Brienzergrat", "Harder Grat"]
+    official_url: "https://www.interlaken.ch/erlebnisse/berge-und-aussicht/harder-kulm"
+    region: be
+  - name: "Waldstätterweg"
+    aliases: ["Weg der Schweiz", "Swiss Path"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-98"
+    region: sz
+  - name: "Via Alpina"
+    aliases: []
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-1"
+    region: ch
+  - name: "Rigi-Panoramaweg"
+    aliases: ["Rigi Panoramaweg", "Rigi Kaltbad – Rigi Scheidegg"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-560"
+    region: sz
+  - name: "Gemmipass"
+    aliases: ["Gemmi", "Gemmi Pass", "Gemmiweg"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-6"
+    region: vs
+  - name: "Aletsch Panoramaweg"
+    aliases: ["Aletschgletscher", "Aletsch Panorama Trail"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-39"
+    region: vs
+  - name: "Oeschinensee"
+    aliases: ["Oeschinen", "Lake Oeschinen"]
+    official_url: "https://www.oeschinensee.ch"
+    region: be
+  - name: "Faulhornweg"
+    aliases: ["Faulhorn", "Schynige Platte – First"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-37"
+    region: be
+  - name: "Creux du Van"
+    aliases: ["Creux-du-Van"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-84"
+    region: ne
+  - name: "Sentiero Cristallina"
+    aliases: ["Cristallina"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-55"
+    region: ti
+  - name: "Vier-Seen-Wanderung"
+    aliases: ["4-Seen-Wanderung", "Four Lakes Hike", "Melchsee-Frutt – Trübsee"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-611"
+    region: ow
+  - name: "Pizol 5-Seen-Wanderung"
+    aliases: ["5-Seen-Wanderung", "Five Lakes Pizol"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-870"
+    region: sg
+  - name: "Eiger Trail"
+    aliases: ["Eigertrail"]
+    official_url: "https://www.jungfrau.ch"
+    region: be
+  - name: "Lac de Taney"
+    aliases: ["Taney", "Tanay"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-64"
+    region: vs
+  - name: "Greina"
+    aliases: ["Greinaebene", "Passo della Greina", "Greina Hochebene"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-43"
+    region: gr
+  - name: "Clariden-Höhenweg"
+    aliases: ["Claridenhöhenweg", "Klausenpass – Fisetenpass"]
+    official_url: "https://schweizmobil.ch/en/hiking-in-switzerland/route-887"
+    region: gl

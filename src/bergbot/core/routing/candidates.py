@@ -34,7 +34,9 @@ def search_bbox(place: Place, radius_km: float) -> tuple[float, float, float, fl
     return (place.lon - dlon, place.lat - dlat, place.lon + dlon, place.lat + dlat)
 
 
-def radius_for(constraints: Constraint) -> float:
+def radius_for(constraints: Constraint, place: Place | None = None) -> float:
+    if place is not None and place.source == "data/cantons.json" and not constraints.place:
+        return 12.0
     if constraints.max_distance_km:
         return max(3.0, min(constraints.max_distance_km * 0.6, 12.0))
     return 6.0

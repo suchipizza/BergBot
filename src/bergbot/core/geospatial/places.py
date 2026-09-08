@@ -59,6 +59,8 @@ def resolve_place(text: str, lang: str = "en", fetcher: Fetcher | None = None) -
     if not recs:
         raise LookupError(f"no place found for '{text}'")
     recs.sort(key=lambda r: _rank_key(r.payload, query, canton_hint))
+    if canton_hint is None:
+        recs = _prefer_place_with_stop(recs, query, g)
     r = recs[0]
     label = r.payload["label"]
     kind = OBJECTCLASS_TO_KIND.get(str(r.payload.get("objectclass")), PlaceKind.unknown)
@@ -166,6 +168,34 @@ def _rank_key(payload: dict[str, Any], query: str, canton_hint: str | None) -> t
         str(payload.get("origin") or ""), 2
     )
     return (canton_ok, exact, origin, cls, -(payload.get("weight") or 0))
+
+
+def _prefer_place_with_stop(recs: list[Any], query: str, g: GeoAdminAdapter) -> list[Any]:
+    """Several localities share a name (Brunnen SZ / VS / SG…). A place that has a public-transport stop of the
+    same name is almost always the one people mean; GeoAdmin lists stops with origin 'haltestellen'."""
+    q = query.lower().strip()
+    exact = [r for r in recs if re.split(r"\s*\(", r.payload["label"], maxsplit=1)[0].strip().lower() == q]
+    if len(exact) < 2:
+        return recs
+    try:
+        stops = [
+            s
+            for s in g.search(query, limit=10, origins="haltestellen")
+            if s.payload["label"].split(",")[0].strip().lower() == q
+        ]
+    except SourceUnavailable:
+        return recs
+
+    def near_stop(r: Any) -> int:
+        for s_ in stops:
+            if (
+                abs(s_.payload["lat"] - r.payload["lat"]) < 0.03
+                and abs(s_.payload["lon"] - r.payload["lon"]) < 0.04
+            ):
+                return 0
+        return 1
+
+    return sorted(recs, key=near_stop)
 
 
 def _enrich(p: Place, fetcher: Fetcher | None) -> Place:

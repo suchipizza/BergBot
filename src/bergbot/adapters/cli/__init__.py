@@ -1,1 +1,1 @@
-"""Bergbot package — see module docstrings."""
+"""CLI chat adapter (`bergbot chat`)."""

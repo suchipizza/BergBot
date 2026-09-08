@@ -65,8 +65,10 @@ class GeoAdminAdapter:
             return Health(ok=False, note=str(e))
 
     # -- services --
-    def search(self, text: str, limit: int = 8) -> list[Record]:
-        params = {"searchText": text, "type": "locations", "sr": 4326, "limit": limit}
+    def search(self, text: str, limit: int = 8, origins: str | None = None) -> list[Record]:
+        params: dict[str, Any] = {"searchText": text, "type": "locations", "sr": 4326, "limit": limit}
+        if origins:
+            params["origins"] = origins
         res = self.fetcher.get_json(
             self.id, SEARCH_URL, params, ttl_s=self.ttl_s, what=f"place search '{text}'"
         )
