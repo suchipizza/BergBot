@@ -1,0 +1,24 @@
+{
+  "name": "bergbot",
+  "owner": {
+    "name": "Bergbot",
+    "url": "https://github.com/suchipizza/BergBot"
+  },
+  "metadata": {
+    "description": "Check everything before you go to the mountains — Swiss hiking audits, route finding and reports, warnings first.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "bergbot",
+      "source": "./plugins/bergbot",
+      "description": "Mountain-planning agent for Switzerland: find, around, audit, check, export, media. Official Swiss data + live web, ≤12-line answers, self-contained HTML report, GPX for swisstopo.",
+      "version": "0.1.0",
+      "author": {"name": "Bergbot contributors"},
+      "homepage": "https://github.com/suchipizza/BergBot",
+      "license": "MIT",
+      "keywords": ["hiking", "switzerland", "gpx", "swisstopo", "mountains", "safety"],
+      "category": "productivity"
+    }
+  ]
+}

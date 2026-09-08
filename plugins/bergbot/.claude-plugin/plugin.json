@@ -1,0 +1,10 @@
+{
+  "name": "bergbot",
+  "version": "0.1.0",
+  "description": "Check everything before you go to the mountains. Swiss hiking: find routes, audit a GPX, check lifts/huts/fire bans, export GPX — warnings first, never 'safe'.",
+  "author": {"name": "Bergbot contributors", "url": "https://github.com/suchipizza/BergBot"},
+  "homepage": "https://github.com/suchipizza/BergBot",
+  "repository": "https://github.com/suchipizza/BergBot",
+  "license": "MIT",
+  "keywords": ["hiking", "switzerland", "gpx", "swisstopo", "mountains"]
+}

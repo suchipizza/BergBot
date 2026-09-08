@@ -51,3 +51,9 @@ All notable changes to Bergbot. Milestones follow docs/BERGBOT_WORK_ORDER.md.
 - Off-network synthesis test: every graph candidate vertex within 30 m of the official network; named candidates come from the SwitzerlandMobility layer.
 - Benchmark harness `bergbot benchmark` (10 real routes, `docs/benchmark/`), offline replay in CI, 10/10 pass on the recording date; network-membership fetch tiled along the route.
 - Packaging: hatch build hook copies locales, brand and seed data into the wheel (`bergbot/_data`); editable installs no longer shadowed.
+
+### M7 — Adapters and plugin
+- Telegram: `bergbot connect telegram` (token stored in ~/.bergbot, long polling), suggestions as reply keyboard, inline GPX / another / photos buttons (photos only in playful register), GPX/HTML as documents, location share → around, progress edits.
+- `bergbot chat` REPL with optional slash commands.
+- Claude plugin marketplace (`.claude-plugin/marketplace.json`, `plugins/bergbot`): 7 skills (audit, find, around, check, export, media, help) describing the exact `bergbot … --json` calls, web-verification and register rules; 6 slash commands; 6 sub-agents (route-investigator, conditions-analyst, logistics-researcher, restriction-researcher, evidence-reviewer, media-scout).
+- Channel passthrough documented with an e2e fixture; decision 004.

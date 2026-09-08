@@ -1,1 +1,1 @@
-"""Bergbot package — see module docstrings."""
+"""Telegram adapter (local long-polling bot)."""
