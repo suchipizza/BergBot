@@ -1,0 +1,97 @@
+[project]
+name = "bergbot"
+version = "0.1.0"
+description = "Open-source, local-first mountain-planning agent for Switzerland. Check everything before you go to the mountains."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "Bergbot contributors" }]
+keywords = ["hiking", "switzerland", "gpx", "swisstopo", "agent", "telegram", "claude"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = [
+  "pydantic>=2.7",
+  "httpx>=0.27",
+  "shapely>=2.0",
+  "pyproj>=3.6",
+  "gpxpy>=1.6",
+  "geojson>=3.1",
+  "jinja2>=3.1",
+  "typer>=0.12",
+  "pyyaml>=6.0",
+  "pillow>=10.3",
+  "python-dateutil>=2.9",
+]
+
+[project.optional-dependencies]
+telegram = ["python-telegram-bot>=21.0"]
+llm = ["anthropic>=0.40"]
+all = ["python-telegram-bot>=21.0", "anthropic>=0.40"]
+
+[project.urls]
+Homepage = "https://github.com/suchipizza/BergBot"
+Repository = "https://github.com/suchipizza/BergBot"
+Issues = "https://github.com/suchipizza/BergBot/issues"
+
+[project.scripts]
+bergbot = "bergbot.cli:app"
+
+[tool.bergbot]
+github_url = "https://github.com/suchipizza/BergBot"
+website_url = "https://suchipizza.github.io/BergBot"
+waitlist_url = "https://tally.so/r/bergbot-waitlist"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bergbot"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"locales" = "bergbot/_data/locales"
+"brand/mascot/manifest.json" = "bergbot/_data/brand/mascot/manifest.json"
+"brand/mascot/dist" = "bergbot/_data/brand/mascot/dist"
+"data" = "bergbot/_data/data"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.2",
+  "pytest-snapshot>=0.9",
+  "hypothesis>=6.100",
+  "ruff>=0.5",
+  "mypy>=1.10",
+  "types-PyYAML",
+  "types-python-dateutil",
+  "respx>=0.21",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+per-file-ignores = { "src/bergbot/cli.py" = ["B008"], "src/bergbot/adapters/**" = ["B008"] }
+select = ["E", "F", "I", "UP", "B", "W"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+plugins = ["pydantic.mypy"]
+mypy_path = "src"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

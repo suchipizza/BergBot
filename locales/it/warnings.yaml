@@ -1,0 +1,78 @@
+trail_closure:
+  title: "Tratto chiuso"
+  body: "Chiusura ufficiale tra il km {from_km} e il km {to_km} ({source})."
+diversion:
+  title: "Deviazione"
+  body: "Tra il km {from_km} e il km {to_km} vale una deviazione ufficiale ({source})."
+fire_restriction:
+  title: "Restrizione fuochi"
+  body: "{scope}: {restriction} ({source})."
+fire_danger:
+  title: "Pericolo di incendio boschivo"
+  body: "Pericolo di incendio boschivo di grado {level} ({label}) nella zona dell'itinerario ({source})."
+shooting_activity:
+  title: "Attività di tiro"
+  body: "L'itinerario attraversa la zona di tiro {name}; il {date} {times} sono previsti tiri ({source})."
+shooting_zone:
+  title: "Zona di tiro"
+  body: "L'itinerario attraversa la zona di tiro {name} tra il km {from_km} e il km {to_km}; nessun orario verificabile per il {date}."
+wildlife_quiet_zone:
+  title: "Zona di tranquillità per la fauna"
+  body: "Tra il km {from_km} e il km {to_km} l'itinerario entra in {name}; è vietato lasciare i sentieri segnalati {period}."
+protected_area:
+  title: "Area protetta"
+  body: "Tra il km {from_km} e il km {to_km} l'itinerario entra in {name} ({kind}); valgono regole particolari (cani, campeggio, fuochi)."
+guardian_dogs:
+  title: "Cani da protezione delle greggi"
+  body: "Cani da protezione segnalati verso il km {from_km}–{to_km} ({name}). Mantieni la distanza, resta calmo, tieni il cane al guinzaglio o evita la zona."
+exposed_wind:
+  title: "Vento su terreno esposto"
+  body: "Raffiche di {gust_kmh} km/h previste verso le {time} mentre l'itinerario è su un tratto esposto (km {from_km}–{to_km})."
+thunderstorm:
+  title: "Rischio di temporali"
+  body: "Probabilità di temporali {probability}% dalle {time} nella zona dell'itinerario."
+heavy_precipitation:
+  title: "Precipitazioni intense"
+  body: "{mm} mm di precipitazioni previsti tra le {from_time} e le {to_time}."
+heat:
+  title: "Caldo"
+  body: "Fino a {temp_c} °C previsti nel punto più basso dell'itinerario verso le {time}."
+cold:
+  title: "Freddo"
+  body: "Fino a {temp_c} °C previsti nel punto più alto dell'itinerario verso le {time}."
+natural_hazard:
+  title: "Allerta pericoli naturali"
+  body: "{authority} ha emesso un'allerta di grado {level}: {kind} ({source})."
+avalanche_context:
+  title: "Bollettino valanghe"
+  body: "{text}"
+snow_context:
+  title: "Neve"
+  body: "In questa data è possibile neve sopra i {elevation_m} m; l'itinerario raggiunge i {max_elevation_m} m."
+lift_unverified:
+  title: "Stato impianto non verificato"
+  body: "Lo stato di esercizio di {name} non è stato verificabile per il {date}."
+lift_closed:
+  title: "Impianto fermo"
+  body: "{name} non è in esercizio il {date} ({source})."
+hut_unverified:
+  title: "Stato capanna non verificato"
+  body: "Non è stato possibile verificare se {name} è aperta il {date}."
+transport_no_return:
+  title: "Nessun ritorno con i mezzi pubblici"
+  body: "Nessun ritorno con i mezzi pubblici trovato da {stop} dopo le {time} del {date}."
+transport_tight_return:
+  title: "Ultimo ritorno stretto"
+  body: "L'ultimo ritorno da {stop} parte alle {time}; arrivo previsto alle {arrival}."
+source_unavailable:
+  title: "Impossibile verificare"
+  body: "{what} non è stato controllabile: {source} non era raggiungibile."
+difficulty_above_ceiling:
+  title: "Oltre il tuo limite di difficoltà"
+  body: "Questo itinerario è classificato {grade}; hai chiesto al massimo {ceiling}."
+exposed_terrain:
+  title: "Terreno esposto"
+  body: "Tratto esposto tra il km {from_km} e il km {to_km} (pendenza {slope_pct}%)."
+long_day:
+  title: "Giornata lunga"
+  body: "Circa {hours} h di cammino stimate; il sole tramonta alle {sunset}."

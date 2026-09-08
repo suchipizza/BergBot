@@ -1,0 +1,25 @@
+{
+  "variants": ["default", "hike", "alpine-hike", "ski-tour", "trail-run", "snowshoe", "mtb", "climb"],
+  "fallback": "default",
+  "activity_to_variant": {
+    "hiking": "hike",
+    "alpine_hiking": "alpine-hike",
+    "winter_hiking": "hike",
+    "snowshoe": "snowshoe",
+    "ski_touring": "ski-tour",
+    "mtb": "mtb",
+    "trail_running": "trail-run",
+    "climbing": "climb",
+    "unknown": "default"
+  },
+  "readme_variant": "alpine-hike",
+  "avatar_variant": "default",
+  "placements": {
+    "report_header": "activity",
+    "report_footer": "default",
+    "telegram_avatar": "default",
+    "website_hero": "default",
+    "readme": "alpine-hike"
+  },
+  "forbidden_placements": ["before_you_go", "serious_message", "safety_page"]
+}

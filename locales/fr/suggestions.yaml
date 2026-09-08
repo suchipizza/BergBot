@@ -1,0 +1,18 @@
+intro: "Tu ne sais pas par où commencer ? Essaie l'une de ces idées :"
+always:
+  - {text: "Envoie-moi un GPX et je le contrôle", kind: audit}
+items:
+  - {text: "Randonnée facile demain, à moins de 2 h de Lausanne en train", kind: find, months: [4,5,6,7,8,9,10,11]}
+  - {text: "Quelque chose avec un repas en cabane près de Champéry", kind: around, months: [6,7,8,9,10]}
+  - {text: "Le Hardergrat, c'est faisable ce week-end ?", kind: check, months: [6,7,8,9,10]}
+  - {text: "Une rando près de Brunnen avec moins de 500 m de dénivelé", kind: around}
+  - {text: "Rando dans le canton de Fribourg demain, max 600 m de montée, retour en train", kind: find, months: [5,6,7,8,9,10]}
+  - {text: "Balade en basse altitude avec vue, sans neige, près de Genève", kind: find, months: [11,12,1,2,3]}
+  - {text: "Rando ensoleillée au-dessus du brouillard près de Neuchâtel", kind: find, months: [10,11,12,1,2]}
+  - {text: "Rando en famille avec une place de jeux à l'arrivée, près de Sion", kind: find, months: [4,5,6,7,8,9,10]}
+  - {text: "Le téléphérique de la Gemmi fonctionne-t-il dimanche ?", kind: check}
+  - {text: "Y a-t-il une interdiction de feu au Tessin en ce moment ?", kind: check, months: [6,7,8,9]}
+  - {text: "Rando avec mon chien en Valais, sans zones de chiens de protection", kind: find, months: [5,6,7,8,9,10]}
+  - {text: "Où puis-je bivouaquer légalement près du glacier d'Aletsch ?", kind: chat, months: [6,7,8,9]}
+  - {text: "Quelque chose près de Locarno avec un lac à l'arrivée", kind: around, regions: [ti], months: [4,5,6,7,8,9,10]}
+  - {text: "Rando en crête avec retour en train à Lausanne, T2 max", kind: find, regions: [vd, vs, fr], months: [6,7,8,9,10]}

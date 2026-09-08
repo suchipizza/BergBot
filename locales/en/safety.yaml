@@ -1,0 +1,56 @@
+# Locked safety terminology — human-reviewed; the model may not paraphrase these strings.
+fixed_line: "Bergbot informs. The decision is yours."
+danger_levels:
+  "1": "low"
+  "2": "moderate"
+  "3": "considerable"
+  "4": "high"
+  "5": "very high"
+t_grades:
+  T1: "Hiking — path well marked, terrain flat or slightly sloping, no fall hazard."
+  T2: "Mountain hiking — continuous path, steep in places, fall hazard possible; sure footing needed."
+  T3: "Demanding mountain hiking — path not always visible, exposed sections may be secured; sure footing and good boots."
+  T4: "Alpine hiking — path partly missing, hands needed in places, exposed terrain; alpine experience required."
+  T5: "Demanding alpine hiking — often pathless, easy scrambling, glacier sections possible; mountaineering skills required."
+  T6: "Difficult alpine hiking — mostly pathless, climbing up to grade II, serious exposure; expert mountaineers only."
+not_graded: "not graded"
+forbidden:
+  - "safe"
+  - "should be fine"
+  - "go for it"
+  - "no risk"
+  - "risk-free"
+  - "nothing to worry about"
+  - "totally fine"
+  - "perfectly safe"
+  - "you'll be fine"
+terms:
+  closure: "closed"
+  diversion: "diversion"
+  fire_ban: "fire ban"
+  shooting_activity: "shooting activity"
+  quiet_zone: "wildlife quiet zone"
+  protected_area: "protected area"
+  guardian_dogs: "livestock guardian dogs"
+  verified: "verified"
+  unverified: "unverified"
+  conflicting: "conflicting sources"
+  open: "open"
+  closed: "closed"
+  could_not_verify: "could not verify {what}"
+  avalanche_not_interpreted: "An SLF bulletin exists for this region (danger level {level}: {label}). Bergbot does not interpret it for hiking."
+  no_bulletin: "No SLF bulletin is published for this region on this date."
+evidence_classes:
+  A: {label: "Official fact", description: "Stated by an official source."}
+  B: {label: "Derived fact", description: "Computed by Bergbot from official data and your route."}
+  C: {label: "Forecast", description: "A forecast; it can change."}
+  D: {label: "Interpretation", description: "Bergbot's reading of the facts above."}
+  E: {label: "Judgment required", description: "Cannot be established by this tool; your call."}
+emergency:
+  title: "Emergency"
+  body: |
+    Call 1414 (Rega, Switzerland) or 112 (European emergency number) now.
+    Share your exact position (coordinates or the location share in this app).
+    Stay where you are unless you are in immediate danger. Keep the injured person warm.
+    Stay reachable: keep the phone on and the line free.
+safety_answer_frame: "Here is what is known, what is unknown, and what only you can decide."

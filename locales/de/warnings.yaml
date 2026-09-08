@@ -1,0 +1,78 @@
+trail_closure:
+  title: "Gesperrter Abschnitt"
+  body: "Offizielle Sperrung zwischen km {from_km} und km {to_km} ({source})."
+diversion:
+  title: "Umleitung"
+  body: "Zwischen km {from_km} und km {to_km} gilt eine offizielle Umleitung ({source})."
+fire_restriction:
+  title: "Feuerverbot / Einschränkung"
+  body: "{scope}: {restriction} ({source})."
+fire_danger:
+  title: "Waldbrandgefahr"
+  body: "Waldbrandgefahrenstufe {level} ({label}) im Gebiet der Route ({source})."
+shooting_activity:
+  title: "Schiessbetrieb"
+  body: "Die Route quert die Schiesszone {name}; am {date} {times} ist Schiessbetrieb angekündigt ({source})."
+shooting_zone:
+  title: "Schiesszone"
+  body: "Die Route quert die Schiesszone {name} zwischen km {from_km} und km {to_km}; für den {date} konnte kein Schiessplan geprüft werden."
+wildlife_quiet_zone:
+  title: "Wildruhezone"
+  body: "Zwischen km {from_km} und km {to_km} führt die Route durch {name}; das Verlassen der markierten Wege ist {period} verboten."
+protected_area:
+  title: "Schutzgebiet"
+  body: "Zwischen km {from_km} und km {to_km} führt die Route durch {name} ({kind}); es gelten besondere Regeln (Hunde, Campieren, Feuer)."
+guardian_dogs:
+  title: "Herdenschutzhunde"
+  body: "Bei km {from_km}–{to_km} sind Herdenschutzhunde gemeldet ({name}). Abstand halten, ruhig bleiben, Hunde an die Leine oder Gebiet meiden."
+exposed_wind:
+  title: "Wind im exponierten Gelände"
+  body: "Böen von {gust_kmh} km/h um {time} prognostiziert, während die Route auf einem exponierten Abschnitt verläuft (km {from_km}–{to_km})."
+thunderstorm:
+  title: "Gewitterrisiko"
+  body: "Gewitterwahrscheinlichkeit {probability}% ab {time} im Gebiet der Route."
+heavy_precipitation:
+  title: "Starker Niederschlag"
+  body: "{mm} mm Niederschlag zwischen {from_time} und {to_time} prognostiziert."
+heat:
+  title: "Hitze"
+  body: "Bis {temp_c} °C am tiefsten Punkt der Route um {time} prognostiziert."
+cold:
+  title: "Kälte"
+  body: "Bis {temp_c} °C am höchsten Punkt der Route um {time} prognostiziert."
+natural_hazard:
+  title: "Naturgefahren-Warnung"
+  body: "{authority} hat eine Warnung der Stufe {level} herausgegeben: {kind} ({source})."
+avalanche_context:
+  title: "Lawinenbulletin"
+  body: "{text}"
+snow_context:
+  title: "Schnee"
+  body: "An diesem Datum ist oberhalb von {elevation_m} m Schnee möglich; die Route erreicht {max_elevation_m} m."
+lift_unverified:
+  title: "Bahnstatus ungeprüft"
+  body: "Der Betriebsstatus von {name} konnte für den {date} nicht geprüft werden."
+lift_closed:
+  title: "Bahn ausser Betrieb"
+  body: "{name} ist am {date} nicht in Betrieb ({source})."
+hut_unverified:
+  title: "Hüttenstatus ungeprüft"
+  body: "Ob {name} am {date} geöffnet ist, konnte nicht geprüft werden."
+transport_no_return:
+  title: "Keine Rückverbindung"
+  body: "Ab {stop} wurde nach {time} am {date} keine ÖV-Rückverbindung gefunden."
+transport_tight_return:
+  title: "Knappe letzte Rückfahrt"
+  body: "Die letzte Rückfahrt ab {stop} geht um {time}; geplante Ankunft ist {arrival}."
+source_unavailable:
+  title: "Nicht prüfbar"
+  body: "{what} konnte nicht geprüft werden: {source} war nicht erreichbar."
+difficulty_above_ceiling:
+  title: "Über deiner Schwierigkeitsgrenze"
+  body: "Diese Route ist mit {grade} bewertet; du wolltest höchstens {ceiling}."
+exposed_terrain:
+  title: "Exponiertes Gelände"
+  body: "Exponierter Abschnitt zwischen km {from_km} und km {to_km} (Neigung {slope_pct}%)."
+long_day:
+  title: "Langer Tag"
+  body: "Geschätzt {hours} h Gehzeit; Sonnenuntergang um {sunset}."

@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv python install ${{ matrix.python-version }}
+      - run: uv sync --all-extras --dev
+      - run: uv run ruff check
+      - run: uv run ruff format --check
+      - run: uv run mypy src/bergbot/core src/bergbot/i18n.py src/bergbot/sources/base.py
+      - run: uv run pytest
+      - run: uv run bergbot --help

@@ -1,0 +1,42 @@
+# Authored natively in English. Short, warm, mountain humour. Never about warnings.
+greetings:
+  - "Hi! I'm Bergbot. Tell me where you'd like to go, or send a GPX, and I'll check everything first."
+  - "Hello! Boots ready? Give me a place, a wish or a GPX and I'll do the homework."
+  - "Hey. I check the weather, the trail, the hazards and the train so you don't have to open six apps."
+suggestions_intro: "Not sure where to start? Try one of these:"
+found_intro:
+  - "{region} with {constraint} — there are more of those than people think. Three ideas, sorted by the weather 👇"
+  - "Good news from the map: here are the best matches for {region}, {constraint}."
+  - "Found some. Ranked by tomorrow's sky and how the trains line up:"
+found_intro_generic:
+  - "Here's what the official network has for you, ranked by weather and transport:"
+  - "Three options, best first. The map did the walking, you get the view:"
+around_intro:
+  - "Around {place} the network fans out nicely. Best three:"
+  - "{place}: good starting point. Here's what's within reach:"
+another_one:
+  - "Another one coming right up."
+  - "Sure — next on the list:"
+  - "Plenty more where that came from:"
+why_prefix:
+  - "Why this one:"
+  - "The pick:"
+empty_state:
+  - "Nothing here yet. Tell me a place, a wish or send a GPX."
+  - "Blank page, big mountains. Where to?"
+media_offer: "Want photos and stories of this route?"
+media_intro: "Pictures and stories from people who walked it (third-party, not part of the check):"
+gpx_delivered:
+  - "GPX is in. Open it in swisstopo → Import and the route is on your map."
+  - "There's your GPX. swisstopo → Import, and off you go."
+selection_ack:
+  - "Good pick. Running the full check now — I'll report back in a moment."
+  - "On it. Checking closures, weather, wind, transport and the rest…"
+thanks:
+  - "Enjoy the mountains. Send me a photo from the top if you like."
+  - "Have a great day up there."
+error_generic:
+  - "Something on my side went sideways. Try again in a moment, or rephrase."
+help_outro: "Or just write what you have in mind, in your own words."
+chat_fallback:
+  - "Happy to chat mountains. Ask me anything, or give me a place to work with."

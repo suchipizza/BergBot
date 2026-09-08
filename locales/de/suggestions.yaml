@@ -1,0 +1,18 @@
+intro: "Weisst du nicht, wo anfangen? Probier eins davon:"
+always:
+  - {text: "Schick mir ein GPX, ich prüfe es", kind: audit}
+items:
+  - {text: "Leichte Wanderung morgen, unter 2 h ab Zürich mit dem Zug", kind: find, months: [4,5,6,7,8,9,10,11]}
+  - {text: "Etwas mit Hüttenzmittag bei Engelberg", kind: around, months: [6,7,8,9,10]}
+  - {text: "Ist der Hardergrat dieses Wochenende machbar?", kind: check, months: [6,7,8,9,10]}
+  - {text: "Eine Wanderung bei Brunnen mit weniger als 500 m Aufstieg", kind: around}
+  - {text: "Wanderung im Kanton Glarus morgen, max. 600 m rauf, mit dem Zug zurück", kind: find, months: [5,6,7,8,9,10]}
+  - {text: "Spaziergang in tiefer Lage mit Aussicht, ohne Schnee, bei Basel", kind: find, months: [11,12,1,2,3]}
+  - {text: "Sonnige Südhang-Wanderung über dem Nebel bei Luzern", kind: find, months: [10,11,12,1,2]}
+  - {text: "Familienwanderung mit Spielplatz am Ziel, bei Bern", kind: find, months: [4,5,6,7,8,9,10]}
+  - {text: "Fährt die Gemmibahn am Sonntag?", kind: check}
+  - {text: "Gilt im Tessin gerade ein Feuerverbot?", kind: check, months: [6,7,8,9]}
+  - {text: "Wandern mit Hund in Graubünden, ohne Herdenschutzhund-Gebiete", kind: find, months: [5,6,7,8,9,10]}
+  - {text: "Wo darf ich beim Aletschgletscher legal biwakieren?", kind: chat, months: [6,7,8,9]}
+  - {text: "Etwas bei Locarno mit einem See am Ziel", kind: around, regions: [ti], months: [4,5,6,7,8,9,10]}
+  - {text: "Gratwanderung mit Zug zurück nach Zürich, max. T2", kind: find, regions: [zh, gl, sz, sg], months: [6,7,8,9,10]}

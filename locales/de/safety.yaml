@@ -1,0 +1,56 @@
+fixed_line: "Bergbot informiert. Die Entscheidung liegt bei dir."
+danger_levels:
+  "1": "gering"
+  "2": "mässig"
+  "3": "erheblich"
+  "4": "gross"
+  "5": "sehr gross"
+t_grades:
+  T1: "Wandern — Weg gut markiert, Gelände flach oder leicht geneigt, keine Absturzgefahr."
+  T2: "Bergwandern — durchgehender Weg, stellenweise steil, Absturzgefahr möglich; Trittsicherheit nötig."
+  T3: "Anspruchsvolles Bergwandern — Weg nicht immer sichtbar, exponierte Stellen teils gesichert; Trittsicherheit und gute Schuhe."
+  T4: "Alpinwandern — Weg teilweise fehlend, stellenweise Hände nötig, exponiertes Gelände; alpine Erfahrung erforderlich."
+  T5: "Anspruchsvolles Alpinwandern — oft weglos, einfache Kletterstellen, Gletscherpassagen möglich; Bergsteigerkenntnisse erforderlich."
+  T6: "Schwieriges Alpinwandern — meist weglos, Kletterstellen bis II, ernste Exposition; nur für erfahrene Bergsteiger."
+not_graded: "nicht bewertet"
+forbidden:
+  - "sicher"
+  - "unbedenklich"
+  - "kein Problem"
+  - "kann losgehen"
+  - "gefahrlos"
+  - "ohne Risiko"
+  - "kein Risiko"
+  - "keine Gefahr"
+  - "sollte passen"
+  - "problemlos machbar"
+terms:
+  closure: "gesperrt"
+  diversion: "Umleitung"
+  fire_ban: "Feuerverbot"
+  shooting_activity: "Schiessbetrieb"
+  quiet_zone: "Wildruhezone"
+  protected_area: "Schutzgebiet"
+  guardian_dogs: "Herdenschutzhunde"
+  verified: "geprüft"
+  unverified: "ungeprüft"
+  conflicting: "widersprüchliche Quellen"
+  open: "offen"
+  closed: "geschlossen"
+  could_not_verify: "{what} konnte nicht geprüft werden"
+  avalanche_not_interpreted: "Für diese Region gibt es ein SLF-Bulletin (Gefahrenstufe {level}: {label}). Bergbot interpretiert es nicht fürs Wandern."
+  no_bulletin: "Für diese Region ist an diesem Datum kein SLF-Bulletin publiziert."
+evidence_classes:
+  A: {label: "Offizielle Angabe", description: "Von einer offiziellen Quelle so angegeben."}
+  B: {label: "Abgeleitete Angabe", description: "Von Bergbot aus offiziellen Daten und deiner Route berechnet."}
+  C: {label: "Prognose", description: "Eine Prognose; sie kann sich ändern."}
+  D: {label: "Interpretation", description: "Bergbots Lesart der obigen Fakten."}
+  E: {label: "Eigenes Urteil nötig", description: "Kann dieses Werkzeug nicht feststellen; das entscheidest du."}
+emergency:
+  title: "Notfall"
+  body: |
+    Ruf jetzt 1414 (Rega, Schweiz) oder 112 (europäische Notrufnummer) an.
+    Teile deine genaue Position mit (Koordinaten oder Standortfreigabe in dieser App).
+    Bleib, wo du bist, ausser du bist in unmittelbarer Gefahr. Halte die verletzte Person warm.
+    Bleib erreichbar: Telefon an, Leitung frei.
+safety_answer_frame: "Hier ist, was bekannt ist, was unbekannt ist und was nur du entscheiden kannst."

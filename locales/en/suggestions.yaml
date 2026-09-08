@@ -1,0 +1,18 @@
+intro: "Not sure where to start? Try one of these:"
+always:
+  - {text: "Send me a GPX and I'll check it", kind: audit}
+items:
+  - {text: "Easy hike tomorrow, under 2 h from Zürich by train", kind: find, months: [4,5,6,7,8,9,10,11]}
+  - {text: "Something with a hut lunch near Engelberg", kind: around, months: [6,7,8,9,10]}
+  - {text: "Is the Hardergrat doable this weekend?", kind: check, months: [6,7,8,9,10]}
+  - {text: "A hike near Brunnen with less than 500 m of ascent", kind: around}
+  - {text: "Hike in canton Glarus tomorrow, max 600 m up, back by train", kind: find, months: [5,6,7,8,9,10]}
+  - {text: "Low-altitude walk with a view, no snow, near Lausanne", kind: find, months: [11,12,1,2,3]}
+  - {text: "Sunny south-facing hike above the fog near Lucerne", kind: find, months: [10,11,12,1,2]}
+  - {text: "Family hike with a playground at the end, near Bern", kind: find, months: [4,5,6,7,8,9,10]}
+  - {text: "Is the Gemmi cableway running on Sunday?", kind: check}
+  - {text: "Is there a fire ban in Ticino right now?", kind: check, months: [6,7,8,9]}
+  - {text: "Hike with my dog in Graubünden, no guardian-dog zones", kind: find, months: [5,6,7,8,9,10]}
+  - {text: "Where can I bivouac legally near the Aletsch glacier?", kind: chat, months: [6,7,8,9]}
+  - {text: "Something near Locarno with a lake at the end", kind: around, regions: [ti], months: [4,5,6,7,8,9,10]}
+  - {text: "Ridge walk with a train back to Zürich, T2 max", kind: find, regions: [zh, gl, sz, sg], months: [6,7,8,9,10]}

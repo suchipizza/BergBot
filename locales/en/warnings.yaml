@@ -1,0 +1,79 @@
+# Presentation strings per warning type. Keys are the WarningType enum values. Placeholders are filled by core.
+trail_closure:
+  title: "Closed section"
+  body: "Official closure between km {from_km} and km {to_km} ({source})."
+diversion:
+  title: "Diversion"
+  body: "An official diversion applies between km {from_km} and km {to_km} ({source})."
+fire_restriction:
+  title: "Fire restriction"
+  body: "{scope}: {restriction} ({source})."
+fire_danger:
+  title: "Forest-fire danger"
+  body: "Forest-fire danger level {level} ({label}) in the route area ({source})."
+shooting_activity:
+  title: "Shooting activity"
+  body: "The route crosses the firing zone {name}; shooting is scheduled on {date} {times} ({source})."
+shooting_zone:
+  title: "Firing zone"
+  body: "The route crosses the firing zone {name} between km {from_km} and km {to_km}; no schedule could be verified for {date}."
+wildlife_quiet_zone:
+  title: "Wildlife quiet zone"
+  body: "Between km {from_km} and km {to_km} the route enters {name}; leaving marked paths is prohibited {period}."
+protected_area:
+  title: "Protected area"
+  body: "Between km {from_km} and km {to_km} the route enters {name} ({kind}); special rules apply (dogs, camping, fires)."
+guardian_dogs:
+  title: "Livestock guardian dogs"
+  body: "Guardian dogs are reported near km {from_km}–{to_km} ({name}). Keep distance, stay calm, keep dogs on a leash or avoid the area."
+exposed_wind:
+  title: "Wind on exposed terrain"
+  body: "Gusts of {gust_kmh} km/h forecast around {time} while the route is on an exposed section (km {from_km}–{to_km})."
+thunderstorm:
+  title: "Thunderstorm risk"
+  body: "Thunderstorm probability {probability}% from {time} in the route area."
+heavy_precipitation:
+  title: "Heavy precipitation"
+  body: "{mm} mm of precipitation forecast between {from_time} and {to_time}."
+heat:
+  title: "Heat"
+  body: "Up to {temp_c} °C forecast at the lowest point of the route around {time}."
+cold:
+  title: "Cold"
+  body: "Down to {temp_c} °C forecast at the highest point of the route around {time}."
+natural_hazard:
+  title: "Natural-hazard warning"
+  body: "{authority} has issued a level {level} warning: {kind} ({source})."
+avalanche_context:
+  title: "Avalanche bulletin"
+  body: "{text}"
+snow_context:
+  title: "Snow"
+  body: "Snow is possible above {elevation_m} m on this date; the route reaches {max_elevation_m} m."
+lift_unverified:
+  title: "Lift status unverified"
+  body: "The operating status of {name} could not be verified for {date}."
+lift_closed:
+  title: "Lift not operating"
+  body: "{name} is not operating on {date} ({source})."
+hut_unverified:
+  title: "Hut status unverified"
+  body: "Whether {name} is open on {date} could not be verified."
+transport_no_return:
+  title: "No return connection"
+  body: "No public-transport return was found from {stop} after {time} on {date}."
+transport_tight_return:
+  title: "Tight last return"
+  body: "The last return from {stop} leaves at {time}; planned arrival is {arrival}."
+source_unavailable:
+  title: "Could not verify"
+  body: "{what} could not be checked: {source} was unavailable."
+difficulty_above_ceiling:
+  title: "Above your difficulty ceiling"
+  body: "This route is graded {grade}; you asked for {ceiling} at most."
+exposed_terrain:
+  title: "Exposed terrain"
+  body: "Exposed section between km {from_km} and km {to_km} (slope {slope_pct}%)."
+long_day:
+  title: "Long day"
+  body: "Estimated {hours} h of walking; daylight ends at {sunset}."

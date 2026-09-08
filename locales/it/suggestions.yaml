@@ -1,0 +1,18 @@
+intro: "Non sai da dove cominciare? Prova una di queste:"
+always:
+  - {text: "Inviami un GPX e lo controllo", kind: audit}
+items:
+  - {text: "Escursione facile domani, a meno di 2 h da Lugano in treno", kind: find, months: [4,5,6,7,8,9,10,11]}
+  - {text: "Qualcosa con pranzo in capanna vicino ad Airolo", kind: around, months: [6,7,8,9,10]}
+  - {text: "L'Hardergrat è fattibile questo fine settimana?", kind: check, months: [6,7,8,9,10]}
+  - {text: "Un'escursione vicino a Brunnen con meno di 500 m di dislivello", kind: around}
+  - {text: "Escursione in Ticino domani, max 600 m di salita, ritorno in treno", kind: find, months: [5,6,7,8,9,10]}
+  - {text: "Passeggiata a bassa quota con vista, senza neve, vicino a Bellinzona", kind: find, months: [11,12,1,2,3]}
+  - {text: "Escursione al sole sopra la nebbia vicino a Lucerna", kind: find, months: [10,11,12,1,2]}
+  - {text: "Escursione in famiglia con parco giochi all'arrivo, vicino a Locarno", kind: find, months: [4,5,6,7,8,9,10]}
+  - {text: "La funivia della Gemmi funziona domenica?", kind: check}
+  - {text: "C'è un divieto di fuochi in Ticino in questo momento?", kind: check, months: [6,7,8,9]}
+  - {text: "Escursione con il mio cane nei Grigioni, senza zone con cani da protezione", kind: find, months: [5,6,7,8,9,10]}
+  - {text: "Dove posso bivaccare legalmente vicino al ghiacciaio dell'Aletsch?", kind: chat, months: [6,7,8,9]}
+  - {text: "Qualcosa vicino a Locarno con un lago all'arrivo", kind: around, regions: [ti], months: [4,5,6,7,8,9,10]}
+  - {text: "Escursione in cresta con treno di ritorno a Lugano, max T2", kind: find, regions: [ti, gr], months: [6,7,8,9,10]}

@@ -1,0 +1,21 @@
+# founder working folder (not part of the repo)
+documents/
+# python
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.hypothesis/
+# bergbot local state
+.bergbot-cache/
+~/.bergbot/
+*.local.json
+# large source art is kept; generated dist is committed (small)
+website/dist/
+node_modules/
+.DS_Store

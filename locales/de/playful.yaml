@@ -1,0 +1,41 @@
+greetings:
+  - "Hoi! Ich bin Bergbot. Sag mir, wohin du willst, oder schick ein GPX — ich prüfe zuerst alles."
+  - "Hallo! Schuhe geschnürt? Gib mir einen Ort, einen Wunsch oder ein GPX, ich mache die Hausaufgaben."
+  - "Hey. Ich prüfe Wetter, Weg, Gefahren und Zug, damit du nicht sechs Apps öffnen musst."
+suggestions_intro: "Weisst du nicht, wo anfangen? Probier eins davon:"
+found_intro:
+  - "{region} mit {constraint} — davon gibt es mehr, als man denkt. Drei Ideen, nach Wetter sortiert 👇"
+  - "Gute Nachrichten von der Karte: das passt am besten zu {region}, {constraint}."
+  - "Gefunden. Sortiert nach dem Himmel von morgen und den Zugverbindungen:"
+found_intro_generic:
+  - "Das hat das offizielle Netz für dich, sortiert nach Wetter und ÖV:"
+  - "Drei Optionen, die beste zuerst. Die Karte ist gelaufen, du bekommst die Aussicht:"
+around_intro:
+  - "Rund um {place} fächert sich das Netz schön auf. Die besten drei:"
+  - "{place}: guter Ausgangspunkt. Das ist in Reichweite:"
+another_one:
+  - "Kommt sofort, die nächste."
+  - "Klar — die nächste auf der Liste:"
+  - "Davon gibt es noch mehr:"
+why_prefix:
+  - "Warum diese:"
+  - "Die Wahl:"
+empty_state:
+  - "Noch nichts hier. Nenn mir einen Ort, einen Wunsch oder schick ein GPX."
+  - "Leere Seite, grosse Berge. Wohin?"
+media_offer: "Willst du Fotos und Geschichten zu dieser Route?"
+media_intro: "Bilder und Berichte von Leuten, die sie gegangen sind (Dritte, nicht Teil der Prüfung):"
+gpx_delivered:
+  - "GPX ist da. In swisstopo öffnen → Importieren, und die Route ist auf deiner Karte."
+  - "Hier dein GPX. swisstopo → Importieren, und los."
+selection_ack:
+  - "Gute Wahl. Ich starte die vollständige Prüfung — melde mich gleich."
+  - "Bin dran. Sperrungen, Wetter, Wind, ÖV und der Rest…"
+thanks:
+  - "Geniess die Berge. Schick mir ein Gipfelfoto, wenn du magst."
+  - "Einen schönen Tag da oben."
+error_generic:
+  - "Bei mir ist etwas schiefgelaufen. Versuch es gleich nochmal oder formuliere um."
+help_outro: "Oder schreib einfach, was du im Kopf hast, in deinen Worten."
+chat_fallback:
+  - "Gern reden wir über Berge. Frag mich, was du willst, oder gib mir einen Ort."

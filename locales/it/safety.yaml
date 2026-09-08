@@ -1,0 +1,56 @@
+fixed_line: "Bergbot informa. La decisione è tua."
+danger_levels:
+  "1": "debole"
+  "2": "moderato"
+  "3": "marcato"
+  "4": "forte"
+  "5": "molto forte"
+t_grades:
+  T1: "Escursione — sentiero ben segnalato, terreno pianeggiante o poco ripido, nessuna esposizione al vuoto."
+  T2: "Escursione di montagna — sentiero continuo, ripido a tratti, possibile pericolo di caduta; piede fermo necessario."
+  T3: "Escursione di montagna impegnativa — sentiero non sempre visibile, tratti esposti talvolta assicurati; piede fermo e buoni scarponi."
+  T4: "Escursione alpina — sentiero in parte assente, a tratti servono le mani, terreno esposto; esperienza alpina richiesta."
+  T5: "Escursione alpina impegnativa — spesso senza sentiero, facile arrampicata, possibili ghiacciai; capacità alpinistiche richieste."
+  T6: "Escursione alpina difficile — quasi sempre senza sentiero, arrampicata fino al II grado, forte esposizione; solo alpinisti esperti."
+not_graded: "non classificato"
+forbidden:
+  - "sicuro"
+  - "senza pericolo"
+  - "senza rischi"
+  - "nessun rischio"
+  - "nessun pericolo"
+  - "dovrebbe andare bene"
+  - "vai tranquillo"
+  - "vai tranquilla"
+  - "in tutta sicurezza"
+  - "nessun problema"
+terms:
+  closure: "chiuso"
+  diversion: "deviazione"
+  fire_ban: "divieto di accendere fuochi"
+  shooting_activity: "attività di tiro"
+  quiet_zone: "zona di tranquillità per la fauna"
+  protected_area: "area protetta"
+  guardian_dogs: "cani da protezione delle greggi"
+  verified: "verificato"
+  unverified: "non verificato"
+  conflicting: "fonti contraddittorie"
+  open: "aperto"
+  closed: "chiuso"
+  could_not_verify: "impossibile verificare {what}"
+  avalanche_not_interpreted: "Per questa regione esiste un bollettino SLF (grado di pericolo {level}: {label}). Bergbot non lo interpreta per l'escursionismo."
+  no_bulletin: "Per questa regione non è pubblicato alcun bollettino SLF in questa data."
+evidence_classes:
+  A: {label: "Fatto ufficiale", description: "Dichiarato da una fonte ufficiale."}
+  B: {label: "Fatto derivato", description: "Calcolato da Bergbot dai dati ufficiali e dal tuo itinerario."}
+  C: {label: "Previsione", description: "Una previsione; può cambiare."}
+  D: {label: "Interpretazione", description: "Lettura di Bergbot dei fatti sopra."}
+  E: {label: "Giudizio necessario", description: "Questo strumento non può stabilirlo; decidi tu."}
+emergency:
+  title: "Emergenza"
+  body: |
+    Chiama subito il 1414 (Rega, Svizzera) o il 112 (numero d'emergenza europeo).
+    Comunica la tua posizione esatta (coordinate o condivisione della posizione in questa app).
+    Resta dove sei, salvo pericolo immediato. Tieni al caldo la persona ferita.
+    Resta raggiungibile: telefono acceso, linea libera.
+safety_answer_frame: "Ecco cosa è noto, cosa è ignoto e cosa puoi decidere solo tu."

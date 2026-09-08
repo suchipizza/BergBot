@@ -1,0 +1,41 @@
+greetings:
+  - "Ciao! Sono Bergbot. Dimmi dove vuoi andare, o invia un GPX, e controllo tutto prima."
+  - "Ciao! Scarponi allacciati? Dammi un luogo, un desiderio o un GPX e faccio io i compiti."
+  - "Ehi. Controllo meteo, sentiero, pericoli e treno, così non devi aprire sei app."
+suggestions_intro: "Non sai da dove cominciare? Prova una di queste:"
+found_intro:
+  - "{region} con {constraint} — ce ne sono più di quanto si pensi. Tre idee, ordinate secondo il meteo 👇"
+  - "Buone notizie dalla mappa: ecco le opzioni migliori per {region}, {constraint}."
+  - "Trovate. Ordinate secondo il cielo di domani e gli orari dei treni:"
+found_intro_generic:
+  - "Ecco cosa ti offre la rete ufficiale, ordinato per meteo e mezzi:"
+  - "Tre opzioni, la migliore per prima. La mappa ha camminato per te, a te la vista:"
+around_intro:
+  - "Attorno a {place} la rete si apre bene. Le tre migliori:"
+  - "{place}: buon punto di partenza. Ecco cosa c'è a portata:"
+another_one:
+  - "Un'altra, subito."
+  - "Certo — la prossima in lista:"
+  - "Ce ne sono ancora tante:"
+why_prefix:
+  - "Perché questa:"
+  - "La scelta:"
+empty_state:
+  - "Ancora niente qui. Dimmi un luogo, un desiderio o invia un GPX."
+  - "Pagina bianca, grandi montagne. Dove andiamo?"
+media_offer: "Vuoi foto e racconti di questo itinerario?"
+media_intro: "Immagini e racconti di chi l'ha percorso (di terzi, non parte del controllo):"
+gpx_delivered:
+  - "Il GPX è qui. Aprilo in swisstopo → Importa e l'itinerario è sulla tua mappa."
+  - "Ecco il tuo GPX. swisstopo → Importa, e via."
+selection_ack:
+  - "Buona scelta. Avvio il controllo completo — torno tra un attimo."
+  - "Ci sono. Chiusure, meteo, vento, mezzi e il resto…"
+thanks:
+  - "Goditi la montagna. Mandami una foto dalla cima, se ti va."
+  - "Buona giornata lassù."
+error_generic:
+  - "Qualcosa da parte mia è andato storto. Riprova tra un attimo, o riformula."
+help_outro: "Oppure scrivi semplicemente cosa hai in mente, con parole tue."
+chat_fallback:
+  - "Volentieri, parliamo di montagna. Chiedimi quello che vuoi, o dammi un luogo."

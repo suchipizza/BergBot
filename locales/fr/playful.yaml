@@ -1,0 +1,41 @@
+greetings:
+  - "Salut ! Je suis Bergbot. Dis-moi où tu veux aller, ou envoie un GPX, et je vérifie tout d'abord."
+  - "Hello ! Chaussures lacées ? Donne-moi un lieu, une envie ou un GPX, je fais les devoirs."
+  - "Coucou. Je vérifie la météo, le sentier, les dangers et le train pour que tu n'ouvres pas six applis."
+suggestions_intro: "Tu ne sais pas par où commencer ? Essaie l'une de ces idées :"
+found_intro:
+  - "{region} avec {constraint} — il y en a plus qu'on ne croit. Trois idées, triées selon la météo 👇"
+  - "Bonne nouvelle de la carte : voici les meilleures options pour {region}, {constraint}."
+  - "J'en ai trouvé. Classées selon le ciel de demain et les horaires de train :"
+found_intro_generic:
+  - "Voici ce que le réseau officiel te propose, classé selon la météo et les transports :"
+  - "Trois options, la meilleure d'abord. La carte a marché pour toi, à toi la vue :"
+around_intro:
+  - "Autour de {place}, le réseau s'ouvre bien. Les trois meilleures :"
+  - "{place} : bon point de départ. Voici ce qui est à portée :"
+another_one:
+  - "Une autre, tout de suite."
+  - "Bien sûr — la suivante sur la liste :"
+  - "Il y en a encore plein :"
+why_prefix:
+  - "Pourquoi celle-ci :"
+  - "Le choix :"
+empty_state:
+  - "Rien ici pour l'instant. Dis-moi un lieu, une envie, ou envoie un GPX."
+  - "Page blanche, grandes montagnes. On va où ?"
+media_offer: "Tu veux des photos et des récits de cet itinéraire ?"
+media_intro: "Images et récits de gens qui l'ont parcouru (tiers, hors contrôle) :"
+gpx_delivered:
+  - "Le GPX est là. Ouvre-le dans swisstopo → Importer et l'itinéraire est sur ta carte."
+  - "Voilà ton GPX. swisstopo → Importer, et c'est parti."
+selection_ack:
+  - "Bon choix. Je lance le contrôle complet — je reviens dans un instant."
+  - "C'est parti. Fermetures, météo, vent, transports et le reste…"
+thanks:
+  - "Profite bien de la montagne. Envoie-moi une photo du sommet si tu veux."
+  - "Belle journée là-haut."
+error_generic:
+  - "Quelque chose a dérapé de mon côté. Réessaie dans un instant, ou reformule."
+help_outro: "Ou écris simplement ce que tu as en tête, avec tes mots."
+chat_fallback:
+  - "Volontiers pour parler montagne. Demande-moi ce que tu veux, ou donne-moi un lieu."
