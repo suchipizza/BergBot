@@ -6,9 +6,11 @@
 - **Release:** `release.yml` runs tests, builds the wheel, creates a GitHub release with `docs/release-notes.md` on
   every `v*` tag. Publishing to PyPI is gated on the repository variable `PYPI_PUBLISH=true` (trusted publishing
   must be configured on PyPI first) — the founder decides when to publish. `v0.1.0` is tagged without PyPI.
-- **Claude.ai:** the marketplace install path could not be verified from a CLI-only environment; the website and
-  docs show the Claude.ai tab as "coming soon" (PRD open decision 4). Claude Code install verified from a fresh
-  marketplace add on 2026-09-09.
+- **Claude.ai (verified by the founder 2026-09-09):** Customize → Plugins → Add marketplace → repo URL installs the
+  plugin. Skills run in Anthropic's sandbox, whose egress allows only package registries and GitHub, so every
+  Swiss source returns 403 and `bergbot around` finds nothing. Bergbot degrades loudly ("could not verify") rather
+  than inventing. Decision: document Claude.ai as "installs, cannot check" and point to Claude Code, Telegram, CLI.
+  Revisit if claude.ai gains an egress allowlist or when a hosted Bergbot API exists (Phase 3/5).
 - **Screenshots:** `scripts/screenshots.py` renders the report, a chat mock and the install steps with headless
   Chrome from real output; Telegram step images are placeholders until real phone screenshots are supplied
   (FOUNDER INPUT). A real Telegram screenshot for the hero is also FOUNDER INPUT (needs the bot token).

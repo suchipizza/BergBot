@@ -24,7 +24,7 @@ pipx install bergbot
 
 ## Claude.ai
 
-Presto — il percorso Personalizza → Plugin → Aggiungi marketplace è in verifica da un account nuovo. Nel frattempo: Claude Code, Telegram o CLI.
+Si installa da Personalizza → Plugin → Aggiungi marketplace → `https://github.com/suchipizza/BergBot`. Verificato il 09.09.2026: l'installazione funziona, ma claude.ai esegue le skill in una sandbox che blocca le fonti svizzere (GeoAdmin, SvizzeraMobile, MeteoSvizzera, trasporti). Bergbot non può controllare nulla e lo dice («impossibile verificare»). Per controlli veri: Claude Code, Telegram o CLI; claude.ai può mostrare un `audit.json` prodotto localmente.
 
 ## CLI
 

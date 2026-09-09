@@ -24,7 +24,7 @@ pipx install bergbot
 
 ## Claude.ai
 
-Coming soon — the Customize → Plugins → Add marketplace path is being verified from a fresh account. Until then use Claude Code, Telegram or the CLI.
+Installs from Customize → Plugins → Add marketplace → `https://github.com/suchipizza/BergBot`. Verified 2026-09-09: the install works, but claude.ai runs plugin skills in a sandbox that blocks the Swiss data sources (GeoAdmin, SwitzerlandMobility, MeteoSwiss, transport). Bergbot cannot check anything there and will say so ("could not verify"). Use Claude Code, Telegram or the CLI for real audits; claude.ai can render an `audit.json` you made locally.
 
 ## CLI
 

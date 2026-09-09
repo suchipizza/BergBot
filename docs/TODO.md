@@ -8,7 +8,7 @@
 - [ ] Decide how the bot stays up: terminal, `nohup`, a launchd service (`--install-service` to be added), or an
       always-on box. Hosted bridge is Phase 3.
 - [ ] Real Tally form URL in `pyproject.toml` → `tool.bergbot.waitlist_url`.
-- [ ] Claude.ai marketplace path check from a browser (website tab says "coming soon").
+- [x] Claude.ai marketplace path checked: installs, but sandbox blocks Swiss sources (decision 005).
 - [ ] 3–5 routes you know well → `docs/benchmark/reference.yaml` `founder_notes`.
 - [ ] Native read of `locales/{fr,de,it}/playful.yaml`.
 - [ ] Set repo variable `PYPI_PUBLISH=true` and configure PyPI trusted publishing when ready to publish.

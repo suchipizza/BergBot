@@ -33,6 +33,12 @@ It is playful when it can be, serious when it must be, and it **never says a rou
 /plugin install bergbot
 ```
 then `pipx install bergbot` (the plugin calls the `bergbot` CLI) and type a sentence, or `/find …`.
+Works in the terminal, the desktop app and the IDE extensions — anywhere Claude Code runs on your machine.
+
+**Claude.ai (plugin)** — Customize → Plugins → Add marketplace → `https://github.com/suchipizza/BergBot` → install
+*bergbot*. It installs, but claude.ai runs skills in a sandbox that cannot reach the Swiss data sources
+(GeoAdmin, SwitzerlandMobility, MeteoSwiss, transport), so Bergbot cannot check anything there. Use it only to
+render an `audit.json` you produced locally. Full function: Claude Code, Telegram or the CLI.
 
 **Telegram (your own bot, nothing hosted)**
 ```
