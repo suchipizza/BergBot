@@ -55,6 +55,7 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/bergbot"]
+dev-mode-dirs = ["src"]   # plain bergbot.pth — CPython ≥ 3.12.11 skips "_"-prefixed (hidden) .pth files
 
 [tool.hatch.build.hooks.custom]
 path = "scripts/hatch_build.py"

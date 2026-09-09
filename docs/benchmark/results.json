@@ -185,8 +185,6 @@
    "warnings": [
     "diversion",
     "exposed_terrain",
-    "fire_danger",
-    "fire_restriction",
     "hut_unverified",
     "lift_unverified",
     "protected_area",

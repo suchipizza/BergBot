@@ -34,6 +34,7 @@ from bergbot.sources.ch.slf import SLFAdapter
 from bergbot.sources.http import Fetcher
 
 ZURICH = "+02:00"
+FORECAST_DAYS = 7  # constant so requests (and recorded fixtures) do not depend on today's date
 
 
 def assess_conditions(
@@ -64,7 +65,7 @@ def assess_conditions(
     met = MeteoSwissAdapter(fetcher)
     for km, ele, lon, lat in samples:
         try:
-            rec = met.forecast(lon, lat, elevation_m=ele, forecast_days=_days_ahead(date) + 1)
+            rec = met.forecast(lon, lat, elevation_m=ele, forecast_days=FORECAST_DAYS)
         except SourceUnavailable:
             snap.unavailable.append("ch.meteoswiss")
             break
